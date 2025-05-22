@@ -5,16 +5,15 @@ os.system('clear')
 
 def show_menu():
     print("        * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\n"
-          "         *                                                       J O E T I L I T I E S!                                                    *\n"
           "         *                                                                                                                                 *\n"
-          "         *                                                            S C A N N Y                                                          *\n"
+          "         *                                                         S C A N N E R Y                                                         *\n"
           "         *                                                                                                                                 *\n"
           "        * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\n")
     print()
 show_menu() 
 
 def scanny_menu():
-    print("Current Scanny options available are :\n")
+    print("Welcome to Scan Scannery! Current scanning options available are :\n")
     print("""
         Press 1  to scan single IP and do simple fingerprinting
         Press 2  for Scanning a Specific Port
