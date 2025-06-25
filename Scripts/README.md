@@ -29,6 +29,9 @@ This tool leverages nmap on your host machine and gives you a menu of different 
 ### Scripts > Zscaler_test.py
 This nifty little script will simply help you determine if your host machine is behind a Zscaler proxy. Good for troubleshooting.
 
+### Scripts > Network_monitor.py
+Very simple monitor for your host machine's network interfaces. This is a LIVE monitor and will run until you cancel with CTRL-C.
+
 ## Support
 Sorry, no support! Use at your own risk! Just kidding, feel free to reach out if you have questions or need help.
 

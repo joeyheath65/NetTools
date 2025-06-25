@@ -12,7 +12,6 @@ GitHub: https://github.com/joeyheath65
 Created: 2025-06-24
 Version: 1.0
 
-
 Description:
     Advanced network path analyzer to detect Zscaler proxy presence
     and trace network routes. Performs traceroute analysis with
