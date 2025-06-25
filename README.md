@@ -23,13 +23,13 @@ There are 2 subdirectories here. Packages and Scripts. The packages directory ha
 ## Tools and What They Do!
 Here is a quick tidbit about each tool and what it does.
 
-### Scripts > Scannery.py
+### ✅ Scripts > Scannery.py
 This tool leverages nmap on your host machine and gives you a menu of different fingerprinting/scanning options.
 
-### Scripts > Zscaler_test.py
+### ✅ Scripts > Zscaler_test.py
 This nifty little script will simply help you determine if your host machine is behind a Zscaler proxy. Good for troubleshooting.
 
-### Scripts > Network_monitor.py
+### ✅ Scripts > Network_monitor.py
 Very simple monitor for your host machine's network interfaces. This is a LIVE monitor and will run until you cancel with CTRL-C.
 
 ## Support
