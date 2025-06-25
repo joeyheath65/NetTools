@@ -1,3 +1,0 @@
-[2025-06-24 20:54:10] Basic Scan: 192.168.1.1 - Command: sudo nmap -sS -O 192.168.1.1
-[2025-06-24 20:54:41] Basic Scan: 192.168.0.222 - Command: sudo nmap -sS -O 192.168.0.222
-[2025-06-24 20:57:09] Range Scan: 192.168.0.222/30 - Command: sudo nmap 192.168.0.222/30
