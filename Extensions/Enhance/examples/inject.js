@@ -80,6 +80,45 @@
       }, 1000);
     }
     
+    // Add "Enhanced!" indicator to Mist.com logo
+    function addEnhancementIndicator() {
+      const logoLink = document.querySelector('a.comp-navbarLogo');
+      if (!logoLink) {
+        return false;
+      }
+      
+      // Check if already enhanced
+      if (logoLink.hasAttribute('data-enhance-indicator')) {
+        return true;
+      }
+      
+      // Create "Enhanced!" text element
+      const enhancedText = document.createElement('span');
+      enhancedText.textContent = 'Enhanced!';
+      enhancedText.style.cssText = `
+        display: inline-block;
+        margin-left: 8px;
+        padding: 2px 8px;
+        background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+        color: white;
+        font-size: 11px;
+        font-weight: 600;
+        border-radius: 4px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        box-shadow: 0 2px 4px rgba(0, 123, 255, 0.3);
+        vertical-align: middle;
+        line-height: 1.4;
+      `;
+      
+      // Add to logo link
+      logoLink.appendChild(enhancedText);
+      logoLink.setAttribute('data-enhance-indicator', 'true');
+      
+      console.log('[Enhance] Added "Enhanced!" indicator to logo');
+      return true;
+    }
+    
     // Enhance dashboard metrics display
     function enhanceDashboardMetrics() {
       // Find metric cards and enhance them
@@ -123,6 +162,31 @@
     // General admin page enhancements
     function initAdminEnhancements() {
       console.log('[Enhance] Initializing Mist.com Admin page enhancements');
+      
+      // Add "Enhanced!" indicator to logo (try multiple times as page loads)
+      let attempts = 0;
+      const maxAttempts = 10;
+      const tryAddIndicator = setInterval(() => {
+        attempts++;
+        if (addEnhancementIndicator() || attempts >= maxAttempts) {
+          clearInterval(tryAddIndicator);
+        }
+      }, 500);
+      
+      // Also try immediately
+      addEnhancementIndicator();
+      
+      // Watch for logo element if it's not present yet
+      const logoObserver = new MutationObserver(() => {
+        if (addEnhancementIndicator()) {
+          logoObserver.disconnect();
+        }
+      });
+      
+      logoObserver.observe(document.body, {
+        childList: true,
+        subtree: true
+      });
       
       // Add keyboard shortcuts helper
       document.addEventListener('keydown', function(e) {

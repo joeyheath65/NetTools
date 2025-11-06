@@ -58,5 +58,11 @@ body {
   /* box-shadow: 0 2px 4px rgba(0, 123, 255, 0.3); */
 }
 
+/* Style for "Enhanced!" indicator on logo */
+a.comp-navbarLogo[data-enhance-indicator] {
+  display: flex;
+  align-items: center;
+}
+
 /* end-domain */
 
