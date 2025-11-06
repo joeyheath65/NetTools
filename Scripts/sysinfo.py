@@ -5,12 +5,12 @@
 |                 Comprehensive Network Information                    |
 +======================================================================+
 
-Author: Joe [Your Last Name]
-Email: [your.email@example.com]
-GitHub: [your-github-username]
+Author: Joe Heath
+Email: joe@joeheath.com
+GitHub: https://github.com/joeheath
 Location: Floresville, TX
 
-Created: 2025-06-24
+Created: 2025-06-27
 Version: 1.0
 
 Description:

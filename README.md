@@ -32,6 +32,9 @@ This nifty little script will simply help you determine if your host machine is 
 ### ✅ Scripts > Network_monitor.py
 Very simple monitor for your host machine's network interfaces. This is a LIVE monitor and will run until you cancel with CTRL-C.
 
+### ✅ Scripts > Sysinfo.py
+Im not gonna even lie on this one, this is all AI. I didnt code ANYTHING on this. This will extract all of the host network connection information.
+
 ## Support
 Sorry, no support! Use at your own risk! Just kidding, feel free to reach out if you have questions or need help.
 

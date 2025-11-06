@@ -1,0 +1,78 @@
+# Network Management Configuration
+# Links to site_master.yaml via site_id
+# Contains network infrastructure management data
+# Cross-references: site_master.yaml, vlan_data.yaml
+
+metadata:
+  file_type: network_management
+  linked_files:
+    - site_master.yaml
+    - vlan_data.yaml
+  primary_key: site_id
+  description: "Network infrastructure management data for sites"
+
+---
+- site_id: c9f13839-adaa-4cd9-964f-71a69928fb86
+  site_name: Store - 00025
+  # Cross-reference: site_master.yaml#c9f13839-adaa-4cd9-964f-71a69928fb86
+  # Cross-reference: vlan_data.yaml#c9f13839-adaa-4cd9-964f-71a69928fb86
+  wireless_platform: Mist
+  switch_ips:
+    - 10.2.59.30
+    - 10.2.59.41
+  firewall_ips: []
+  grafana_dash: null
+  circuits: []
+  business_unit: Store
+  required_services:
+    - DNS
+    - DHCP
+    - RADIUS1
+- site_id: 727dd2d2-c3e4-4a88-97d3-cc4fed6422f7
+  site_name: Store - 00006
+  # Cross-reference: site_master.yaml#727dd2d2-c3e4-4a88-97d3-cc4fed6422f7
+  # Cross-reference: vlan_data.yaml#727dd2d2-c3e4-4a88-97d3-cc4fed6422f7
+  wireless_platform: Mist
+  switch_ips:
+    - 10.0.66.30
+    - 10.0.66.41
+  firewall_ips: []
+  grafana_dash: null
+  circuits: []
+  business_unit: Store
+  required_services:
+    - DNS
+    - DHCP
+    - RADIUS1
+- site_id: 5cc42df4-53a8-4724-b73a-388093e7a270
+  site_name: Store - 00009
+  # Cross-reference: site_master.yaml#5cc42df4-53a8-4724-b73a-388093e7a270
+  # Cross-reference: vlan_data.yaml#5cc42df4-53a8-4724-b73a-388093e7a270
+  wireless_platform: Mist
+  switch_ips:
+    - 10.0.99.30
+    - 10.0.99.41
+  firewall_ips: []
+  grafana_dash: null
+  circuits: []
+  business_unit: Store
+  required_services:
+    - DNS
+    - DHCP
+    - RADIUS1
+- site_id: fb57e3e1-ea77-4181-ab75-0d856aee3f6b
+  site_name: Store - 00019
+  # Cross-reference: site_master.yaml#fb57e3e1-ea77-4181-ab75-0d856aee3f6b
+  # Cross-reference: vlan_data.yaml#fb57e3e1-ea77-4181-ab75-0d856aee3f6b
+  wireless_platform: Mist
+  switch_ips:
+    - 10.1.96.30
+    - 10.1.96.41
+  firewall_ips: []
+  grafana_dash: null
+  circuits: []
+  business_unit: Store
+  required_services:
+    - DNS
+    - DHCP
+    - RADIUS1 

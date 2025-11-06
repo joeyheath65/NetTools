@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhance Extension - Options</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Enhance Extension Settings</h1>
+    </header>
+
+    <form id="optionsForm">
+      <div class="section">
+        <h2>GitLab Configuration</h2>
+        
+        <div class="form-group">
+          <label for="gitlabUrl">GitLab Raw URL</label>
+          <input type="url" id="gitlabUrl" placeholder="https://gitlab.com/group/project/-/raw/main/" required>
+          <small>Base URL for fetching inject.css, inject.js, and version.json</small>
+        </div>
+
+        <div class="form-group">
+          <label for="gitlabPat">GitLab Personal Access Token (Optional)</label>
+          <input type="password" id="gitlabPat" placeholder="glpat-xxxxxxxxxxxxxxxxxxxx">
+          <small>Required if repository is private. Token is stored locally and never transmitted except to GitLab.</small>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Polling Configuration</h2>
+        
+        <div class="form-group">
+          <label for="pollInterval">Poll Interval (minutes)</label>
+          <input type="number" id="pollInterval" min="1" max="1440" value="30" required>
+          <small>How often to check for asset updates (1-1440 minutes)</small>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2>Target Domains</h2>
+        
+        <div class="form-group">
+          <label for="targetDomains">Domain Patterns (one per line)</label>
+          <textarea id="targetDomains" rows="5" placeholder="https://manage.mist.com/*&#10;https://example.com/dashboard/*" required></textarea>
+          <small>Use * as wildcard. One pattern per line. Domains matching these patterns will have assets injected.</small>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="button-group">
+          <button type="submit" class="btn btn-primary">Save Settings</button>
+          <button type="button" id="resetBtn" class="btn btn-secondary">Reset to Defaults</button>
+        </div>
+        <div id="saveStatus" class="status-message"></div>
+      </div>
+    </form>
+  </div>
+
+  <script type="module" src="options.js"></script>
+</body>
+</html>
+

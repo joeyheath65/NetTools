@@ -1,0 +1,90 @@
+# Site Master Database
+# Primary source of truth for site information
+# Links to vlan_data.yaml and net_manage.yaml via site_id
+# Cross-references: vlan_data.yaml, net_manage.yaml
+
+metadata:
+  file_type: site_master
+  linked_files:
+    - vlan_data.yaml
+    - net_manage.yaml
+  primary_key: site_id
+  description: "Primary source of truth for site information"
+
+---
+- site_id: c9f13839-adaa-4cd9-964f-71a69928fb86
+  site_name: Store - 00025
+  # Cross-reference: vlan_data.yaml#c9f13839-adaa-4cd9-964f-71a69928fb86
+  # Cross-reference: net_manage.yaml#c9f13839-adaa-4cd9-964f-71a69928fb86
+  address: 925 10th St, Floresville, TX 78114, USA
+  latlng:
+    lat: 29.1443053
+    lng: -98.1566883
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+    - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+    - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  created_time: 1674589269
+  modified_time: 1717127329
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+  notes: ''
+- site_id: 727dd2d2-c3e4-4a88-97d3-cc4fed6422f7
+  site_name: Store - 00006
+  # Cross-reference: vlan_data.yaml#727dd2d2-c3e4-4a88-97d3-cc4fed6422f7
+  # Cross-reference: net_manage.yaml#727dd2d2-c3e4-4a88-97d3-cc4fed6422f7
+  address: 2150 W Washington St, Stephenville, TX 76401, USA
+  latlng:
+    lat: 32.2094103
+    lng: -98.2252391
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+    - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+    - 275aed20-2e63-4c66-ad28-aa904584bb79
+  created_time: 1674589443
+  modified_time: 1732164859
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+  notes: ''
+- site_id: 5cc42df4-53a8-4724-b73a-388093e7a270
+  site_name: Store - 00009
+  # Cross-reference: vlan_data.yaml#5cc42df4-53a8-4724-b73a-388093e7a270
+  # Cross-reference: net_manage.yaml#5cc42df4-53a8-4724-b73a-388093e7a270
+  address: 813 Miller Ave, Donna, TX 78537, USA
+  latlng:
+    lat: 26.1687004
+    lng: -98.05544669999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+    - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+    - 4c5f3e59-601a-4b67-8287-21204257def3
+  created_time: 1674589632
+  modified_time: 1717123280
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+  notes: ''
+- site_id: fb57e3e1-ea77-4181-ab75-0d856aee3f6b
+  site_name: Store - 00019
+  # Cross-reference: vlan_data.yaml#fb57e3e1-ea77-4181-ab75-0d856aee3f6b
+  # Cross-reference: net_manage.yaml#fb57e3e1-ea77-4181-ab75-0d856aee3f6b
+  address: 19337 McDonald St, Lytle, TX 78052, USA
+  latlng:
+    lat: 29.2311367
+    lng: -98.7903024
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+    - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+    - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  created_time: 1674589250
+  modified_time: 1740589059
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 8c2bbafc-87d6-43d5-8a3b-8325a20bde90
+  tzoffset: 1080
+  notes: '' 

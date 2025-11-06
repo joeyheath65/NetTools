@@ -32,6 +32,12 @@ This nifty little script will simply help you determine if your host machine is 
 ### ✅ Scripts > Network_monitor.py
 Very simple monitor for your host machine's network interfaces. This is a LIVE monitor and will run until you cancel with CTRL-C.
 
+### ✅ Scripts > Sysinfo.py
+Im not gonna even lie on this one, this is all AI. I didnt code ANYTHING on this. This will extract all of the host network connection information.
+
+### ✅ Scripts > Lottery.py
+Just because I like sharing my random scripts, this one is one I wrote a couple years ago for grins (when i was learning python) that generates and analyzes lottery number picks. Do not waste your money on the lottery, this isnt magic, its just random number generator. I used AI to update the output and display of this.
+
 ## Support
 Sorry, no support! Use at your own risk! Just kidding, feel free to reach out if you have questions or need help.
 

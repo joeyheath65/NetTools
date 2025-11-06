@@ -1,0 +1,82 @@
+- country_code: US
+  timezone: America/Chicago
+  address: 5731 Rittiman Rd, San Antonio, TX 78218, USA
+  sitegroup_ids:
+  - 140a9d8d-f197-4d47-a910-5d43021ca957
+  notes: ''
+  latlng:
+    lat: 29.485383
+    lng: -98.377203
+  id: fe02a4b3-dbbe-4b47-93ce-71d77fa99f97
+  name: "W250 \u2013 SA Transportation Processing"
+  org_id: f9d9f882-7e5f-4407-b1f4-75dbe221c52e
+  created_time: 1743442542
+  modified_time: 1743444357
+  rftemplate_id: 887f62c5-9b03-4f60-b4fd-b5ac26e58c5f
+  wireless_platform: Mist
+  business_unit: "MWTA"
+  switch_ips:
+  - 172.20.61.33
+  vlan50_svi:
+    ip: 172.20.61.128
+    netmask: 255.255.255.196
+    gateway: 172.20.61.129
+  tzoffset: 1080
+- country_code: US
+  timezone: America/Chicago
+  address: 925 10th St, Floresville, TX 78114, USA
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  notes: ''
+  latlng:
+    lat: 29.1443053
+    lng: -98.1566883
+  id: c9f13839-adaa-4cd9-964f-71a69928fb86
+  name: "Store - 00025"
+  org_id: 9a9d648b-610b-40fb-bf16-1231f682ff51
+  created_time: 1674589269
+  modified_time: 1717127329
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  wireless_platform: Mist
+  business_unit: "Store"
+  switch_ips:
+  - 10.2.59.30
+  - 10.2.59.41
+  vlan10_svi:
+    ip: 10.2.51.1
+    netmask: 255.255.255.0
+    gateway: 10.2.51.1
+  vlan20_svi:
+    ip: 10.2.52.1
+    netmask: 255.255.255.0
+    gateway: 10.2.52.1
+  vlan30_svi:
+    ip: 10.2.53.1
+    netmask: 255.255.255.0
+    gateway: 10.2.53.1
+  vlan40_svi:
+    ip: 10.2.54.1
+    netmask: 255.255.255.0
+    gateway: 10.2.54.1
+  vlan50_svi:
+    ip: 10.2.55.1
+    netmask: 255.255.255.0
+    gateway: 10.2.55.1
+  vlan60_svi:
+    ip: 10.2.56.1
+    netmask: 255.255.255.0
+    gateway: 10.2.56.1
+  vlan70_svi:
+    ip: 10.2.57.1
+    netmask: 255.255.255.0
+    gateway: 10.2.57.1
+  vlan80_svi:
+    ip: 10.2.58.1
+    netmask: 255.255.255.0
+    gateway: 10.2.58.1
+  vlan90_svi:
+    ip: 10.2.59.1
+    netmask: 255.255.255.0
+    gateway: 10.2.59.1
+  tzoffset: 1080  

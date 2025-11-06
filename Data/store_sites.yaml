@@ -1,0 +1,6344 @@
+- address: 4517 Kingwood Dr, Kingwood, TX 77345, USA
+  latlng:
+    lat: 30.0510409
+    lng: -95.1821126
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: fc13e28b-b048-46a3-a7a1-04a076d92d7a
+  name: Store - 00720
+  created_time: 1674589597
+  modified_time: 1731626618
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 11652 Bandera Rd, San Antonio, TX 78254, USA
+  latlng:
+    lat: 29.553033
+    lng: -98.6653444
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  notes: Stand-alone C-store, standard store vlans
+  id: ca79bd8c-6c97-4b46-b699-91ac65635631
+  name: C-Store - 00719
+  created_time: 1674588766
+  modified_time: 1741035436
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 28550 US-290, Cypress, TX 77433, USA
+  latlng:
+    lat: 29.9912083
+    lng: -95.74617889999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: b8031068-3d7f-4f6e-a47d-cc377a9e0e39
+  name: Store - 00656
+  created_time: 1674589567
+  modified_time: 1737336877
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 24165 W I-10 Suite 300, San Antonio, TX 78257, USA
+  latlng:
+    lat: 29.6654464
+    lng: -98.63406379999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: f19aff49-95ae-4cb3-9ef5-854744a277a8
+  name: Store - 00566
+  created_time: 1674589424
+  modified_time: 1740700514
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 4701 East Blvd, Deer Park, TX 77536, USA
+  latlng:
+    lat: 29.6671373
+    lng: -95.0968024
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 70eaecce-4a06-4f4c-9359-74072fecc8e1
+  name: Store - 00715
+  created_time: 1674589595
+  modified_time: 1740702385
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 3590 College St, Beaumont, TX 77701, USA
+  latlng:
+    lat: 30.06860279999999
+    lng: -94.1281187
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 790b606b-5121-4341-ad5b-0ef553e45509
+  name: Store - 00692
+  created_time: 1674589582
+  modified_time: 1745471665
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 300 W Olmos Dr, San Antonio, TX 78212, USA
+  latlng:
+    lat: 29.4700933
+    lng: -98.49657769999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: b1617eaf-a14e-4a6c-803f-8bf4ed24df01
+  name: Store - 00385
+  created_time: 1674589293
+  modified_time: 1739396985
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 1601 Nogalitos St, San Antonio, TX 78204, USA
+  latlng:
+    lat: 29.39774929999999
+    lng: -98.5148529
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: f9a72b1a-b248-449d-848b-051423adf6e7
+  name: Store - 00699
+  created_time: 1674589585
+  modified_time: 1737338741
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- country_code: US
+  timezone: America/Chicago
+  address: 1601 Trinity Street, Austin, TX 78712, USA
+  sitegroup_ids:
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  notes: ''
+  latlng:
+    lat: 30.173204
+    lng: -97.821881
+  id: a8c7ffb6-f4d8-44b6-bbd2-c50c37d025ed
+  name: 773 - UT Marc Pharmacy
+  created_time: 1723836824
+  modified_time: 1734368754
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 3325 W Wadley Ave, Midland, TX 79707, USA
+  latlng:
+    lat: 32.0191425
+    lng: -102.1263592
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  id: 6c757778-b1d6-4ba3-80e4-dd41af52c9f2
+  name: Store - 00382
+  created_time: 1674589291
+  modified_time: 1748099191
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 10718 Potranco Rd, San Antonio, TX 78251, USA
+  latlng:
+    lat: 29.4343223
+    lng: -98.7028066
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: 71175197-aa3d-43b7-b3e6-70b3a8fb2d03
+  name: Store - 00085
+  created_time: 1674589629
+  modified_time: 1740703226
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 3033 S Port Ave, Corpus Christi, TX 78405, USA
+  latlng:
+    lat: 27.7658956
+    lng: -97.4206238
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 82bf05e1-0e57-47fe-a3e6-3b0acf700a85
+  id: 3d8e2361-d34c-4041-a3dc-9a6e791f9ada
+  name: Store - 00462
+  created_time: 1674589397
+  modified_time: 1739323234
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 107 N Sunset Strip St, Kenedy, TX 78119, USA
+  latlng:
+    lat: 28.8158368
+    lng: -97.8600015
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 82bf05e1-0e57-47fe-a3e6-3b0acf700a85
+  id: 874e0183-cd8a-45ce-988c-c353d6cb9429
+  name: Store - 00693
+  created_time: 1674589582
+  modified_time: 1740706154
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 14100 Spring Cypress Rd, Cypress, TX 77429, USA
+  latlng:
+    lat: 30.0028691
+    lng: -95.63895409999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 07acce41-b409-4fe6-9b37-c3a02725acaa
+  name: Store - 00698
+  created_time: 1674589585
+  modified_time: 1735929864
+  rftemplate_id: 3f9535c5-9dfb-4543-8c42-d9cbe6b73706
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 6210 Fairmont Pkwy, Pasadena, TX 77505, USA
+  latlng:
+    lat: 29.6486915
+    lng: -95.14434709999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 5ed273ea-54f1-4525-8d79-7e2d962a395d
+  name: Store - 00473
+  created_time: 1674589400
+  modified_time: 1740711324
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 1621 Mason Rd, Katy, TX 77450, USA
+  latlng:
+    lat: 29.7578416
+    lng: -95.7511916
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 78f8a257-4262-4cc5-8a1c-1e5a157a2442
+  name: Store - 00497
+  created_time: 1674589410
+  modified_time: 1745856571
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 4950 FM 1463, Katy, TX 77494, USA
+  latlng:
+    lat: 29.7198165
+    lng: -95.8480494
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 5dda33d6-bb47-47b9-9bbc-9670a8e712ef
+  name: Store - 00736
+  created_time: 1674589604
+  modified_time: 1730005836
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 106 S San Patricio St, Sinton, TX 78387, USA
+  latlng:
+    lat: 28.0355318
+    lng: -97.51717769999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 82bf05e1-0e57-47fe-a3e6-3b0acf700a85
+  id: 66624265-c73e-41b4-b1ef-4d063577f164
+  name: Store - 00115
+  created_time: 1674589237
+  modified_time: 1739336635
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 26500 Kuykendahl Rd, Tomball, TX 77375, USA
+  latlng:
+    lat: 30.1439757
+    lng: -95.5495875
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: f692623c-e7e9-4a91-8d17-baa97b1f0cc0
+  name: Store - 00686
+  created_time: 1674589580
+  modified_time: 1738092083
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 201 Farm to Market 685, Pflugerville, TX 78660, USA
+  latlng:
+    lat: 30.4368647
+    lng: -97.61244889999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: df1ef1ef-11ef-4cea-95a5-70143cbb7153
+  name: Store - 00479
+  created_time: 1674589404
+  modified_time: 1742570182
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- country_code: US
+  timezone: America/Chicago
+  address: 575 E Exchange Pkwy, Allen, TX 75002, USA
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  notes: ''
+  latlng:
+    lat: 33.117445
+    lng: -96.65293
+  id: a40c1dc8-4a93-4450-8fff-41c44e79da4f
+  name: Store - 00796
+  created_time: 1692636437
+  modified_time: 1730391330
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 10660 FM471, San Antonio, TX 78251, USA
+  latlng:
+    lat: 29.4909175
+    lng: -98.7028711
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: bf1c8b4b-fe1e-47f7-95bf-a5fd2aaa1398
+  name: Store - 00494
+  created_time: 1674589409
+  modified_time: 1739386821
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 9722 Fry Rd, Cypress, TX 77433, USA
+  latlng:
+    lat: 29.9271372
+    lng: -95.72521049999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 700a2f85-0025-47f9-9df5-6f19bdb57cbc
+  name: Store - 00709
+  created_time: 1674589590
+  modified_time: 1735943970
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 14414 U.S. Hwy 87 W, La Vernia, TX 78121, USA
+  latlng:
+    lat: 29.3581381
+    lng: -98.1369922
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: a256db4a-7bdd-4bd2-8b99-87f376efc1ab
+  name: Store - 00612
+  created_time: 1674589445
+  modified_time: 1739203312
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 2929 FM 1960, Houston, TX 77068, USA
+  latlng:
+    lat: 30.0224911
+    lng: -95.3827834
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 70809475-be3b-47fd-b470-65fd79f96830
+  name: Store - 00731
+  created_time: 1674589602
+  modified_time: 1730405880
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: E FM 1431, Texas 78654, USA
+  latlng:
+    lat: 30.5703096
+    lng: -98.1358819
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: e77a2cda-fffa-4e90-b0c5-567a20b80110
+  name: Store - 00735
+  created_time: 1674589603
+  modified_time: 1730405187
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 100 Hudson Oaks Dr, Hudson Oaks, TX 76087, USA
+  latlng:
+    lat: 32.7577505
+    lng: -97.69740709999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  id: 75fb2d79-7c43-434c-aa71-f5dec6db8e9d
+  name: Store - 00752
+  created_time: 1674589613
+  modified_time: 1731036890
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 949 William D. Fitch Pkwy, College Station, TX 77845, USA
+  latlng:
+    lat: 30.5590246
+    lng: -96.2609947
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 5676aa94-4a61-4c92-956e-88815f8e55bd
+  name: Store - 00619
+  created_time: 1674589449
+  modified_time: 1738772827
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 10777 Kuykendahl Rd, Spring, TX 77382, USA
+  latlng:
+    lat: 30.1802461
+    lng: -95.5392128
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 0e8db203-0147-4a02-9c55-ba93e01f2a4f
+  name: Store - 00594
+  created_time: 1674589440
+  modified_time: 1738120505
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 910 Kitty Hawk Rd, Universal City, TX 78148, USA
+  latlng:
+    lat: 29.5464454
+    lng: -98.3123214
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: cd25c4cc-b828-43ff-bfd0-1006f7b06e01
+  name: Store - 00555
+  created_time: 1674589418
+  modified_time: 1740092623
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- country_code: US
+  timezone: America/Chicago
+  address: Texas, USA
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  notes: ''
+  latlng:
+    lat: 31.968599
+    lng: -99.901813
+  id: b83b3075-75eb-4bf4-a649-63ca694a8bd3
+  name: Store - 00780
+  created_time: 1684767774
+  modified_time: 1746129141
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 5502 Sherwood Way, San Angelo, TX 76901, USA
+  latlng:
+    lat: 31.4308525
+    lng: -100.5108049
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  id: 7e0eccc4-8993-4bc9-8d9b-552cc92ffba6
+  name: Store - 00734
+  created_time: 1674589603
+  modified_time: 1731452409
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 1702 11th St, Huntsville, TX 77340, USA
+  latlng:
+    lat: 30.7220926
+    lng: -95.5607435
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 16d1c518-86bd-40c1-99a6-92b47b4b5725
+  name: Store - 00728
+  created_time: 1674589601
+  modified_time: 1737057098
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 1103 Morgan Blvd, Harlingen, TX 78550, USA
+  latlng:
+    lat: 26.2037622
+    lng: -97.6768549
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: df39d3dd-f6f1-436f-bee8-5ff2af73ea9d
+  name: Store - 00168
+  created_time: 1674589244
+  modified_time: 1746560004
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 6106 N Navarro St, Victoria, TX 77904, USA
+  latlng:
+    lat: 28.8519498
+    lng: -96.9952022
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 82bf05e1-0e57-47fe-a3e6-3b0acf700a85
+  id: e2d09552-921f-4c93-b178-9ff73abd4748
+  name: Store - 00092
+  created_time: 1674589636
+  modified_time: 1746560232
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 11551 West Ave, San Antonio, TX 78213, USA
+  latlng:
+    lat: 29.5473785
+    lng: -98.51087079999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: 84b3b6c9-6422-40e8-aafb-b6678ae456f9
+  name: Store - 00195
+  created_time: 1674589251
+  modified_time: 1735682785
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 1425 E Southlake Blvd, Southlake, TX 76092, USA
+  latlng:
+    lat: 32.9388872
+    lng: -97.1312658
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 79f81fb4-9332-4308-9820-5ce13b9b27f9
+  id: 7a6ced15-aa57-48a1-92e6-d1eaeec59baf
+  name: Central-Market - 00055
+  created_time: 1674588924
+  modified_time: 1692792892
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- country_code: US
+  timezone: America/Chicago
+  address: 4520 Holmes Rd, Houston, TX 77033, USA
+  sitegroup_ids:
+  - ffc21cda-0fb4-478e-9f45-451184494c1e
+  notes: ''
+  latlng:
+    lat: 29.682117
+    lng: -95.354562
+  id: bb4ccc08-32ff-42b9-8095-0922087defd9
+  name: EFC - 00779
+  created_time: 1711999425
+  modified_time: 1720492982
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- country_code: US
+  timezone: America/Chicago
+  address: 899 University Dr, Frisco, TX 75033, USA
+  sitegroup_ids:
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  notes: ''
+  latlng:
+    lat: 33.216222
+    lng: -96.882754
+  id: f5daaadd-3e4e-4faf-a6b4-1aa545a7f4d5
+  name: Store - 00802
+  created_time: 1720619887
+  modified_time: 1720703259
+  rftemplate_id: 1758a1f0-fcf3-4c1e-a8a7-b9888cdd9490
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 17460 I-35 N, Schertz, TX 78154, USA
+  latlng:
+    lat: 29.5971568
+    lng: -98.2780423
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: 19e85169-8c29-4760-a854-7ad7e52d22ff
+  name: Store - 00415
+  created_time: 1674589302
+  modified_time: 1744743987
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 2950 Southmost Blvd, Brownsville, TX 78521, USA
+  latlng:
+    lat: 25.9063496
+    lng: -97.46440079999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: 0cdc067d-7c56-4985-b3a1-d0fdccff2b68
+  name: Store - 00332
+  created_time: 1674589282
+  modified_time: 1727981604
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 909 10th St, Floresville, TX 78114, USA
+  latlng:
+    lat: 29.1443005
+    lng: -98.1571365
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 9bea0967-6cec-4353-9a24-16a09ea398b9
+  id: 9c3a4273-fb32-4f64-b384-b59e1467448b
+  name: C-Store - 00079
+  created_time: 1674588767
+  modified_time: 1734368769
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 7004 S Zarzamora St, San Antonio, TX 78224, USA
+  latlng:
+    lat: 29.3578343
+    lng: -98.53370609999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 9bea0967-6cec-4353-9a24-16a09ea398b9
+  id: 2c39a224-933e-475f-9225-86cc7e6f3963
+  name: C-Store - 00111
+  created_time: 1674588761
+  modified_time: 1734368779
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 4001 N Lamar Blvd, Austin, TX 78756, USA
+  latlng:
+    lat: 30.3082573
+    lng: -97.7397606
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 79f81fb4-9332-4308-9820-5ce13b9b27f9
+  id: 5577b7cc-cf82-4037-9748-dbb8b6544cc6
+  name: Central-Market - 00061
+  created_time: 1674588925
+  modified_time: 1734369112
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 210 W Del Mar Blvd, Laredo, TX 78041, USA
+  latlng:
+    lat: 27.5680971
+    lng: -99.49974569999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: 9c447065-aeda-4b8b-a603-f3938f694b76
+  name: Store - 00570
+  created_time: 1674589427
+  modified_time: 1735238115
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 100, 9595 Six Pines Dr, The Woodlands, TX 77380, USA
+  latlng:
+    lat: 30.1640332
+    lng: -95.46422419999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 140f9837-6321-4c2d-8f4f-634e9b20578b
+  name: Store - 00579
+  created_time: 1674589431
+  modified_time: 1736469946
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 16900 Ranch Rd 620, Round Rock, TX 78681, USA
+  latlng:
+    lat: 30.500764
+    lng: -97.72246
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: 89cdcb86-8ab2-4453-a2f9-6adf23a9db80
+  name: Store - 00373
+  created_time: 1674589289
+  modified_time: 1746486659
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 19348 Ronald Reagan Blvd, Georgetown, TX 78628, USA
+  latlng:
+    lat: 30.6331694
+    lng: -97.8244583
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: f59e034e-89d5-461b-b921-d753b9076481
+  name: Store - 00774
+  created_time: 1674589623
+  modified_time: 1743042350
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 8c2bbafc-87d6-43d5-8a3b-8325a20bde90
+  tzoffset: 1080
+- address: 819 N Main St, Lumberton, TX 77657, USA
+  latlng:
+    lat: 30.2643592
+    lng: -94.20018429999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: afa71297-e1e6-4c08-aecc-b5162d3638e6
+  name: Store - 00116
+  created_time: 1674589238
+  modified_time: 1727812978
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- country_code: US
+  timezone: America/Chicago
+  address: 2924 Morton Ranch Rd, Katy, TX 77449, USA
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  notes: ''
+  latlng:
+    lat: 29.817084
+    lng: -95.780404
+  id: d972cc90-0c09-43d3-aa6e-68e5f4fe3699
+  name: Store - 00797
+  created_time: 1689276488
+  modified_time: 1746487270
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- country_code: US
+  timezone: America/Chicago
+  address: 16000 Woodland Hills Dr, Humble, TX 77396, USA
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  notes: ''
+  latlng:
+    lat: 29.955258
+    lng: -95.210245
+  id: d77b0e67-be6e-4ccc-b8b0-3b6649790364
+  name: Store - 00798
+  created_time: 1688144456
+  modified_time: 1743044350
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 1080 Hwy 290 Hwy E, Elgin, TX 78621, USA
+  latlng:
+    lat: 30.3349361
+    lng: -97.3606058
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: 0bd53f32-7ac2-44a3-ac4d-82f11f49af46
+  name: Store - 00475
+  created_time: 1674589402
+  modified_time: 1743045696
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 3800 Little York Rd, Houston, TX 77093, USA
+  latlng:
+    lat: 29.8697572
+    lng: -95.33332539999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: dee58d25-7cb9-482a-9d29-ae1c98f952a3
+  name: Store - 00648
+  created_time: 1674589564
+  modified_time: 1743047205
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 15300 S I-35 Frontage Rd, Buda, TX 78610, USA
+  latlng:
+    lat: 30.0880501
+    lng: -97.820819
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: 01c0d94f-07d0-4aa5-9b7c-2f2054f83ca7
+  name: Store - 00477
+  created_time: 1674589403
+  modified_time: 1745274560
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 641 E Hopkins St, San Marcos, TX 78666, USA
+  latlng:
+    lat: 29.8864399
+    lng: -97.9254315
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: 0627fc94-dfd5-4a4e-aa68-10f1ba10cf16
+  name: Store - 00243
+  created_time: 1674589268
+  modified_time: 1743051712
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 11521 N FM 620 a, Austin, TX 78726, USA
+  latlng:
+    lat: 30.4522444
+    lng: -97.8268947
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: aaa70b96-483a-4dd7-a813-f1ff5acd2e13
+  name: Store - 00024
+  created_time: 1674589268
+  modified_time: 1746488953
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 3502 Palmer Hwy, Texas City, TX 77590, USA
+  latlng:
+    lat: 29.3972069
+    lng: -94.9495383
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 4782ed10-cda3-480f-9477-d9439620658d
+  name: Store - 00662
+  created_time: 1674589571
+  modified_time: 1741232405
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- country_code: US
+  timezone: America/Chicago
+  address: 2641 E Pflugerville Pkwy, Pflugerville, TX 78660, USA
+  sitegroup_ids:
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  notes: ''
+  latlng:
+    lat: 30.448709
+    lng: -97.59017
+  id: 5c35f27d-a8cc-4675-b273-81d503a9f3a6
+  name: Store - 00804
+  created_time: 1729021351
+  modified_time: 1741233989
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 7755 W Bellfort Blvd, Houston, TX 77071, USA
+  latlng:
+    lat: 29.6552121
+    lng: -95.51301749999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 9ada0004-b003-4c2d-aa47-2865407de363
+  name: Store - 00667
+  created_time: 1674589571
+  modified_time: 1742525856
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 800 US-77, Waxahachie, TX 75165, USA
+  latlng:
+    lat: 32.4112857
+    lng: -96.84022960000001
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  id: fbf5174b-40ad-403c-a352-a10bcab1eb77
+  name: Store - 00426
+  created_time: 1674589386
+  modified_time: 1717442678
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- country_code: US
+  timezone: America/Chicago
+  address: 10241 N Fwy Service Rd, Houston, TX 77037, USA
+  sitegroup_ids:
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  notes: ''
+  latlng:
+    lat: 29.911442
+    lng: -95.413755
+  id: a2055b87-8ac6-424e-a8f4-7b0360165868
+  name: Store - 00813
+  created_time: 1747760084
+  modified_time: 1747771619
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 451be0c1-87b4-46c0-b439-b4f98ca0990f
+  tzoffset: 1080
+- address: 105 S Boundary St, Burnet, TX 78611, USA
+  latlng:
+    lat: 30.7587721
+    lng: -98.2240642
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: 36eceecb-28af-4654-928f-d725a5055ba5
+  name: Store - 00433
+  created_time: 1674589390
+  modified_time: 1742528893
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 11815 Westheimer Rd, Houston, TX 77077, USA
+  latlng:
+    lat: 29.7359897
+    lng: -95.58577
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 45463649-e767-46c0-b6cd-317efd6e96ce
+  name: Store - 00551
+  created_time: 1674589417
+  modified_time: 1742529824
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 20311 Champion Forest Dr, Spring, TX 77379, USA
+  latlng:
+    lat: 30.0540085
+    lng: -95.576849
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: d53c519c-4c34-4ae7-9653-9cf6006d41b7
+  name: Store - 00725
+  created_time: 1674589600
+  modified_time: 1730923524
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 2800 E Whitestone Blvd, Cedar Park, TX 78613, USA
+  latlng:
+    lat: 30.5322467
+    lng: -97.7851385
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: 277a5ee4-efb3-415a-a84a-64ac18839f57
+  name: Store - 00580
+  created_time: 1674589431
+  modified_time: 1742533060
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 2512 E Riverside Dr, Austin, TX 78741, USA
+  latlng:
+    lat: 30.2365989
+    lng: -97.72220750000001
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 9bea0967-6cec-4353-9a24-16a09ea398b9
+  id: a8303139-8e11-4fa2-8374-1f11f3ba6cc5
+  name: C-Store - 00628
+  created_time: 1674588764
+  modified_time: 1734369083
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 5895 San Felipe St, Houston, TX 77057, USA
+  latlng:
+    lat: 29.7480668
+    lng: -95.4855231
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 826f0fc6-8e6c-4c0b-96d0-49cb96cebf59
+  name: Store - 00687
+  created_time: 1674589581
+  modified_time: 1742534120
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 12680 W Lake Houston Pkwy, Houston, TX 77044, USA
+  latlng:
+    lat: 29.9231919
+    lng: -95.1972601
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 6ae2c79a-113e-4fce-95f1-4033f4b84b86
+  name: Store - 00614
+  created_time: 1674589446
+  modified_time: 1742535218
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 4349 W Northwest Hwy, Dallas, TX 75220, USA
+  latlng:
+    lat: 32.8652164
+    lng: -96.8361049
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 79f81fb4-9332-4308-9820-5ce13b9b27f9
+  id: c81d1dd5-3215-446c-b4e0-3eba907c169b
+  name: Central-Market - 00747
+  created_time: 1674588925
+  modified_time: 1730407357
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 8300 Floyd Curl Dr ste 105, San Antonio, TX 78229, USA
+  latlng:
+    lat: 29.515117
+    lng: -98.58173
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  notes: MARC Pharmacy
+  id: 058db2c4-63f0-430d-9a09-7c3368f21eee
+  name: Store - 00647
+  created_time: 1674589563
+  modified_time: 1729874627
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- country_code: US
+  timezone: America/Chicago
+  address: 13100 FM973, Manor, TX 78653, USA
+  sitegroup_ids:
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  notes: ''
+  latlng:
+    lat: 30.351765
+    lng: -97.540485
+  id: ebda0b59-cfc5-417b-b566-cc9ff5c02bce
+  name: Store - 00811
+  created_time: 1746220601
+  modified_time: 1746220601
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 300 W Main St, Kerrville, TX 78028, USA
+  latlng:
+    lat: 30.0514554
+    lng: -99.1447288
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: ec2fcaa5-fd19-4faf-a065-3cec11040a34
+  name: Store - 00770
+  created_time: 1674589620
+  modified_time: 1738892552
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- country_code: US
+  timezone: America/Chicago
+  address: 15489 Culebra Rd, San Antonio, TX 78253, USA
+  sitegroup_ids: []
+  notes: ''
+  latlng:
+    lat: 29.52368
+    lng: -98.804633
+  id: 9f8d0ef9-a980-457d-9432-6f37b1573cc5
+  name: Store - 00807
+  created_time: 1746221694
+  modified_time: 1746221694
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 5225 Buffalo Speedway, Houston, TX 77005, USA
+  latlng:
+    lat: 29.7269681
+    lng: -95.4271763
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 397a0b40-71a4-4733-98a0-279d14aa5785
+  name: Store - 00599
+  created_time: 1674589442
+  modified_time: 1736204107
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 11675 Farm to Market Rd 2154, College Station, TX 77845, USA
+  latlng:
+    lat: 30.5827873
+    lng: -96.32296029999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 809372ad-6d08-4594-b755-ebda07603e01
+  name: Store - 00746
+  created_time: 1674589610
+  modified_time: 1731006734
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- country_code: US
+  timezone: America/Chicago
+  address: 2407 W Airport Fwy, Irving, TX 75062, USA
+  sitegroup_ids:
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  notes: 'DFW Smart Shop #3'
+  latlng:
+    lat: 32.838636
+    lng: -96.977791
+  id: f366b6e3-a6d0-4a61-a2dc-2cf604e45ff4
+  name: Store - 00815
+  created_time: 1746461808
+  modified_time: 1746461945
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 4651 West Fwy, Fort Worth, TX 76107, USA
+  latlng:
+    lat: 32.7297616
+    lng: -97.38930830000001
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 79f81fb4-9332-4308-9820-5ce13b9b27f9
+  id: fcba960b-9e61-48a1-ae8c-0116825594dc
+  name: Central-Market - 00545
+  created_time: 1674588922
+  modified_time: 1692878714
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 801 N Interstate 35 Frontage Rd, Waco, TX 76705, USA
+  latlng:
+    lat: 31.5858901
+    lng: -97.1084223
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  id: 8efc9f5d-b66b-455f-afde-5071853b3167
+  name: Store - 00557
+  created_time: 1674589420
+  modified_time: 1723837025
+  rftemplate_id: 1758a1f0-fcf3-4c1e-a8a7-b9888cdd9490
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 2118 Fredericksburg Rd, San Antonio, TX 78201, USA
+  latlng:
+    lat: 29.4657442
+    lng: -98.5252443
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: 2eec5bd8-862e-45f7-8558-5da6c615c07f
+  name: Store - 00556
+  created_time: 1674589419
+  modified_time: 1739899698
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- country_code: US
+  timezone: America/Chicago
+  address: 7330 N Loop 1604 W, San Antonio, TX 78249, USA
+  sitegroup_ids:
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  notes: ''
+  latlng:
+    lat: 29.585213
+    lng: -98.632794
+  id: e0f63424-8bf8-4f83-8a05-ab506d2c29dc
+  name: Store - 00799
+  created_time: 1745335963
+  modified_time: 1745335963
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 7988 Farm to Market Rd 1488, Magnolia, TX 77354, USA
+  latlng:
+    lat: 30.2215521
+    lng: -95.58431329999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 37794e4b-5f58-4044-8fef-515bd91c8e9c
+  name: Store - 00722
+  created_time: 1674589598
+  modified_time: 1730504745
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 108 N Rosillo St, San Antonio, TX 78207, USA
+  latlng:
+    lat: 29.4283025
+    lng: -98.5239574
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: ddb95f31-3ba6-4f0e-a2e5-42dc6480b49e
+  name: Store - 00466
+  created_time: 1674589399
+  modified_time: 1725943324
+  rftemplate_id: 000f3a0a-a90e-4a64-88cf-3900d7e5f1b4
+  networktemplate_id: 9ac7bebf-49bd-4467-9814-464676f4ede8
+  tzoffset: 1080
+- address: 4203 Red Bluff Rd, Pasadena, TX 77503, USA
+  latlng:
+    lat: 29.6803824
+    lng: -95.1469767
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: d5df2353-5e86-4a63-8fca-117cf4fc8758
+  name: Store - 00753
+  created_time: 1674589614
+  modified_time: 1730506926
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 2108 N Frazier St, Conroe, TX 77301, USA
+  latlng:
+    lat: 30.3351468
+    lng: -95.4656582
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 2f40b524-13da-4cc0-acbf-a12680f780cd
+  name: Store - 00595
+  created_time: 1674589441
+  modified_time: 1740548326
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 28520 Tomball Pkwy, Tomball, TX 77375, USA
+  latlng:
+    lat: 30.0885597
+    lng: -95.6318508
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 228cc9f3-6987-4a82-877f-b7f362dd21bf
+  name: Store - 00574
+  created_time: 1674589428
+  modified_time: 1743739621
+  rftemplate_id: 000f3a0a-a90e-4a64-88cf-3900d7e5f1b4
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 101 S Clay St, Ennis, TX 75119, USA
+  latlng:
+    lat: 32.3240283
+    lng: -96.6339167
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  id: 19d0bb38-787e-4e8b-99c2-571db9b79a54
+  name: Store - 00107
+  created_time: 1674589232
+  modified_time: 1717125814
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 3002 S 31st St, Temple, TX 76502, USA
+  latlng:
+    lat: 31.0719565
+    lng: -97.3700573
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  id: 665a1416-7292-4191-9d13-cc2802185781
+  name: Store - 00182
+  created_time: 1674589247
+  modified_time: 1717125829
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 201 S 15th St, Corsicana, TX 75110, USA
+  latlng:
+    lat: 32.0897549
+    lng: -96.4678899
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  id: 6afb5858-d18a-46d9-9217-d5fc54bfe5ff
+  name: Store - 00238
+  created_time: 1674589267
+  modified_time: 1717125839
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 601 Indian Trail, Harker Heights, TX 76548, USA
+  latlng:
+    lat: 31.0787162
+    lng: -97.65412459999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  id: b8e9337d-03f3-4b3f-9a65-1ac8e2faf8bd
+  name: Store - 00381
+  created_time: 1674589290
+  modified_time: 1717125849
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 1314 W Adams Ave, Temple, TX 76504, USA
+  latlng:
+    lat: 31.1022612
+    lng: -97.3535623
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  id: 3c3832ce-b1e4-4add-94ae-736a2061e1f5
+  name: Store - 00071
+  created_time: 1674589591
+  modified_time: 1720492985
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 1700 E Palm Valley Blvd, Round Rock, TX 78664, USA
+  latlng:
+    lat: 30.51906829999999
+    lng: -97.65610369999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: 8d5b33e5-b8cd-4703-9508-c86b8c342fd9
+  name: Store - 00591
+  created_time: 1674589439
+  modified_time: 1745866512
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 3801 E 42nd St, Odessa, TX 79762, USA
+  latlng:
+    lat: 31.8905333
+    lng: -102.3515555
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  id: f6d6e385-7e24-4f94-b9b6-60563d828245
+  name: Store - 00387
+  created_time: 1674589293
+  modified_time: 1717125870
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 4821 Broadway, San Antonio, TX 78209, USA
+  latlng:
+    lat: 29.47068659999999
+    lng: -98.4645175
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 79f81fb4-9332-4308-9820-5ce13b9b27f9
+  id: ff43ce8d-0466-421c-bb70-9d71aac23d93
+  name: Central-Market - 00191
+  created_time: 1674588920
+  modified_time: 1692302271
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 1207 E Main St, Gatesville, TX 76528, USA
+  latlng:
+    lat: 31.4351508
+    lng: -97.74271
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  id: 99017001-752f-4820-a0da-ea494f9b1275
+  name: Store - 00403
+  created_time: 1674589298
+  modified_time: 1717125880
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: null
+  tzoffset: 1080
+- country_code: US
+  timezone: America/Chicago
+  address: 1301 Wooded Acres Dr, Waco, TX 76710, USA
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  notes: ''
+  latlng:
+    lat: 31.533399
+    lng: -97.188182
+  id: 27ceaca7-3931-4772-a963-961ae09f5553
+  name: Store - 00423
+  created_time: 1677780818
+  modified_time: 1717125896
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 701 E Milam St, Mexia, TX 76667, USA
+  latlng:
+    lat: 31.685708
+    lng: -96.4774041
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  id: 32f70121-d823-4f6a-9aab-1eb701d2a693
+  name: Store - 00467
+  created_time: 1674589400
+  modified_time: 1717125915
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 2150 W Washington St, Stephenville, TX 76401, USA
+  latlng:
+    lat: 32.2094103
+    lng: -98.2252391
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  id: 727dd2d2-c3e4-4a88-97d3-cc4fed6422f7
+  name: Store - 00006
+  created_time: 1674589443
+  modified_time: 1732164859
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 12125 Alamo Rnch Pkwy, San Antonio, TX 78253, USA
+  latlng:
+    lat: 29.4851997
+    lng: -98.7317272
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: 3f0f84d3-a438-4e6b-b151-5738eff8f05c
+  name: Store - 00733
+  created_time: 1674589602
+  modified_time: 1728011394
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 3323 SE Military Dr, San Antonio, TX 78223, USA
+  latlng:
+    lat: 29.3536945
+    lng: -98.4339193
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: 7dc26237-c026-4453-92e7-e588d892f3cd
+  name: Store - 00444
+  created_time: 1674589392
+  modified_time: 1724963967
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 19344 Ronald Reagan Blvd, Georgetown, TX 78641, USA
+  latlng:
+    lat: 30.6324512
+    lng: -97.82641489999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 9bea0967-6cec-4353-9a24-16a09ea398b9
+  id: 72437d82-c010-4f69-9240-7b9b105bd676
+  name: C-Store - 00782
+  created_time: 1674589625
+  modified_time: 1692302244
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 2511 Trimmier Rd Ste 100, Killeen, TX 76542, USA
+  latlng:
+    lat: 31.0910836
+    lng: -97.73591619999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  id: f77e7711-50bc-4817-abf5-c9d756a66ea5
+  name: Store - 00581
+  created_time: 1674589433
+  modified_time: 1717125938
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 9100 Woodway Dr, Waco, TX 76712, USA
+  latlng:
+    lat: 31.495623
+    lng: -97.2211313
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  id: d53886d7-fa77-4939-a6f0-a94a00892176
+  name: Store - 00583
+  created_time: 1674589434
+  modified_time: 1717125951
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 2000 Ranch Rd 620 S, Lakeway, TX 78734, USA
+  latlng:
+    lat: 30.3442825
+    lng: -97.9665871
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: 81e68a37-e0ed-435d-8881-4d27800ffbfd
+  name: Store - 00714
+  created_time: 1674589594
+  modified_time: 1745876126
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 5800 W Slaughter Ln, Austin, TX 78749, USA
+  latlng:
+    lat: 30.2008564
+    lng: -97.8763693
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: c1c64a8c-71d4-422e-8246-d9ca58921129
+  name: Store - 00068
+  created_time: 1674589579
+  modified_time: 1745878010
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 7901 US-290, Austin, TX 78736, USA
+  latlng:
+    lat: 30.2277386
+    lng: -97.8876823
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: 0a114557-0a62-463d-9117-1c39b837da9c
+  name: Store - 00765
+  created_time: 1674589617
+  modified_time: 1745879130
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 3804 E US Hwy 377, Granbury, TX 76049, USA
+  latlng:
+    lat: 32.45776430000001
+    lng: -97.72966199999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  id: 9343052c-5c62-42c3-8d2a-f83b0810d50c
+  name: Store - 00631
+  created_time: 1674589455
+  modified_time: 1717125968
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 1550 Fry Rd, Houston, TX 77084, USA
+  latlng:
+    lat: 29.7899517
+    lng: -95.7166548
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 886ce19e-4648-487b-8fba-b187671cbcab
+  name: Store - 00492
+  created_time: 1674589408
+  modified_time: 1745886076
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- country_code: US
+  timezone: America/Chicago
+  address: Austin, TX, USA
+  sitegroup_ids: []
+  notes: ''
+  latlng:
+    lat: 30.267153
+    lng: -97.743061
+  id: aaed8de4-3a49-4d2c-809a-2b8ebc4fcb46
+  name: TAC Test Site
+  created_time: 1747880894
+  modified_time: 1747880894
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 4800B FM 365, Port Arthur, TX 776427403, USA
+  latlng:
+    lat: 29.9636175
+    lng: -93.9747465
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 4e9076a5-17c2-446a-bdde-9b88ed306cf9
+  name: Store - 00589
+  created_time: 1674589437
+  modified_time: 1717126642
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 2990 U.S. Hwy 190, Copperas Cove, TX 76522, USA
+  latlng:
+    lat: 31.1203002
+    lng: -97.86380609999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  id: b92f8bb2-3dcc-4aa2-8578-b074ab304b70
+  name: Store - 00668
+  created_time: 1674589572
+  modified_time: 1717125978
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- country_code: US
+  timezone: America/Chicago
+  address: 110 Co Rd 343, Melissa, TX 75454, USA
+  sitegroup_ids:
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  notes: ''
+  latlng:
+    lat: 33.269594
+    lng: -96.593126
+  id: 3cf298f1-a91c-4a38-836b-9c5866cab293
+  name: Store - 00808
+  created_time: 1733940876
+  modified_time: 1733940876
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 600 W Henderson St, Cleburne, TX 76033, USA
+  latlng:
+    lat: 32.3467363
+    lng: -97.3936469
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  id: 1b2f7fce-d02d-4d60-af9f-3728aaec16c4
+  name: Store - 00679
+  created_time: 1674589578
+  modified_time: 1717126002
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: '19561 W Farm to Market 2790 S #1, Lytle, TX 78052, USA'
+  latlng:
+    lat: 29.230649
+    lng: -98.80293499999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 9bea0967-6cec-4353-9a24-16a09ea398b9
+  id: 7a13bd3c-d09a-4177-bf52-14940bf0cba7
+  name: C-Store - 00651
+  created_time: 1674588764
+  modified_time: 1692302210
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 2501 W University Blvd, Odessa, TX 79764, USA
+  latlng:
+    lat: 31.8604964
+    lng: -102.4119101
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  id: 912bce98-550d-4aa6-bc3d-9da7e2280204
+  name: Store - 00711
+  created_time: 1674589592
+  modified_time: 1717126016
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 5750 E Lovers Ln, Dallas, TX 75206, USA
+  latlng:
+    lat: 32.8497825
+    lng: -96.7686731
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 79f81fb4-9332-4308-9820-5ce13b9b27f9
+  id: ec168ae2-d4c6-402f-af7a-e4440c5c52ba
+  name: Central-Market - 00552
+  created_time: 1674588924
+  modified_time: 1694517130
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 5407 Andrews Hwy, Midland, TX 79706, USA
+  latlng:
+    lat: 31.9965853
+    lng: -102.1556114
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  id: 962b93a0-2b94-4221-8f31-5e7ec7fa9590
+  name: Store - 00717
+  created_time: 1674589596
+  modified_time: 1717126025
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 1101 W Stan Schlueter Loop, Killeen, TX 76549, USA
+  latlng:
+    lat: 31.079383
+    lng: -97.7592818
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  id: 461c6d17-7832-49da-9158-35bbe89d9ddd
+  name: Store - 00721
+  created_time: 1674589598
+  modified_time: 1730503754
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 105 N Sunset Strip St, Kenedy, TX 78119, USA
+  latlng:
+    lat: 28.8147698
+    lng: -97.8582531
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 9bea0967-6cec-4353-9a24-16a09ea398b9
+  id: 5b67aa9b-178d-44a4-b489-da0c9e13acc6
+  name: C-Store - 00688
+  created_time: 1674588765
+  modified_time: 1692302215
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 5008 Gattis School Rd, Hutto, TX 78634, USA
+  latlng:
+    lat: 30.5028898
+    lng: -97.5811363
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  notes: Stand-alone C-store, standard store vlans
+  id: adfb70b4-ba8c-4ca4-b41c-adfba4dc42d4
+  name: C-Store - 00729
+  created_time: 1674588766
+  modified_time: 1727377614
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 2710 Pearland Pkwy, Pearland, TX 77581, USA
+  latlng:
+    lat: 29.5580135
+    lng: -95.26467939999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 6eb6ffda-5119-44ce-8397-ac81c607f8ae
+  name: Store - 00675
+  created_time: 1674589576
+  modified_time: 1744057151
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 7015 Village Center Dr, Austin, TX 78731, USA
+  latlng:
+    lat: 30.3518557
+    lng: -97.7550047
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: f1f3d23f-804c-4c32-98ad-296074efd25d
+  name: Store - 00096
+  created_time: 1674589638
+  modified_time: 1747605579
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 130 Sawdust Rd, Spring, TX 77380, USA
+  latlng:
+    lat: 30.1275381
+    lng: -95.44575909999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: d6a769a6-fdfd-4e36-9be7-7af8ae304957
+  name: Store - 00564
+  created_time: 1674589424
+  modified_time: 1747608672
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 3750 Gattis School Rd, Round Rock, TX 78664, USA
+  latlng:
+    lat: 30.4974476
+    lng: -97.613815
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: 8666ad69-3207-4109-bf82-38480f1e3320
+  name: Store - 00034
+  created_time: 1674589284
+  modified_time: 1747609616
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 8c2bbafc-87d6-43d5-8a3b-8325a20bde90
+  tzoffset: 1080
+- country_code: US
+  timezone: America/Chicago
+  address: 2102 Elrod Rd, Katy, TX 77449, USA
+  sitegroup_ids:
+  - ffc21cda-0fb4-478e-9f45-451184494c1e
+  notes: ''
+  latlng:
+    lat: 29.803555
+    lng: -95.760509
+  id: fc651794-92b3-406f-b691-93c201923cd9
+  name: EFC - 00776
+  created_time: 1666041049
+  modified_time: 1692302421
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 5106 Bissonnet St, Bellaire, TX 77401, USA
+  latlng:
+    lat: 29.7076365
+    lng: -95.4695077
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 06097705-52c5-4a7a-ba66-6ccbd705ae59
+  name: Store - 00738
+  created_time: 1674589606
+  modified_time: 1732166047
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 651 N US Hwy 183, Leander, TX 78641, USA
+  latlng:
+    lat: 30.5833317
+    lng: -97.85547439999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - ffc21cda-0fb4-478e-9f45-451184494c1e
+  id: 8312c0cd-7720-469c-ba08-be0ba0552ff5
+  name: EFC - 00764
+  created_time: 1674589051
+  modified_time: 1734519566
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- country_code: US
+  timezone: America/Chicago
+  address: 8700 Eldorado Pkwy, McKinney, TX 75070, USA
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  notes: ''
+  latlng:
+    lat: 33.176059
+    lng: -96.728363
+  id: 1c86889a-d9f2-4eed-8837-e139a8e3e4c2
+  name: Store - 00794
+  created_time: 1677533854
+  modified_time: 1717126121
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: null
+  tzoffset: 1080
+- country_code: US
+  timezone: America/Chicago
+  address: 3451 Heritage Trace Pkwy, Fort Worth, TX 76244, USA
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  notes: ''
+  latlng:
+    lat: 32.914335
+    lng: -97.308914
+  id: dcd4a946-672e-4ff5-9766-3e74281d8e7e
+  name: Store - 00801
+  created_time: 1708375368
+  modified_time: 1717126150
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 24224 Northwest Fwy, Cypress, TX 77429, USA
+  latlng:
+    lat: 29.9574758
+    lng: -95.6732414
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 5aac3f6d-beef-4293-9ef5-ba368f121057
+  name: Store - 00020
+  created_time: 1674589252
+  modified_time: 1738122015
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 3780 Gattis School Rd, Round Rock, TX 78664, USA
+  latlng:
+    lat: 30.4973917
+    lng: -97.61362439999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 9bea0967-6cec-4353-9a24-16a09ea398b9
+  id: 0f4e0034-84c0-4a67-bdac-efe908020edd
+  name: C-Store - 00101
+  created_time: 1674588768
+  modified_time: 1692302170
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 651 N US Hwy 183, Leander, TX 78641, USA
+  latlng:
+    lat: 30.5833317
+    lng: -97.85547439999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: cf314f70-059a-47a1-937c-25a6f4eb02bf
+  name: Store - 00592
+  created_time: 1674589439
+  modified_time: 1743048737
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 2955 Gulf Fwy, League City, TX 77573, USA
+  latlng:
+    lat: 29.4648552
+    lng: -95.0933642
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 1bfad8aa-0501-4ff9-82f0-e54ca3f56e1d
+  name: Store - 00028
+  created_time: 1674589277
+  modified_time: 1741236951
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 6100 W Fuqua St, Houston, TX 77085, USA
+  latlng:
+    lat: 29.6079425
+    lng: -95.47728959999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 1bb8121a-5071-47c6-9eaa-e746b99ababd
+  name: Store - 00559
+  created_time: 1674589421
+  modified_time: 1744088325
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 3801 N 19th St, Waco, TX 76708, USA
+  latlng:
+    lat: 31.5809294
+    lng: -97.1727757
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  id: 32364e90-b446-481f-b6a0-c80c44a55509
+  name: Store - 00064
+  created_time: 1674589457
+  modified_time: 1717125759
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 2424 N 16th St, Orange, TX 77630, USA
+  latlng:
+    lat: 30.1156351
+    lng: -93.7462042
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 3b665beb-471e-428c-a981-1da373c227ca
+  name: Store - 00035
+  created_time: 1674589285
+  modified_time: 1717126213
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 3025 Dowlen Rd, Beaumont, TX 77706, USA
+  latlng:
+    lat: 30.1066929
+    lng: -94.16993409999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 05cc19ff-faaa-4489-9e9d-e9756989104f
+  name: Store - 00048
+  created_time: 1674589404
+  modified_time: 1743565818
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 5000 32nd St, Groves, TX 77619, USA
+  latlng:
+    lat: 29.9289997
+    lng: -93.9225925
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 922c6083-b871-48ca-bc24-eebcf28e8203
+  name: Store - 00053
+  created_time: 1674589413
+  modified_time: 1717126239
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 9828 Blackhawk Blvd, Houston, TX 77075, USA
+  latlng:
+    lat: 29.6018264
+    lng: -95.249743
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 77cbe496-68ec-4ef3-83ff-a1e3a8a0490f
+  name: Store - 00054
+  created_time: 1674589413
+  modified_time: 1743479549
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 3401 Gulfway Dr, Port Arthur, TX 77642, USA
+  latlng:
+    lat: 29.9050318
+    lng: -93.92368359999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 7d5fa92c-e5a2-4861-bb3a-b08858d53cc6
+  name: Store - 00086
+  created_time: 1674589631
+  modified_time: 1717126292
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 10919 Louetta Rd, Houston, TX 77070, USA
+  latlng:
+    lat: 29.9954598
+    lng: -95.57633249999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 0b8a8427-3df6-4f31-8570-4d2262f4d99e
+  name: Store - 00099
+  created_time: 1674589639
+  modified_time: 1744311029
+  rftemplate_id: 3f9535c5-9dfb-4543-8c42-d9cbe6b73706
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 9503 Jones Rd, Houston, TX 77065, USA
+  latlng:
+    lat: 29.9111124
+    lng: -95.5861804
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 71325f7b-3961-43eb-9122-26cc2f5209aa
+  name: Store - 00657
+  created_time: 1674589567
+  modified_time: 1738992904
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 8900 Hwy 6, Missouri City, TX 77459, USA
+  latlng:
+    lat: 29.5386894
+    lng: -95.53672189999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 563e6a8b-7d21-4f16-bded-bc7dde097e11
+  name: Store - 00110
+  created_time: 1674589235
+  modified_time: 1744184236
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 2700 7th St, Bay City, TX 77414, USA
+  latlng:
+    lat: 28.982453
+    lng: -95.95765089999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 82bf05e1-0e57-47fe-a3e6-3b0acf700a85
+  id: 6fa6dcff-bdf9-4ff8-918d-1520eb38f443
+  name: Store - 00292
+  created_time: 1674589280
+  modified_time: 1733415753
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 2105 Milam St, Columbus, TX 78934, USA
+  latlng:
+    lat: 29.6940578
+    lng: -96.53839579999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 6675ed0b-8254-43ef-bab4-9015027b6667
+  name: Store - 00256
+  created_time: 1674589271
+  modified_time: 1717126344
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: Cleveland, TX, USA
+  latlng:
+    lat: 30.34132
+    lng: -95.0854885
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: c9f4b121-9ab5-44fa-9f28-1b70d0780e03
+  name: Store - 00257
+  created_time: 1674589272
+  modified_time: 1717126355
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 5609 Uvalde Rd, Houston, TX 77049, USA
+  latlng:
+    lat: 29.80753529999999
+    lng: -95.1833733
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 38cdb6b9-ec84-4538-bbde-da36cfb9f105
+  name: Store - 00640
+  created_time: 1674589458
+  modified_time: 1740701266
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 1239 E Mulberry St, Angleton, TX 77515, USA
+  latlng:
+    lat: 29.171502
+    lng: -95.41842360000001
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 36e31a36-8987-49db-8dd0-bb39b2aabe58
+  name: Store - 00017
+  created_time: 1674589245
+  modified_time: 1717126182
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 110 W Brazos Ave, West Columbia, TX 77486, USA
+  latlng:
+    lat: 29.14545309999999
+    lng: -95.6482598
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 3efc5c57-5724-4cde-9c00-9b71d2ba3da0
+  name: Store - 00271
+  created_time: 1674589277
+  modified_time: 1717126365
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 10710 Research Blvd Suite 200, Austin, TX 78759, USA
+  latlng:
+    lat: 30.3985657
+    lng: -97.7482909
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: e3737975-b9a6-4b61-a3fa-a17bfe8e0f99
+  name: Store - 00269
+  created_time: 1674589275
+  modified_time: 1747668217
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 9238 N Loop 1604 W Acc Rd, San Antonio, TX 78250, USA
+  latlng:
+    lat: 29.5536932
+    lng: -98.66418399999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: 0dc29478-7a14-4f53-811c-ed3342be4d47
+  name: Store - 00623
+  created_time: 1674589452
+  modified_time: 1740540378
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 1035 E Loop 304, Crockett, TX 75835, USA
+  latlng:
+    lat: 31.325709
+    lng: -95.4360986
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 2db1f15a-d53c-4c35-a440-4e0c7872abb4
+  name: Store - 00287
+  created_time: 1674589278
+  modified_time: 1717126374
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 2216 N Conway Ave, Mission, TX 78572, USA
+  latlng:
+    lat: 26.2291683
+    lng: -98.3229661
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 9bea0967-6cec-4353-9a24-16a09ea398b9
+  id: 4a737ab0-0751-46be-a675-334ed7fc0a91
+  name: C-Store - 00588
+  created_time: 1674588763
+  modified_time: 1692302197
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 4477 S Lamar Blvd, Austin, TX 78745, USA
+  latlng:
+    lat: 30.2306155
+    lng: -97.79906969999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 79f81fb4-9332-4308-9820-5ce13b9b27f9
+  id: 97ab78e7-6dcc-46be-bd2e-3b44a2662a50
+  name: Central-Market - 00420
+  created_time: 1674588921
+  modified_time: 1692302281
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 3815 Westheimer Rd, Houston, TX 77027, USA
+  latlng:
+    lat: 29.7410651
+    lng: -95.4442034
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 79f81fb4-9332-4308-9820-5ce13b9b27f9
+  id: 8069b9ab-9221-401e-abbc-cb75cfd8e4f8
+  name: Central-Market - 00491
+  created_time: 1674588922
+  modified_time: 1743050273
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 320 Coit Rd, Plano, TX 75075, USA
+  latlng:
+    lat: 33.0021305
+    lng: -96.76462289999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 79f81fb4-9332-4308-9820-5ce13b9b27f9
+  id: aa1fe9b6-bf8f-4baf-94f6-a0f96f4e9cda
+  name: Central-Market - 00546
+  created_time: 1674588923
+  modified_time: 1695271278
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 14540 Memorial Dr, Houston, TX 77079, USA
+  latlng:
+    lat: 29.7712314
+    lng: -95.6054705
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - ffc21cda-0fb4-478e-9f45-451184494c1e
+  id: 68d149fa-b09e-4bac-806e-ecd0a579c280
+  name: EFC - 00758
+  created_time: 1674589050
+  modified_time: 1692302372
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 10718 Potranco Rd, San Antonio, TX 78251, USA
+  latlng:
+    lat: 29.4343223
+    lng: -98.7028066
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - ffc21cda-0fb4-478e-9f45-451184494c1e
+  id: 9396b062-8193-4af1-88f1-001afabc3f35
+  name: EFC - 00761
+  created_time: 1674589051
+  modified_time: 1692302385
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 17238 Bulverde Rd, San Antonio, TX 78247, USA
+  latlng:
+    lat: 29.5949581
+    lng: -98.4175578
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - ffc21cda-0fb4-478e-9f45-451184494c1e
+  id: dd8ef38f-1247-4db4-bde3-abd2e8f37aa8
+  name: EFC - 00766
+  created_time: 1674589052
+  modified_time: 1692302406
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- country_code: US
+  timezone: America/Chicago
+  address: 850 FM1103 suite 125, Cibolo, TX 78108, USA
+  sitegroup_ids:
+  - ffc21cda-0fb4-478e-9f45-451184494c1e
+  notes: ''
+  latlng:
+    lat: 29.569227
+    lng: -98.230987
+  id: 799d0f8d-29fa-4fa0-8601-e167e4184f4c
+  name: EFC - 00784
+  created_time: 1682691517
+  modified_time: 1692302430
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: '6001 Preston Rd #120, Plano, TX 75093, USA'
+  latlng:
+    lat: 33.0562175
+    lng: -96.7952983
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - ffc21cda-0fb4-478e-9f45-451184494c1e
+  id: 82e465a9-db91-40cf-a3ed-c33ab04e79ac
+  name: EFC - 00787
+  created_time: 1674589053
+  modified_time: 1692302438
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 1616 N Alabama Rd, Wharton, TX 77488, USA
+  latlng:
+    lat: 29.3219805
+    lng: -96.08413759999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 82bf05e1-0e57-47fe-a3e6-3b0acf700a85
+  id: 925adcbb-6c20-460c-b0a5-6f6da0298ada
+  name: Store - 00233
+  created_time: 1674589264
+  modified_time: 1717125177
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 651 S Walnut Ave, New Braunfels, TX 78130, USA
+  latlng:
+    lat: 29.6889233
+    lng: -98.1268795
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: ab3464f3-d3c8-424a-982b-2ea9d4a8b34d
+  name: Store - 00775
+  created_time: 1674589624
+  modified_time: 1717127992
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 820 S Conway Ave, Mission, TX 78572, USA
+  latlng:
+    lat: 26.2137051
+    lng: -98.3257198
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: 716168c0-0bea-49d9-9437-ccf929b8420a
+  name: Store - 00226
+  created_time: 1674589260
+  modified_time: 1717123419
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 207 E South St, Alvin, TX 77511, USA
+  latlng:
+    lat: 29.41
+    lng: -95.2425748
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 70f54eb3-cb0b-479e-9ad1-735829b899ef
+  name: Store - 00288
+  created_time: 1674589278
+  modified_time: 1717126384
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 609 19th St, Hondo, TX 78861, USA
+  latlng:
+    lat: 29.3475206
+    lng: -99.13471949999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: 234c7e5b-2b06-47ba-8a77-d877ff84e653
+  name: Store - 00424
+  created_time: 1674589385
+  modified_time: 1717123588
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 4500 Williams Dr, Georgetown, TX 78633, USA
+  latlng:
+    lat: 30.6828604
+    lng: -97.7186514
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: f5723af3-ae97-4b77-a533-a1be3f8ccecd
+  name: Store - 00487
+  created_time: 1674589406
+  modified_time: 1747578659
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 1509 W Church St, Livingston, TX 77351, USA
+  latlng:
+    lat: 30.7097434
+    lng: -94.9507558
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 5104f708-d0d7-4f0d-b3e2-d383a23d377e
+  name: Store - 00339
+  created_time: 1674589284
+  modified_time: 1717126393
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 4206 Avenue T, Santa Fe, TX 77510, USA
+  latlng:
+    lat: 29.3803184
+    lng: -95.1074639
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: afa0704c-69a0-4a40-81a1-df0dd81c93ba
+  name: Store - 00348
+  created_time: 1674589285
+  modified_time: 1717126402
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 2508 S Day St, Brenham, TX 77833, USA
+  latlng:
+    lat: 30.1444345
+    lng: -96.39792010000001
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 32e1246b-83b0-4b53-acda-64aecd1a1c5e
+  name: Store - 00414
+  created_time: 1674589301
+  modified_time: 1737340321
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 2314 S Zapata Hwy, Laredo, TX 78046, USA
+  latlng:
+    lat: 27.4756508
+    lng: -99.47545099999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: 1524fbc7-fb85-4f40-b0bf-60c1bee3cc82
+  name: Store - 00586
+  created_time: 1674589436
+  modified_time: 1740874975
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: null
+  tzoffset: 1080
+- address: '419 NW Loop #436, Carthage, TX 75633, USA'
+  latlng:
+    lat: 32.1495148
+    lng: -94.3675576
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 85ff1a84-5447-4718-9388-5d746c277cb0
+  name: Store - 00458
+  created_time: 1674589396
+  modified_time: 1717126431
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 901 Trenton Rd, McAllen, TX 78504, USA
+  latlng:
+    lat: 26.2667039
+    lng: -98.21851009999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: 9c7aec10-14bb-486f-94a8-3bdbe8123ed0
+  name: Store - 00590
+  created_time: 1674589438
+  modified_time: 1733434727
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 6711 S Fry Rd, Katy, TX 77494, USA
+  latlng:
+    lat: 29.7129493
+    lng: -95.77623709999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 4287218e-fe55-40ee-a9fd-f9d02bd9d837
+  name: Store - 00596
+  created_time: 1674589442
+  modified_time: 1745867476
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 1300 S Cage Blvd, Pharr, TX 78577, USA
+  latlng:
+    lat: 26.1792968
+    lng: -98.18833330000001
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: 5bd2ea44-1797-457d-9575-8d54f4cfb66f
+  name: Store - 00642
+  created_time: 1674589559
+  modified_time: 1717123790
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 14028 US-183 Hwy, Austin, TX 78717, USA
+  latlng:
+    lat: 30.4760825
+    lng: -97.8036994
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: 60b0d659-f0b3-4e5e-b62b-edca87c6ef4d
+  name: Store - 00659
+  created_time: 1674589569
+  modified_time: 1741326730
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 1821 S Valley Mills Dr, Waco, TX 76711, USA
+  latlng:
+    lat: 31.5228817
+    lng: -97.1371155
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  id: 9b837115-289b-4dc8-91e4-c3717f08fe58
+  name: Store - 00672
+  created_time: 1674589574
+  modified_time: 1717125989
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 4724 Hwy 6, Missouri City, TX 77459, USA
+  latlng:
+    lat: 29.5788323
+    lng: -95.5824052
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: b34c2e38-8bf3-4436-b319-7b0510b6a72a
+  name: Store - 00474
+  created_time: 1674589401
+  modified_time: 1746048074
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 7405 Farm to Market 1960 Rd E, Humble, TX 77346, USA
+  latlng:
+    lat: 30.0001716
+    lng: -95.1635513
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: ce969701-fd92-43c8-9c00-4dbaa3e986cd
+  name: Store - 00498
+  created_time: 1674589411
+  modified_time: 1738094299
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 10100 Beechnut St, Houston, TX 77072, USA
+  latlng:
+    lat: 29.6911661
+    lng: -95.5599366
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: d625058c-73ec-4168-97c5-13132c8a498f
+  name: Store - 00541
+  created_time: 1674589414
+  modified_time: 1742527918
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 4955 Hwy 6 N, Houston, TX 77084, USA
+  latlng:
+    lat: 29.8475958
+    lng: -95.64760249999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: b623d1b9-8ae8-41cf-b877-babdd978d6fb
+  name: Store - 00553
+  created_time: 1674589417
+  modified_time: 1717126545
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 813 Miller Ave, Donna, TX 78537, USA
+  latlng:
+    lat: 26.1687004
+    lng: -98.05544669999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: 5cc42df4-53a8-4724-b73a-388093e7a270
+  name: Store - 00009
+  created_time: 1674589632
+  modified_time: 1717123280
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 6520 Fratt Rd b, San Antonio, TX 78218, USA
+  latlng:
+    lat: 29.4868262
+    lng: -98.39218149999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: 7093a025-d366-468e-8162-281a875f44b3
+  name: Store - 00751
+  created_time: 1674589612
+  modified_time: 1717130844
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 10200 TX-242, Conroe, TX 77385, USA
+  latlng:
+    lat: 30.2076179
+    lng: -95.4256417
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 9a9e379c-a3a1-4fb8-b792-6159d94ca605
+  name: Store - 00757
+  created_time: 1674589616
+  modified_time: 1739249169
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 13663 Farm to Market Rd 1488, Magnolia, TX 77354, USA
+  latlng:
+    lat: 30.2209984
+    lng: -95.6819534
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: e250de8c-e18d-49e4-83ea-2126bacf3b5c
+  name: Store - 00767
+  created_time: 1674589617
+  modified_time: 1747948565
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 4800 Main St, Frisco, TX 75033, USA
+  latlng:
+    lat: 33.155342
+    lng: -96.84617220000001
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  id: bb64b6a2-5fb1-4d6d-8d08-ca903c0a95db
+  name: Store - 00789
+  created_time: 1674589626
+  modified_time: 1717126101
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 4031 US-83, Rio Grande City, TX 78582, USA
+  latlng:
+    lat: 26.3711724
+    lng: -98.799222
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: c93da2b9-7941-47ad-8606-34390ce1923d
+  name: Store - 00013
+  created_time: 1674589239
+  modified_time: 1717123292
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 8801 S Congress Ave, Austin, TX 78745, USA
+  latlng:
+    lat: 30.1690026
+    lng: -97.7867921
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: 48270cad-6cb1-4021-a043-91adbca4d3d9
+  name: Store - 00710
+  created_time: 1674589591
+  modified_time: 1743567511
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 11100 Leopard St, Corpus Christi, TX 78410, USA
+  latlng:
+    lat: 27.8450546
+    lng: -97.583989
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 82bf05e1-0e57-47fe-a3e6-3b0acf700a85
+  id: 91c03a44-fd49-428f-9e46-b88d77039a30
+  name: Store - 00184
+  created_time: 1674589249
+  modified_time: 1748026007
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 14501 Ranch Rd 12, Wimberley, TX 78676, USA
+  latlng:
+    lat: 30.00233
+    lng: -98.1026115
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: 8764a843-a46c-4315-ad36-cee6051532ca
+  name: Store - 00708
+  created_time: 1674589589
+  modified_time: 1743569252
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 901 W Expy 83, San Juan, TX 78589, USA
+  latlng:
+    lat: 26.2037012
+    lng: -98.1641973
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: 26a26863-94a9-4dca-b6ed-24d4ff1a3fee
+  name: Store - 00038
+  created_time: 1674589289
+  modified_time: 1717123303
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 97 Oyster Creek Dr, Lake Jackson, TX 77566, USA
+  latlng:
+    lat: 29.0415914
+    lng: -95.445951
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 3e3a26cd-03cb-4c21-9e1c-f972df0f9b0a
+  name: Store - 00707
+  created_time: 1674589589
+  modified_time: 1743571072
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 2409 E Expressway 83, Mission, TX 78572, USA
+  latlng:
+    lat: 26.196618
+    lng: -98.28712949999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: 4d14a6bb-f2f5-4c6d-a0dd-c41ae3d7cfc8
+  name: Store - 00094
+  created_time: 1674589636
+  modified_time: 1717123313
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 514 E Zavala St, Crystal City, TX 78839, USA
+  latlng:
+    lat: 28.6820698
+    lng: -99.8289286
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: 3e33641d-41f4-4a6f-8e12-7f26b29faa48
+  name: Store - 00117
+  created_time: 1674589238
+  modified_time: 1717123343
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: '6001 Preston Rd #100, Plano, TX 75093, USA'
+  latlng:
+    lat: 33.0562175
+    lng: -96.7952983
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  id: 674f86c3-414c-4ed3-a609-dc42ab7dd6ca
+  name: Store - 00790
+  created_time: 1674589627
+  modified_time: 1717126111
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 1213 S Commerce St, Harlingen, TX 78550, USA
+  latlng:
+    lat: 26.180851
+    lng: -97.68209139999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: a17d5086-e9eb-4053-86fc-d73f262c21e1
+  name: Store - 00136
+  created_time: 1674589240
+  modified_time: 1717123355
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 1212 S Closner Blvd, Edinburg, TX 78539, USA
+  latlng:
+    lat: 26.2898666
+    lng: -98.16317339999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: 54548f55-7ea4-42cf-aed9-1952ad033889
+  name: Store - 00172
+  created_time: 1674589246
+  modified_time: 1717123379
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 2310 E Saunders St, Laredo, TX 78041, USA
+  latlng:
+    lat: 27.5309305
+    lng: -99.4712072
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: 3fce7774-d2d9-49fc-8e95-55e1386e690d
+  name: Store - 00186
+  created_time: 1674589249
+  modified_time: 1717123388
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 18611 Eastfield Dr, Webster, TX 77598, USA
+  latlng:
+    lat: 29.5518406
+    lng: -95.14879250000001
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 2e692b16-9a47-4d38-ae1f-f621a04e5013
+  name: Store - 00769
+  created_time: 1674589619
+  modified_time: 1744827304
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 1000 E 41st St, Austin, TX 78751, USA
+  latlng:
+    lat: 30.3010636
+    lng: -97.7210961
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: 902da1df-68b8-4721-a192-d1e13df9e443
+  name: Store - 00425
+  created_time: 1674589385
+  modified_time: 1746051928
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 6818 S Zarzamora, San Antonio, TX 78224, USA
+  latlng:
+    lat: 29.2960637
+    lng: -98.54912069999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: 3b8be82a-f1f3-4c27-b4d8-835fa7695f52
+  name: Store - 00084
+  created_time: 1674589629
+  modified_time: 1746052530
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 8c2bbafc-87d6-43d5-8a3b-8325a20bde90
+  tzoffset: 1080
+- address: 3501 Clear Lake City Blvd, Houston, TX 77059, USA
+  latlng:
+    lat: 29.6063705
+    lng: -95.1270831
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: ab1820fa-240f-4a8b-a178-8d9b9ecfc609
+  name: Store - 00713
+  created_time: 1674589593
+  modified_time: 1744835813
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 1301 Guadalupe St, Laredo, TX 78040, USA
+  latlng:
+    lat: 27.5060056
+    lng: -99.4830708
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: 8ff48ba5-df03-4436-893b-96441373dd64
+  name: Store - 00207
+  created_time: 1674589254
+  modified_time: 1717123400
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 3200 N 10th St, McAllen, TX 78501, USA
+  latlng:
+    lat: 26.2327213
+    lng: -98.22350089999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: 2f6e982b-3aac-4ae8-9104-650e0668337f
+  name: Store - 00212
+  created_time: 1674589257
+  modified_time: 1726510925
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: null
+  tzoffset: 1080
+- address: Weslaco, TX, USA
+  latlng:
+    lat: 26.1595194
+    lng: -97.9908366
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: 73d5ff64-5657-4291-bd36-68f832314698
+  name: Store - 00231
+  created_time: 1674589263
+  modified_time: 1717123436
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 4801 San Dario Ave, Laredo, TX 78041, USA
+  latlng:
+    lat: 27.5421291
+    lng: -99.50087479999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: 2edfd031-900d-485b-9d37-30cf3854d4bd
+  name: Store - 00255
+  created_time: 1674589270
+  modified_time: 1717123447
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 1628 Central Blvd, Brownsville, TX 78520, USA
+  latlng:
+    lat: 25.9261273
+    lng: -97.5095803
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: 8c6be70f-1a63-410f-9082-0a0e7c520a81
+  name: Store - 00263
+  created_time: 1674589274
+  modified_time: 1717123458
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 5914 Distribution, San Antonio, TX 78218, USA
+  latlng:
+    lat: 29.4804021
+    lng: -98.391184
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - ffc21cda-0fb4-478e-9f45-451184494c1e
+  id: fcc2741f-e481-4646-abe6-5d7fb0e2ea97
+  name: EFC - 00788
+  created_time: 1674589053
+  modified_time: 1724301109
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 613 S Expressway 83, Harlingen, TX 78550, USA
+  latlng:
+    lat: 26.1836506
+    lng: -97.7133274
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: 3695fdf5-1c07-43c0-af66-9bc273bbff13
+  name: Store - 00291
+  created_time: 1674589280
+  modified_time: 1717123471
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 3601 Pecan Blvd, McAllen, TX 78501, USA
+  latlng:
+    lat: 26.2187347
+    lng: -98.259266
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: 68ff0bfe-4dfb-44f5-b0a9-a04badb34265
+  name: Store - 00334
+  created_time: 1674589283
+  modified_time: 1717123493
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 209 N Texas Ave, Mercedes, TX 78570, USA
+  latlng:
+    lat: 26.1531916
+    lng: -97.91322129999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: 8c69b5f1-b32b-4fb6-b1d7-719140abcfc7
+  name: Store - 00370
+  created_time: 1674589287
+  modified_time: 1717123504
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 1679 TX-100, Port Isabel, TX 78578, USA
+  latlng:
+    lat: 26.0722186
+    lng: -97.2255328
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: cb0ebbf9-8281-4e7b-a4a2-6a8690607b7f
+  name: Store - 00383
+  created_time: 1674589291
+  modified_time: 1717123531
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 701 W Parkwood Ave, Friendswood, TX 77546, USA
+  latlng:
+    lat: 29.5057798
+    lng: -95.19075409999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: da2b383a-06ef-42dd-8c5b-dd66a16ffd27
+  name: Store - 00558
+  created_time: 1674589421
+  modified_time: 1741753981
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: Del Rio, TX 78840, USA
+  latlng:
+    lat: 29.3708857
+    lng: -100.8958674
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: 993fa7ff-147a-48b6-a68c-a1d6dca02995
+  name: Store - 00418
+  created_time: 1674589303
+  modified_time: 1717123545
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 2805 Business Center Dr, Pearland, TX 77584, USA
+  latlng:
+    lat: 29.5591682
+    lng: -95.39050689999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 91593d32-a6c7-48c2-805d-6090be7ed747
+  name: Store - 00063
+  created_time: 1674589454
+  modified_time: 1744182522
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 5801 Weber Rd, Corpus Christi, TX 78413, USA
+  latlng:
+    lat: 27.7118504
+    lng: -97.40535489999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 82bf05e1-0e57-47fe-a3e6-3b0acf700a85
+  id: bd8b5140-4385-4775-a54e-95c6244e247d
+  name: Store - 00139
+  created_time: 1674589240
+  modified_time: 1724343300
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 2135 E Main St, Eagle Pass, TX 78852, USA
+  latlng:
+    lat: 28.7086587
+    lng: -100.4844314
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: fe20f29e-603a-4749-9bf6-7ec8e82dac73
+  name: Store - 00419
+  created_time: 1674589304
+  modified_time: 1717123556
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 603 Louis Henna Blvd a, Round Rock, TX 78664, USA
+  latlng:
+    lat: 30.4807766
+    lng: -97.6590497
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: dc328799-7519-4a01-870d-be985ebf4319
+  name: Store - 00495
+  created_time: 1674589409
+  modified_time: 1746062241
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 1211 E Frontage Rd, Alamo, TX 78516, USA
+  latlng:
+    lat: 26.1905567
+    lng: -98.12350889999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: 3ec12a93-ea60-4947-b76c-36ecf90ac3e3
+  name: Store - 00421
+  created_time: 1674589304
+  modified_time: 1717123568
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 405 W Hidalgo Ave, Raymondville, TX 78580, USA
+  latlng:
+    lat: 26.4816176
+    lng: -97.7858408
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: f3442114-656f-4a1e-9045-40f7862877d1
+  name: Store - 00429
+  created_time: 1674589388
+  modified_time: 1717123600
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 2700 W Freddy Gonzalez Dr, Edinburg, TX 78539, USA
+  latlng:
+    lat: 26.289267
+    lng: -98.19585509999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: 8ba997a2-75de-4dba-b4e8-730bd5b291dd
+  name: Store - 00431
+  created_time: 1674589389
+  modified_time: 1717123613
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 201 E Main St, Uvalde, TX 78801, USA
+  latlng:
+    lat: 29.2095503
+    lng: -99.7828572
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: fd76621a-f736-4c2b-9940-a60b67d8989a
+  name: Store - 00441
+  created_time: 1674589391
+  modified_time: 1717123632
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 2155 Paredes Line Rd, Brownsville, TX 78526, USA
+  latlng:
+    lat: 25.9500179
+    lng: -97.4885176
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: d06536e4-6372-4ac0-8ede-73d90264b559
+  name: Store - 00446
+  created_time: 1674589393
+  modified_time: 1717123641
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 6010 W Expy 83, Palmview, TX 78572, USA
+  latlng:
+    lat: 26.2364924
+    lng: -98.3905631
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: 8046607c-86bb-437a-b55d-b705afcd2115
+  name: Store - 00448
+  created_time: 1674589394
+  modified_time: 1717123653
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 9211 Farm to Market Rd 723, Richmond, TX 77406, USA
+  latlng:
+    lat: 29.6956944
+    lng: -95.8161011
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: d3c9cba4-7737-4e15-aa75-2ab57b54b191
+  name: Store - 00749
+  created_time: 1674589611
+  modified_time: 1744858947
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 7811 McPherson Rd, Laredo, TX 78045, USA
+  latlng:
+    lat: 27.5761776
+    lng: -99.4729764
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: 386bf577-d88a-4b8e-a9f7-192159e8ec9a
+  name: Store - 00449
+  created_time: 1674589394
+  modified_time: 1717123663
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 14498 Bellaire Blvd, Houston, TX 77083, USA
+  latlng:
+    lat: 29.7051577
+    lng: -95.6434331
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 67b3de3f-dcd6-4ba1-8063-1747ac9e1a47
+  name: Store - 00575
+  created_time: 1674589429
+  modified_time: 1744866451
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 530 Hwy 6, Sugar Land, TX 774784947, USA
+  latlng:
+    lat: 29.6085155
+    lng: -95.64437790000001
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 1abf2c10-d5eb-43b4-8233-03353b117c66
+  name: Store - 00627
+  created_time: 1674589453
+  modified_time: 1744867118
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 310 N Westgate Dr, Weslaco, TX 78596, USA
+  latlng:
+    lat: 26.1635917
+    lng: -98.0050127
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: efd4adb6-80b2-4f95-8f4f-62e619648636
+  name: Store - 00485
+  created_time: 1674589405
+  modified_time: 1717123674
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 2250 Boca Chica Blvd, Brownsville, TX 78521, USA
+  latlng:
+    lat: 25.9202983
+    lng: -97.48859449999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: 177f12d4-b2ca-492f-80ca-169d4d283ca2
+  name: Store - 00489
+  created_time: 1674589407
+  modified_time: 1717123706
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 200 E Griffin Pkwy, Mission, TX 78572, USA
+  latlng:
+    lat: 26.2281447
+    lng: -98.32224769999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: a650566e-886d-4174-9d5b-049cf7765539
+  name: Store - 00571
+  created_time: 1674589427
+  modified_time: 1717123729
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 225 I-35, Pearsall, TX 78061, USA
+  latlng:
+    lat: 28.895276
+    lng: -99.11459459999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: f4e12a9c-1a76-4642-9652-721677eeb887
+  name: Store - 00620
+  created_time: 1674589450
+  modified_time: 1717123769
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 1095 W Business 77, San Benito, TX 78586, USA
+  latlng:
+    lat: 26.1443261
+    lng: -97.63691829999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: cef54f81-b6c9-4636-9be2-afb53ce0bd03
+  name: Store - 00626
+  created_time: 1674589452
+  modified_time: 1717123778
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 2030 N 1st St, Carrizo Springs, TX 78834, USA
+  latlng:
+    lat: 28.5363194
+    lng: -99.8519082
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: d5495d72-6294-4802-b993-8b31e4d6b540
+  name: Store - 00671
+  created_time: 1674589573
+  modified_time: 1717123801
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 120 E Mile 3 Rd, Palmhurst, TX 78573, USA
+  latlng:
+    lat: 26.2555538
+    lng: -98.3179763
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: 2ef25b6a-7dbc-42d0-b267-91203b31324c
+  name: Store - 00674
+  created_time: 1674589575
+  modified_time: 1717123810
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 512 E Edinburg Ave, Elsa, TX 78543, USA
+  latlng:
+    lat: 26.2931465
+    lng: -97.9847678
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: ef2d9550-9cb8-42bc-945a-f785eb4c7e2e
+  name: Store - 00677
+  created_time: 1674589577
+  modified_time: 1717123819
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: W Expy 83, McAllen, TX 78501, USA
+  latlng:
+    lat: 26.1912797
+    lng: -98.2410707
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: 5b15cdaf-663c-4a47-af99-9b43a786a599
+  name: Store - 00702
+  created_time: 1674589587
+  modified_time: 1717123827
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 12860 Research Blvd, Austin, TX 78759, USA
+  latlng:
+    lat: 30.4342416
+    lng: -97.7726251
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: 0c2a4068-1951-41aa-98c7-ebfbc826da47
+  name: Store - 00031
+  created_time: 1674589281
+  modified_time: 1747952118
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 2508 E Riverside Dr, Austin, TX 78741, USA
+  latlng:
+    lat: 30.236434
+    lng: -97.72216399999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: 2411575a-4beb-4c9b-9f69-71537f91d18e
+  name: Store - 00091
+  created_time: 1674589634
+  modified_time: 1743480865
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 8c2bbafc-87d6-43d5-8a3b-8325a20bde90
+  tzoffset: 1080
+- address: 19900 Southwest Fwy, Sugar Land, TX 77479, USA
+  latlng:
+    lat: 29.5648997
+    lng: -95.68540730000001
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: ad4a6ec3-ae88-4873-8b00-a1f6f4e6761f
+  name: Store - 00563
+  created_time: 1674589423
+  modified_time: 1743200631
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  address: '7112 Ed Bluestein Blvd #125, Austin, TX 78723, USA'
+  country_code: US
+  latlng:
+    lat: 30.312096
+    lng: -97.66473
+  id: cfd7495f-35a3-4396-8087-10fa12b133e0
+  name: Store - 00161
+  created_time: 1674589243
+  modified_time: 1745374019
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 9414 N Lamar Blvd, Austin, TX 78753, USA
+  latlng:
+    lat: 30.3645477
+    lng: -97.6980615
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: 3dfa817d-492c-4f84-b4bb-32d727d2b22f
+  name: Store - 00183
+  created_time: 1674589248
+  modified_time: 1717124010
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 5808 Burnet Rd, Austin, TX 78756, USA
+  latlng:
+    lat: 30.3344254
+    lng: -97.74101110000001
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: 0deecd75-1ec9-4e63-9ae3-3f17bbf95424
+  name: Store - 00202
+  created_time: 1674589253
+  modified_time: 1747607203
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: HEB, 250 University Blvd, Round Rock, TX 78665, USA
+  latlng:
+    lat: 30.5606194
+    lng: -97.68833769999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: d9aae813-11ab-4b62-957e-d00bda05695e
+  name: Store - 00673
+  created_time: 1674589575
+  modified_time: 1745637956
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 2110 W Slaughter Ln, Austin, TX 78748, USA
+  latlng:
+    lat: 30.1742917
+    lng: -97.82581119999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: b44f0979-c551-4308-93d5-cd01fafba17e
+  name: Store - 00227
+  created_time: 1674589261
+  modified_time: 1744183271
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 6607 S I-35 Frontage Rd, Austin, TX 78744, USA
+  latlng:
+    lat: 30.1888732
+    lng: -97.768666
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: 960aaf07-aaa3-49a7-8352-1a556f186603
+  name: Store - 00229
+  created_time: 1674589262
+  modified_time: 1744178423
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 1434 Wells Branch Pkwy, Pflugerville, TX 78660, USA
+  latlng:
+    lat: 30.4424844
+    lng: -97.6640754
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: 443f8f74-1cc9-4ca4-a3ac-fc2fe5a081a7
+  name: Store - 00236
+  created_time: 1674589266
+  modified_time: 1717124072
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 170 E Whitestone Blvd, Cedar Park, TX 78613, USA
+  latlng:
+    lat: 30.5222062
+    lng: -97.8281618
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: 9ba9e1ad-d370-4cfa-8191-b2f1f90ff488
+  name: Store - 00265
+  created_time: 1674589275
+  modified_time: 1742526486
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 12400 State Hwy 71, Bee Cave, TX 78738, USA
+  latlng:
+    lat: 30.3048872
+    lng: -97.9348139
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: bb0e27f2-cf77-4f51-a88b-d003d68ce08d
+  name: Store - 00404
+  created_time: 1674589299
+  modified_time: 1747162254
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 450 E Travis St, La Grange, TX 78945, USA
+  latlng:
+    lat: 29.906506
+    lng: -96.87237809999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: ee55e90a-cfc2-489b-a58f-b3b4de9adc32
+  name: Store - 00416
+  created_time: 1674589302
+  modified_time: 1717124182
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 705 S Key Ave, Lampasas, TX 76550, USA
+  latlng:
+    lat: 31.0618897
+    lng: -98.18087279999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: 3e48fabb-758f-4b8c-82f6-2593e99b4e44
+  name: Store - 00432
+  created_time: 1674589389
+  modified_time: 1717124213
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 403 S Colorado St, Lockhart, TX 78644, USA
+  latlng:
+    lat: 29.8805844
+    lng: -97.6698806
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: fa76873c-aac7-4035-b354-d311dec1a16e
+  name: Store - 00445
+  created_time: 1674589392
+  modified_time: 1717124240
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 7301 N FM 620, Austin, TX 78730, USA
+  latlng:
+    lat: 30.4047842
+    lng: -97.8515549
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: 71c05f1f-7836-4084-bdd3-386eea91c844
+  name: Store - 00451
+  created_time: 1674589395
+  modified_time: 1746488008
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 320 E Pierce St, Luling, TX 78648, USA
+  latlng:
+    lat: 29.6802994
+    lng: -97.65269169999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: 7663d6e2-f3ec-4563-b0f1-e55effc6629e
+  name: Store - 00464
+  created_time: 1674589398
+  modified_time: 1717124270
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: Govalle Shopping Center, 2701 E 7th St, Austin, TX 78702, USA
+  latlng:
+    lat: 30.2591848
+    lng: -97.7115457
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: a310f24d-166c-4450-b610-6862635636fa
+  name: Store - 00465
+  created_time: 1674589399
+  modified_time: 1723759929
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 104 Hasler Blvd, Bastrop, TX 78602, USA
+  latlng:
+    lat: 30.1081411
+    lng: -97.3358665
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: 828d67bb-8f46-46b0-8a57-c14dad4c7dc8
+  name: Store - 00582
+  created_time: 1674589434
+  modified_time: 1745472995
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 215 Ranch Rd 2900, Kingsland, TX 78639, USA
+  latlng:
+    lat: 30.6581796
+    lng: -98.44601349999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: e43e2940-4726-40d6-aa37-0b121da24d4c
+  name: Store - 00587
+  created_time: 1674589437
+  modified_time: 1747885870
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 598 US-290, Dripping Springs, TX 78620, USA
+  latlng:
+    lat: 30.1902607
+    lng: -98.0816333
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: 97488c21-5bde-4c02-a81b-a93562c4b4ea
+  name: Store - 00611
+  created_time: 1674589444
+  modified_time: 1744264345
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: Building H, 1801 E 51st St, Austin, TX 78723, USA
+  latlng:
+    lat: 30.3010455
+    lng: -97.6997009
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: 5a72b895-1b9f-4597-a10b-80156bac0c67
+  name: Store - 00639
+  created_time: 1674589456
+  modified_time: 1717124469
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 2301 S Congress Ave, Austin, TX 78704, USA
+  latlng:
+    lat: 30.23925879999999
+    lng: -97.7516014
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: 6fb0a1e5-9868-4b33-af3c-4586287ba2ee
+  name: Store - 00755
+  created_time: 1674589614
+  modified_time: 1717124601
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 4405 114th St, Lubbock, TX 79424, USA
+  latlng:
+    lat: 33.4900034
+    lng: -101.9063171
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  id: 92459e47-92ce-4f4b-b060-0d25cc035fba
+  name: Store - 00772
+  created_time: 1674589622
+  modified_time: 1739308356
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 1601 Trinity St, Austin, TX 78712, USA
+  latlng:
+    lat: 30.27792549999999
+    lng: -97.73560429999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: d8e19d52-c623-4344-8b17-c83e4b06ae4d
+  name: Store - 00773
+  created_time: 1674589623
+  modified_time: 1717124645
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- country_code: US
+  timezone: America/Chicago
+  address: 1010 W University Ave, Georgetown, TX 78628, USA
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  notes: ''
+  latlng:
+    lat: 30.635223
+    lng: -97.694801
+  id: da4dace6-9947-464b-8252-d974467df5d8
+  name: Store - 00781
+  created_time: 1683303104
+  modified_time: 1741236406
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 308 E Main Ave, Robstown, TX 78380, USA
+  latlng:
+    lat: 27.7890038
+    lng: -97.66574729999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 82bf05e1-0e57-47fe-a3e6-3b0acf700a85
+  id: 010ae55c-a0e6-4959-bbfe-a99ee3d8f1ea
+  name: Store - 00022
+  created_time: 1674589258
+  modified_time: 1717124742
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 201 W Gonzales St, Yoakum, TX 77995, USA
+  latlng:
+    lat: 29.2932029
+    lng: -97.1503359
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 82bf05e1-0e57-47fe-a3e6-3b0acf700a85
+  id: eaf9d892-2627-4869-b53e-b8476216c523
+  name: Store - 00355
+  created_time: 1674589287
+  modified_time: 1720979713
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 1145 Waldron Rd, Corpus Christi, TX 78418, USA
+  latlng:
+    lat: 27.6652644
+    lng: -97.28203769999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 82bf05e1-0e57-47fe-a3e6-3b0acf700a85
+  id: d57d240b-3c83-45fd-b304-bfd870e43c4f
+  name: Store - 00057
+  created_time: 1674589426
+  modified_time: 1717124755
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- country_code: US
+  timezone: America/Chicago
+  address: 1670 E Broad St, Mansfield, TX 76063, USA
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  notes: ''
+  latlng:
+    lat: 32.568383
+    lng: -97.114377
+  id: 3a3cd919-5e78-4421-88b5-9a0f2fbe4e5b
+  name: Store - 00750
+  created_time: 1712160952
+  modified_time: 1719553216
+  rftemplate_id: 1758a1f0-fcf3-4c1e-a8a7-b9888cdd9490
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 601 E San Patricio Ave, Mathis, TX 78368, USA
+  latlng:
+    lat: 28.0910293
+    lng: -97.8227734
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 82bf05e1-0e57-47fe-a3e6-3b0acf700a85
+  id: 396eb0ab-9581-4ab8-95d1-fb5aa1d7560f
+  name: Store - 00160
+  created_time: 1674589242
+  modified_time: 1717124819
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 2616 TX-361, Ingleside, TX 78362, USA
+  latlng:
+    lat: 27.8822427
+    lng: -97.210213
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 82bf05e1-0e57-47fe-a3e6-3b0acf700a85
+  id: efd6fe26-a73d-46c8-ba34-539f5121524e
+  name: Store - 00171
+  created_time: 1674589245
+  modified_time: 1717124846
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 700 S St Marys St, Falfurrias, TX 78355, USA
+  latlng:
+    lat: 27.2205343
+    lng: -98.14589
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 82bf05e1-0e57-47fe-a3e6-3b0acf700a85
+  id: 3b7acc6f-f391-4b23-bf78-439f891ea49c
+  name: Store - 00200
+  created_time: 1674589252
+  modified_time: 1717124884
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 4320 S Alameda St, Corpus Christi, TX 78412, USA
+  latlng:
+    lat: 27.7299106
+    lng: -97.3707146
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 82bf05e1-0e57-47fe-a3e6-3b0acf700a85
+  id: 7d4717a5-5473-444f-846f-1392696975cc
+  name: Store - 00210
+  created_time: 1674589255
+  modified_time: 1717124894
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 7310 Louetta Rd, Spring, TX 77379, USA
+  latlng:
+    lat: 30.0222482
+    lng: -95.52730079999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 0dc20450-d415-4a46-929e-ec0f5b2e64a2
+  name: Store - 00576
+  created_time: 1674589429
+  modified_time: 1743739533
+  rftemplate_id: 000f3a0a-a90e-4a64-88cf-3900d7e5f1b4
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 206 S Alamo St, Refugio, TX 78377, USA
+  latlng:
+    lat: 28.3032894
+    lng: -97.27588639999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 82bf05e1-0e57-47fe-a3e6-3b0acf700a85
+  id: 5a80d6a6-cff7-45dc-9be6-f0013c23f2fb
+  name: Store - 00234
+  created_time: 1674589264
+  modified_time: 1717125188
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 3500 Leopard St, Corpus Christi, TX 78408, USA
+  latlng:
+    lat: 27.7981862
+    lng: -97.427742
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 82bf05e1-0e57-47fe-a3e6-3b0acf700a85
+  id: 10562725-3476-475a-8008-9ea40d612e6d
+  name: Store - 00253
+  created_time: 1674589269
+  modified_time: 1717125201
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 180, 5425 S Padre Island Dr, Corpus Christi, TX 78411, USA
+  latlng:
+    lat: 27.7079428
+    lng: -97.374612
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 82bf05e1-0e57-47fe-a3e6-3b0acf700a85
+  id: 29c647ba-4212-45e5-a20f-02f56c382b1e
+  name: Store - 00270
+  created_time: 1674589276
+  modified_time: 1717125213
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 101 E Goodnight Ave, Aransas Pass, TX 78336, USA
+  latlng:
+    lat: 27.9015739
+    lng: -97.14629699999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 82bf05e1-0e57-47fe-a3e6-3b0acf700a85
+  id: 99c38531-8fe8-4348-981e-21187c450628
+  name: Store - 00333
+  created_time: 1674589283
+  modified_time: 1726151220
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 301 N Wells St, Edna, TX 77957, USA
+  latlng:
+    lat: 28.9792083
+    lng: -96.64802759999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 82bf05e1-0e57-47fe-a3e6-3b0acf700a85
+  id: 6e6f1664-deb7-42c9-8e83-7d13022c077a
+  name: Store - 00351
+  created_time: 1674589286
+  modified_time: 1717125243
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 409 E Kleberg Ave, Kingsville, TX 78363, USA
+  latlng:
+    lat: 27.5163356
+    lng: -97.86435879999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 82bf05e1-0e57-47fe-a3e6-3b0acf700a85
+  id: 079b5c5e-5a06-4b84-8b0e-9cdfa5e750f5
+  name: Store - 00401
+  created_time: 1674589298
+  modified_time: 1717125266
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 100 E Houston St, Beeville, TX 78102, USA
+  latlng:
+    lat: 28.4012839
+    lng: -97.7468267
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 82bf05e1-0e57-47fe-a3e6-3b0acf700a85
+  id: 5d32cccd-8b6e-4d6a-b78c-1abef4c52c37
+  name: Store - 00412
+  created_time: 1674589300
+  modified_time: 1717125277
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 3133 S Alameda St, Corpus Christi, TX 78404, USA
+  latlng:
+    lat: 27.7579085
+    lng: -97.3911873
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 82bf05e1-0e57-47fe-a3e6-3b0acf700a85
+  id: 605c3dd9-30bf-4b19-92f1-90f797d96432
+  name: Store - 00413
+  created_time: 1674589301
+  modified_time: 1717125288
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 10251 Kempwood Dr, Houston, TX 77043, USA
+  latlng:
+    lat: 29.8223913
+    lng: -95.54560959999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 43458697-7a74-42dc-ac32-0533173b496f
+  name: Store - 00577
+  created_time: 1674589430
+  modified_time: 1717126622
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 1600 Wildcat Dr, Portland, TX 78374, USA
+  latlng:
+    lat: 27.8873498
+    lng: -97.3186848
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 82bf05e1-0e57-47fe-a3e6-3b0acf700a85
+  id: cfd9496c-de8a-42fa-9693-08f5526a30fa
+  name: Store - 00488
+  created_time: 1674589407
+  modified_time: 1717125317
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 1505 E Rio Grande St, Victoria, TX 77901, USA
+  latlng:
+    lat: 28.8051917
+    lng: -96.9890408
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 82bf05e1-0e57-47fe-a3e6-3b0acf700a85
+  id: 6e3f9fa5-5007-4657-a6ad-ebf53d327bc5
+  name: Store - 00554
+  created_time: 1674589418
+  modified_time: 1717125326
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 1409 Hwy 35 N, Rockport, TX 78382, USA
+  latlng:
+    lat: 28.0384209
+    lng: -97.0439588
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 82bf05e1-0e57-47fe-a3e6-3b0acf700a85
+  id: cffd1563-296d-44ba-9725-c26c0bda3f6e
+  name: Store - 00562
+  created_time: 1674589422
+  modified_time: 1717125341
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 306 N Mechanic St, El Campo, TX 77437, USA
+  latlng:
+    lat: 29.1990056
+    lng: -96.2695136
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 82bf05e1-0e57-47fe-a3e6-3b0acf700a85
+  id: 791e91c4-702b-4d8b-a37e-1a5ce820929d
+  name: Store - 00584
+  created_time: 1674589435
+  modified_time: 1717125361
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 1841 Church St, Gonzales, TX 78629, USA
+  latlng:
+    lat: 29.5182745
+    lng: -97.4514676
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 82bf05e1-0e57-47fe-a3e6-3b0acf700a85
+  id: 11059c85-0fac-4e8f-b5e6-5ddfbe524ebc
+  name: Store - 00641
+  created_time: 1674589558
+  modified_time: 1717125373
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 10161 W Grand Pkwy S, Richmond, TX 77407, USA
+  latlng:
+    lat: 29.6598843
+    lng: -95.713392
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 1642eb77-e436-4223-b29d-5146e8006325
+  name: Store - 00724
+  created_time: 1674589599
+  modified_time: 1727316987
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 5000 Gattis School Rd, Hutto, TX 78634, USA
+  latlng:
+    lat: 30.50226069999999
+    lng: -97.5822847
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: 6b24d1ea-82a0-4a60-a44b-4cf8b0691a00
+  name: Store - 00696
+  created_time: 1674589584
+  modified_time: 1727321520
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 4444 Kostoryz Rd, Corpus Christi, TX 78415, USA
+  latlng:
+    lat: 27.7394115
+    lng: -97.4056595
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 82bf05e1-0e57-47fe-a3e6-3b0acf700a85
+  id: 13c87ccf-8787-45d5-9708-3a7a5e299bb6
+  name: Store - 00643
+  created_time: 1674589560
+  modified_time: 1717125382
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 909 E Broadway St, Cuero, TX 77954, USA
+  latlng:
+    lat: 29.0896192
+    lng: -97.2806287
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 82bf05e1-0e57-47fe-a3e6-3b0acf700a85
+  id: ad310520-b739-4065-8036-3ba2c56bce0e
+  name: Store - 00712
+  created_time: 1674589593
+  modified_time: 1717125422
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 165 NW John Jones Dr, Burleson, TX 76028, USA
+  latlng:
+    lat: 32.5217092
+    lng: -97.3503898
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  id: 20178629-76b4-4563-87ad-f0aac4de41c5
+  name: Store - 00016
+  created_time: 1674589242
+  modified_time: 1717125712
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 2509 N Main St, Belton, TX 76513, USA
+  latlng:
+    lat: 31.0801544
+    lng: -97.4568456
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  id: faff06db-1ae3-4dbb-81e0-0c43098a9cda
+  name: Store - 00039
+  created_time: 1674589295
+  modified_time: 1717125724
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 2000 S Gregg St, Big Spring, TX 79720, USA
+  latlng:
+    lat: 32.2347442
+    lng: -101.4726044
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  id: 689ccdd4-4213-4955-9daa-32f3c28135be
+  name: Store - 00051
+  created_time: 1674589411
+  modified_time: 1717125736
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 9710 Katy Fwy, Houston, TX 77055, USA
+  latlng:
+    lat: 29.7858207
+    lng: -95.53242709999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 11cfe545-8dd0-40ee-9558-b4d7a1b3fc7d
+  name: Store - 00109
+  created_time: 1674589234
+  modified_time: 1746713246
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 1345 Barrow St, Abilene, TX 79605, USA
+  latlng:
+    lat: 32.432792
+    lng: -99.7590467
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  id: 68b5d21a-476f-4d3f-96f3-1bb34e2751d0
+  name: Store - 00070
+  created_time: 1674589586
+  modified_time: 1717125770
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 435 Live Oak St, Marlin, TX 76661, USA
+  latlng:
+    lat: 31.307074
+    lng: -96.8903127
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  id: 030907f9-9d06-4689-856b-265519117611
+  name: Store - 00104
+  created_time: 1674589231
+  modified_time: 1717125803
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: null
+  tzoffset: 1080
+- country_code: US
+  timezone: America/Chicago
+  address: 2145 W Frontier Pkwy, Prosper, TX 75078, USA
+  sitegroup_ids:
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  notes: ''
+  latlng:
+    lat: 33.261521
+    lng: -96.817111
+  id: ce0ec5c9-5b67-46be-9443-bf364304c494
+  name: Store - 00809
+  created_time: 1746728524
+  modified_time: 1746728524
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 25675 Nelson Way, Katy, TX 77494, USA
+  latlng:
+    lat: 29.7745541
+    lng: -95.81983969999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 82a24cdd-f080-4643-9216-3814a577561a
+  name: Store - 00615
+  created_time: 1674589447
+  modified_time: 1744263617
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 111 N Timberland Dr, Lufkin, TX 75901, USA
+  latlng:
+    lat: 31.3377792
+    lng: -94.7192652
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  notes: 11/17/2023 undergoing remodel
+  id: 27e3a861-2b0f-4e34-bc16-542f8311c2fc
+  name: Store - 00617
+  created_time: 1674589448
+  modified_time: 1719388795
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 1701 W Alabama St, Houston, TX 77098, USA
+  latlng:
+    lat: 29.7380744
+    lng: -95.4026268
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: a974e7a2-e106-4a94-b5b6-a3c10917fd5f
+  name: Store - 00630
+  created_time: 1674589454
+  modified_time: 1736363102
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 3875 W Davis St, Conroe, TX 77304, USA
+  latlng:
+    lat: 30.3256173
+    lng: -95.50023159999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 12cf4f89-0ac5-4332-b60c-acef4c1c5448
+  name: Store - 00660
+  created_time: 1674589570
+  modified_time: 1739247981
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 12035 Antoine Dr, Houston, TX 77066, USA
+  latlng:
+    lat: 29.96063899999999
+    lng: -95.4811399
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 90a55152-29ba-4c94-91a9-58cbb80312e8
+  name: Store - 00616
+  created_time: 1674589447
+  modified_time: 1740608668
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 2652 Lake Austin Blvd, Austin, TX 78703, USA
+  latlng:
+    lat: 30.2831516
+    lng: -97.7763786
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: e8580a52-b188-4030-ae36-2cd9f25fc33d
+  name: Store - 00768
+  created_time: 1674589618
+  modified_time: 1745991666
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 2755 E League City Pkwy, League City, TX 77573, USA
+  latlng:
+    lat: 29.5056442
+    lng: -95.0388653
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 737da545-f5a6-4aed-a993-3173b590d2a5
+  name: Store - 00697
+  created_time: 1674589584
+  modified_time: 1741234606
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 500 Pecan St, Del Rio, TX 78840, USA
+  latlng:
+    lat: 29.3580574
+    lng: -100.8972803
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: 060e07a2-bccc-41ff-b16e-a0ef2b6521d5
+  name: Store - 00088
+  created_time: 1674589632
+  modified_time: 1717130754
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- country_code: US
+  timezone: America/Chicago
+  address: 17238 Bulverde Rd, San Antonio, TX 78247, USA
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  notes: SA48 BULVERDE ROAD/LOOP 1604
+  latlng:
+    lat: 29.595443
+    lng: -98.417328
+  id: e4d792bd-ecc7-4972-93d4-260a2572cc70
+  name: Store - 00732
+  created_time: 1625599660
+  modified_time: 1726769667
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 8c2bbafc-87d6-43d5-8a3b-8325a20bde90
+  tzoffset: 1080
+- address: 8219 Marbach Rd, San Antonio, TX 78227, USA
+  latlng:
+    lat: 29.4198645
+    lng: -98.6519617
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: 1141eb66-8961-4dbb-bd8b-bc9643f289c8
+  name: Store - 00613
+  created_time: 1674589445
+  modified_time: 1740609688
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 3131 Campbell Rd, Houston, TX 77080, USA
+  latlng:
+    lat: 29.8213469
+    lng: -95.528669
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 5ca33770-c2ea-48c3-9506-5535ed38deec
+  name: Store - 00090
+  created_time: 1674589633
+  modified_time: 1717130765
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- country_code: US
+  timezone: America/Chicago
+  address: 2400 S Congress Ave, Austin, TX 78704, USA
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  notes: ''
+  latlng:
+    lat: 30.238694
+    lng: -97.755182
+  id: 54b73418-2117-4b18-a5c5-01b316964e8a
+  name: Store - 00754
+  created_time: 1683313936
+  modified_time: 1746735951
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 2300 N Shepherd Dr, Houston, TX 77008, USA
+  latlng:
+    lat: 29.8077194
+    lng: -95.4084616
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 9d03f38d-244a-442b-975a-03ff067857b5
+  name: Store - 00737
+  created_time: 1674589605
+  modified_time: 1731628399
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 13401 Interstate 10 E, Mont Belvieu, TX 77523, USA
+  latlng:
+    lat: 29.8268581
+    lng: -94.8481341
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 001c1e20-8e62-4c2a-9186-0c40c073047a
+  name: Store - 00741
+  created_time: 1674589607
+  modified_time: 1731002116
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 6430 Garth Rd, Baytown, TX 77521, USA
+  latlng:
+    lat: 29.7955215
+    lng: -94.9797601
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: a31b2d56-77e2-416b-b5f7-3aae2f725c93
+  name: Store - 00742
+  created_time: 1674589608
+  modified_time: 1731346302
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 4955 Beechnut St, Houston, TX 77096, USA
+  latlng:
+    lat: 29.68884509999999
+    lng: -95.4642441
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: bbf7c04e-abbe-4a52-ba33-4032cf6b7497
+  name: Store - 00745
+  created_time: 1674589609
+  modified_time: 1736468856
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 5251 Farm to Market 2920, Spring, TX 77379, USA
+  latlng:
+    lat: 30.0716737
+    lng: -95.5018707
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: ed8b47c9-5d4a-49bd-afb8-8b88f01da776
+  name: Store - 00748
+  created_time: 1674589611
+  modified_time: 1730742678
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 2121 Pease St, Harlingen, TX 78550, USA
+  latlng:
+    lat: 26.1747952
+    lng: -97.67012509999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: 2916a2a4-4791-46f4-887f-d93a664793c1
+  name: Store - 00676
+  created_time: 1674589577
+  modified_time: 1717130858
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 6055 South Fwy, Houston, TX 77004, USA
+  latlng:
+    lat: 29.7138622
+    lng: -95.3767792
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 856f45bf-e2db-473d-bb37-84663f6cc5e1
+  name: Store - 00756
+  created_time: 1674589615
+  modified_time: 1737331901
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 19529 Northpark Dr, Kingwood, TX 77339, USA
+  latlng:
+    lat: 30.0686804
+    lng: -95.2515645
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 5cd47229-e106-40c9-bc54-b095f94f6dfa
+  name: Store - 00759
+  created_time: 1674589616
+  modified_time: 1735944689
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- country_code: US
+  timezone: America/Chicago
+  address: 17119 Hwy 6, Manvel, TX 77578, USA
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  notes: ''
+  latlng:
+    lat: 29.487447
+    lng: -95.40515
+  id: 1af5d6eb-d240-4980-a48d-28ce782d166b
+  name: Store - 00760
+  created_time: 1695322093
+  modified_time: 1717127220
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: '3485 Fredericksburg Rd # 4, San Antonio, TX 78201, USA'
+  latlng:
+    lat: 29.4756246
+    lng: -98.5391794
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: d4796c9d-a51f-4658-b9cc-c1da11d9e4a8
+  name: Store - 00701
+  created_time: 1674589587
+  modified_time: 1717130871
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 12350 Interstate 45 N, Willis, TX 77378, USA
+  latlng:
+    lat: 30.4206439
+    lng: -95.4880524
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 878dcd74-e1d1-4614-a367-109bba612ee7
+  name: Store - 00791
+  created_time: 1674589628
+  modified_time: 1717127254
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 10720 Preston Rd Ste 1018, Dallas, TX 75230, USA
+  latlng:
+    lat: 32.8942493
+    lng: -96.8021119
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 79f81fb4-9332-4308-9820-5ce13b9b27f9
+  id: 5b7a2fd8-0f69-49e0-9778-c020fed64d40
+  name: Central-Market - 00653
+  created_time: 1674589565
+  modified_time: 1745517566
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 19337 McDonald St, Lytle, TX 78052, USA
+  latlng:
+    lat: 29.2311367
+    lng: -98.7903024
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: fb57e3e1-ea77-4181-ab75-0d856aee3f6b
+  name: Store - 00019
+  created_time: 1674589250
+  modified_time: 1740589059
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 8c2bbafc-87d6-43d5-8a3b-8325a20bde90
+  tzoffset: 1080
+- address: 925 10th St, Floresville, TX 78114, USA
+  latlng:
+    lat: 29.1443053
+    lng: -98.1566883
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: c9f13839-adaa-4cd9-964f-71a69928fb86
+  name: Store - 00025
+  created_time: 1674589269
+  modified_time: 1717127329
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+  network_config_ref: detailed_network_configs.yaml#c9f13839-adaa-4cd9-964f-71a69928fb86
+- address: 200 W Hopkins St, San Marcos, TX 78666, USA
+  latlng:
+    lat: 29.8833825
+    lng: -97.94302719999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: e5dabfed-8026-416c-a013-6f73d90bf36d
+  name: Store - 00455
+  created_time: 1674589395
+  modified_time: 1728935104
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 4100 S New Braunfels Ave, San Antonio, TX 78223, USA
+  latlng:
+    lat: 29.3792227
+    lng: -98.4608044
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: 1d12fcca-a5cb-43e8-87b1-16697d152eb1
+  name: Store - 00026
+  created_time: 1674589273
+  modified_time: 1736990842
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 8503 NW Military Hwy, San Antonio, TX 78230, USA
+  latlng:
+    lat: 29.5529585
+    lng: -98.5341673
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: 37b725af-4935-476f-8569-865236e56dbe
+  name: Store - 00102
+  created_time: 1674589230
+  modified_time: 1736287488
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 20935 U.S. Hwy 281 N, San Antonio, TX 78258, USA
+  latlng:
+    lat: 29.6413127
+    lng: -98.4573271
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: b436e7c9-086b-40bf-9f32-6da877b762d0
+  name: Store - 00108
+  created_time: 1674589233
+  modified_time: 1735864131
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 15000 San Pedro Ave, San Antonio, TX 78232, USA
+  latlng:
+    lat: 29.5777934
+    lng: -98.476444
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: f8ff40fb-261d-4975-8b9b-4688e3af0c7c
+  name: Store - 00164
+  created_time: 1674589243
+  modified_time: 1717127415
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 716276a7-e16c-4ccd-8c0e-130923c2ddc9
+  tzoffset: 1080
+- address: 6839 San Pedro Ave, San Antonio, TX 78216, USA
+  latlng:
+    lat: 29.5036053
+    lng: -98.500293
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: 9e78630c-b8e3-4bad-8686-83a470acd883
+  name: Store - 00178
+  created_time: 1674589247
+  modified_time: 1717127428
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 2130 Culebra Rd, San Antonio, TX 78228, USA
+  latlng:
+    lat: 29.44648879999999
+    lng: -98.54169689999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: 5a54823c-e099-4fe7-912f-348e9cc22fb4
+  name: Store - 00189
+  created_time: 1674589250
+  modified_time: 1735856998
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 721 Castroville Rd, San Antonio, TX 78237, USA
+  latlng:
+    lat: 29.4171792
+    lng: -98.5552563
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: b611985b-608c-45f3-a71d-4e487e7047b9
+  name: Store - 00205
+  created_time: 1674589254
+  modified_time: 1717127459
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 415 N New Braunfels Ave, San Antonio, TX 78202, USA
+  latlng:
+    lat: 29.4247395
+    lng: -98.46281309999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: 1d3c5a7a-0fed-4764-b8b1-2a4deda40b9f
+  name: Store - 00211
+  created_time: 1674589255
+  modified_time: 1717127468
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 7951 Guilbeau Rd, San Antonio, TX 78250, USA
+  latlng:
+    lat: 29.5200723
+    lng: -98.64258149999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: 2383d923-f62a-4e83-82cb-a07068d07292
+  name: Store - 00224
+  created_time: 1674589260
+  modified_time: 1717127477
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 5601 Bandera Rd, San Antonio, TX 78238, USA
+  latlng:
+    lat: 29.4816688
+    lng: -98.59603489999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: 03232d08-03b3-4898-a06f-880ce2112178
+  name: Store - 00262
+  created_time: 1674589273
+  modified_time: 1736465088
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 6580 Farm-To-Market Rd 78, San Antonio, TX 78244, USA
+  latlng:
+    lat: 29.4805262
+    lng: -98.359611
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: e02ea634-d8cf-440e-8a95-af3aaab28c13
+  name: Store - 00294
+  created_time: 1674589281
+  modified_time: 1738096600
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 1955 Nacogdoches Rd, San Antonio, TX 78209, USA
+  latlng:
+    lat: 29.5075448
+    lng: -98.45827
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: 916da9f0-503a-455e-9f39-268ac28cd12b
+  name: Store - 00372
+  created_time: 1674589288
+  modified_time: 1738090551
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 420 W Bandera Rd, Boerne, TX 78006, USA
+  latlng:
+    lat: 29.7810596
+    lng: -98.7350177
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: f28b50ba-eefa-4a28-bad3-2bfa21df3c76
+  name: Store - 00621
+  created_time: 1674589450
+  modified_time: 1740512884
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 5313 Saratoga Blvd, Corpus Christi, TX 78413, USA
+  latlng:
+    lat: 27.6846777
+    lng: -97.38863579999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 82bf05e1-0e57-47fe-a3e6-3b0acf700a85
+  id: 51b680f5-68dc-45a2-addb-b87c95e0875c
+  name: Store - 00069
+  created_time: 1674589581
+  modified_time: 1717124765
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 12777 I-10, San Antonio, TX 78230, USA
+  latlng:
+    lat: 29.5623288
+    lng: -98.5879904
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: 21296e19-88ab-4e01-b0ec-f8f368c92615
+  name: Store - 00395
+  created_time: 1674589296
+  modified_time: 1733984091
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 18140 San Pedro Ave, San Antonio, TX 78232, USA
+  latlng:
+    lat: 29.6069018
+    lng: -98.4669278
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: a485e96f-ddc9-4295-b79a-5774ba149884
+  name: Store - 00397
+  created_time: 1674589296
+  modified_time: 1738122527
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 219 W Oaklawn Rd, Pleasanton, TX 78064, USA
+  latlng:
+    lat: 28.9559917
+    lng: -98.4865617
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: b35b9ead-c971-4c2a-8b85-1885a2ec5f54
+  name: Store - 00411
+  created_time: 1674589300
+  modified_time: 1737334500
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 735 SW Military Dr, San Antonio, TX 78221, USA
+  latlng:
+    lat: 29.3569568
+    lng: -98.5036276
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: cc5cee11-c1f5-4bc6-856b-372e806055d0
+  name: Store - 00427
+  created_time: 1674589387
+  modified_time: 1736806708
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 8c2bbafc-87d6-43d5-8a3b-8325a20bde90
+  tzoffset: 1080
+- address: 1150 TX-1604 Loop, San Antonio, TX 78248, USA
+  latlng:
+    lat: 29.6066299
+    lng: -98.5103109
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: 025c7ba9-6de3-4744-b245-3808a174bb4c
+  name: Store - 00463
+  created_time: 1674589397
+  modified_time: 1730133490
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 9900 Wurzbach Rd, San Antonio, TX 78230, USA
+  latlng:
+    lat: 29.5321107
+    lng: -98.56079229999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: 1a0a4482-21de-44ff-be1e-1a895fe13d60
+  name: Store - 00480
+  created_time: 1674589405
+  modified_time: 1717127675
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 725 E Villa Maria Rd Ste 1300, Bryan, TX 77802, USA
+  latlng:
+    lat: 30.6437652
+    lng: -96.3508301
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: a05d3d29-957a-4b84-a215-f1c9a8baa755
+  name: Store - 00544
+  created_time: 1674589416
+  modified_time: 1740509607
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 407 S Adams St, Fredericksburg, TX 78624, USA
+  latlng:
+    lat: 30.2701639
+    lng: -98.87547980000001
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: 733fe3fb-63d2-4444-91a2-7f187aff1086
+  name: Store - 00561
+  created_time: 1674589422
+  modified_time: 1738889126
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 999 E Basse Rd, San Antonio, TX 78209, USA
+  latlng:
+    lat: 29.495244
+    lng: -98.479745
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: 4fbfb152-c933-4036-9def-fd6aa515e572
+  name: Store - 00567
+  created_time: 1674589425
+  modified_time: 1738357390
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 12018 Perrin Beitel, San Antonio, TX 78217, USA
+  latlng:
+    lat: 29.5489659
+    lng: -98.40722300000002
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: 6cadb47a-768d-498f-8143-c024ad38a3b7
+  name: Store - 00568
+  created_time: 1674589426
+  modified_time: 1717127749
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 1520 Austin Hwy, San Antonio, TX 78218, USA
+  latlng:
+    lat: 29.4931736
+    lng: -98.43118109999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: 7a9798a2-4a72-4490-917e-c1076a8aa57b
+  name: Store - 00585
+  created_time: 1674589435
+  modified_time: 1717127759
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 5910 Babcock Rd, San Antonio, TX 78240, USA
+  latlng:
+    lat: 29.5270854
+    lng: -98.6033559
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: f6d5e94a-c0e1-4480-ba39-4bf074eeceef
+  name: Store - 00618
+  created_time: 1674589448
+  modified_time: 1736360338
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 313 Sidney Baker St S, Kerrville, TX 78028, USA
+  latlng:
+    lat: 30.0411519
+    lng: -99.1432803
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: a2161e36-da61-44f0-9ad9-2a717b9061ca
+  name: Store - 00655
+  created_time: 1674589566
+  modified_time: 1740084775
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 368 Valley Hi Dr, San Antonio, TX 78227, USA
+  latlng:
+    lat: 29.3799392
+    lng: -98.63677
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: 5664214d-675e-444c-932d-b25fb692b279
+  name: Store - 00678
+  created_time: 1674589578
+  modified_time: 1740600118
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 2965 N Interstate 35 Frontage Rd, New Braunfels, TX 78130, USA
+  latlng:
+    lat: 29.7312986
+    lng: -98.0780654
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: f7ace514-46a3-4bef-b85f-ab256d12a76c
+  name: Store - 00694
+  created_time: 1674589583
+  modified_time: 1739458595
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 1609 N Texas Ave, Bryan, TX 77803, USA
+  latlng:
+    lat: 30.68987259999999
+    lng: -96.3721406
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: b697789a-93a7-4d1f-9ac3-94ee178c17d2
+  name: Store - 00644
+  created_time: 1674589561
+  modified_time: 1740515228
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 1340 E Court St, Seguin, TX 78155, USA
+  latlng:
+    lat: 29.5707416
+    lng: -97.9448494
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: 8f2f95a2-2102-400d-92ce-49fa363ebf6a
+  name: Store - 00716
+  created_time: 1674589595
+  modified_time: 1738119891
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 516 S Flores St, San Antonio, TX 78204, USA
+  latlng:
+    lat: 29.4191853
+    lng: -98.4966164
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: 8cb5a4fd-88a8-41b1-abf6-72e2e7a42fb1
+  name: Store - 00718
+  created_time: 1674589597
+  modified_time: 1720492953
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: SW Military Dr, San Antonio, TX 78221, USA
+  latlng:
+    lat: 29.3566876
+    lng: -98.5125036
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 9bea0967-6cec-4353-9a24-16a09ea398b9
+  id: 8bff166e-e2b5-4d3f-a0cc-93e474708a0d
+  name: C-Store - 00121
+  created_time: 1674588762
+  modified_time: 1726785700
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 5b6edff6-e2d8-406f-b455-6bd4dce71d67
+  tzoffset: 1080
+- address: 14325 Potranco Rd, San Antonio, TX 78245, USA
+  latlng:
+    lat: 29.423192
+    lng: -98.7796778
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: 96a276af-32cd-489d-82f1-2d396ff59845
+  name: Store - 00771
+  created_time: 1674589621
+  modified_time: 1717127976
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 850 FM1103 Suite 100, Cibolo, TX 78108, USA
+  latlng:
+    lat: 29.5691808
+    lng: -98.23100199999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: 78d0882d-86ea-4153-9389-0e2e8da35ff7
+  name: Store - 00785
+  created_time: 1674589626
+  modified_time: 1717128003
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- country_code: US
+  timezone: America/Chicago
+  address: 29388 I-10, Boerne, TX 78006, USA
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  notes: ''
+  latlng:
+    lat: 29.73442
+    lng: -98.680294
+  id: e92193ea-e874-4c2b-8c1d-8cf3837fee95
+  name: Store - 00793
+  created_time: 1707250562
+  modified_time: 1747726282
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 1630 Spencer Hwy, South Houston, TX 77587, USA
+  latlng:
+    lat: 29.6636586
+    lng: -95.208989
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: b612a0d6-905f-4359-9fc5-d34fcd5fd2a6
+  name: Store - 00066
+  created_time: 1674589569
+  modified_time: 1717128031
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 3500 Garth Rd, Baytown, TX 77521, USA
+  latlng:
+    lat: 29.7605804
+    lng: -94.9751818
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: bd4da822-e08b-4673-b0b0-89f606aaca10
+  name: Store - 00645
+  created_time: 1674589562
+  modified_time: 1740693324
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 12009 Northwest Fwy, Houston, TX 77092, USA
+  latlng:
+    lat: 29.8314558
+    lng: -95.4849086
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 8d7a7463-58d7-4999-a70c-9f75c663334e
+  name: Store - 00646
+  created_time: 1674589563
+  modified_time: 1740637131
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 612 N Victory Dr, Houston, TX 77088, USA
+  latlng:
+    lat: 29.872526
+    lng: -95.41343239999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: e140f1d9-901e-4a5b-af91-ceeaba678636
+  name: Store - 00649
+  created_time: 1674589565
+  modified_time: 1740613972
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- country_code: US
+  timezone: America/Chicago
+  address: 4107 Fry Rd, Katy, TX 77449, USA
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  notes: ''
+  latlng:
+    lat: 29.83114
+    lng: -95.72006
+  id: 3aff92a4-111b-4abd-acba-f4fe7bc5997d
+  name: Store - 00792
+  created_time: 1677769625
+  modified_time: 1717128167
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- country_code: US
+  timezone: America/Chicago
+  address: 4101 W Wheatland Rd, Dallas, TX 75237, USA
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  notes: ''
+  latlng:
+    lat: 32.648118
+    lng: -96.886473
+  id: f229a700-5477-4700-9d6d-7dc56342438e
+  name: Store - 00803
+  created_time: 1715347352
+  modified_time: 1717128182
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 101 Calhoun Plaza, Port Lavaca, TX 77979, USA
+  latlng:
+    lat: 28.6264255
+    lng: -96.6368597
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 82bf05e1-0e57-47fe-a3e6-3b0acf700a85
+  id: 805279a9-9bfa-488a-a680-b49a660ee83f
+  name: Store - 00434
+  created_time: 1674589390
+  modified_time: 1726779936
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 23500 Circle Oak Pkwy, Richmond, TX 77469, USA
+  latlng:
+    lat: 29.5517373
+    lng: -95.7475606
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 700abaeb-c3b1-4ac7-8449-9c30b194ba77
+  name: Store - 00727
+  created_time: 1674589600
+  modified_time: 1736606512
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 3301 Sherwood Way, San Angelo, TX 76901, USA
+  latlng:
+    lat: 31.4446956
+    lng: -100.4802085
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  id: 4e58a506-49a1-4269-a293-8ff5641001c3
+  name: Store - 00052
+  created_time: 1674589412
+  modified_time: 1740021256
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 3663 Washington Ave Suite 100, Houston, TX 77007, USA
+  latlng:
+    lat: 29.7689838
+    lng: -95.3965525
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 053c1001-7e91-4349-b875-79c9b2708c18
+  name: Store - 00744
+  created_time: 1674589609
+  modified_time: 1738266578
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 1655 TX-46, New Braunfels, TX 78130, USA
+  latlng:
+    lat: 29.7131379
+    lng: -98.16053579999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: 608f1422-d52e-4ff9-90c9-7e104f593972
+  name: Store - 00074
+  created_time: 1674589607
+  modified_time: 1738267831
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 1900 Texas Ave S, College Station, TX 77840, USA
+  latlng:
+    lat: 30.6124687
+    lng: -96.3187858
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: bbad3d3d-5f25-4cb4-ac09-5e66e425f7e6
+  name: Store - 00543
+  created_time: 1674589415
+  modified_time: 1740521661
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 500 W Canyon Ridge Dr, Austin, TX 78753, USA
+  latlng:
+    lat: 30.4041297
+    lng: -97.67227079999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: 1578337a-7530-471e-b050-d41e46c08df5
+  name: Store - 00476
+  created_time: 1674589402
+  modified_time: 1740712176
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 14087 O'Connor Rd, San Antonio, TX 78247, USA
+  latlng:
+    lat: 29.5697082
+    lng: -98.3867094
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: e7a11d6c-ffaf-4806-9705-3f573e246343
+  name: Store - 00230
+  created_time: 1674589262
+  modified_time: 1725495867
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- country_code: US
+  timezone: America/Chicago
+  address: 17439 Classen Rd, San Antonio, TX 78247, USA
+  sitegroup_ids:
+  - 9bea0967-6cec-4353-9a24-16a09ea398b9
+  notes: SA48 CONVENIENCE STR BULV/1604
+  latlng:
+    lat: 29.597164
+    lng: -98.416968
+  id: 9a167fd2-83fc-4165-9dd0-c4a8770f8cb5
+  name: C-Store - 00739
+  created_time: 1625599471
+  modified_time: 1726774858
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 5b6edff6-e2d8-406f-b455-6bd4dce71d67
+  tzoffset: 1080
+- address: 23635 Wilderness Oak, San Antonio, TX 78258, USA
+  latlng:
+    lat: 29.6626711
+    lng: -98.49985389999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: 5a396699-361a-418c-89f1-76b7ffbceb56
+  name: Store - 00658
+  created_time: 1674589568
+  modified_time: 1737164316
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: '3111 Woodridge Dr #500, Houston, TX 77087, USA'
+  latlng:
+    lat: 29.6983935
+    lng: -95.2947652
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 239477fd-3e7c-4887-89dd-41e43640f632
+  name: Store - 00540
+  created_time: 1674589414
+  modified_time: 1736996510
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 6000 West Ave, San Antonio, TX 78213, USA
+  latlng:
+    lat: 29.5148216
+    lng: -98.52447219999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: e811f285-e477-4011-92df-3d42dd21a699
+  name: Store - 00389
+  created_time: 1674589295
+  modified_time: 1747986465
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 5401 Farm to Market 1626, Kyle, TX 78640, USA
+  latlng:
+    lat: 30.0158656
+    lng: -97.8620114
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: 184a71dc-f72c-4f4e-84da-0a5b8b97c568
+  name: Store - 00014
+  created_time: 1674589241
+  modified_time: 1744265947
+  rftemplate_id: 1758a1f0-fcf3-4c1e-a8a7-b9888cdd9490
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 701 S Capital of Texas Hwy, West Lake Hills, TX 78746, USA
+  latlng:
+    lat: 30.2921146
+    lng: -97.82599789999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: 9e181b10-ca78-4b36-a010-4cbf5716118f
+  name: Store - 00029
+  created_time: 1674589279
+  modified_time: 1747661628
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 6001 W Parmer Ln, Austin, TX 78727, USA
+  latlng:
+    lat: 30.44149629999999
+    lng: -97.742519
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: 4e5a339b-ae3c-4ef7-ae33-acfc9602e14f
+  name: Store - 00388
+  created_time: 1674589294
+  modified_time: 1745536572
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 2929 Thousand Oaks Dr, San Antonio, TX 78247, USA
+  latlng:
+    lat: 29.5767622
+    lng: -98.4390719
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: a1b606b3-c99d-4c9c-80fc-b781db222f34
+  name: Store - 00398
+  created_time: 1674589297
+  modified_time: 1744836836
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- country_code: US
+  timezone: America/Chicago
+  address: 20017 Bridgeland Creek Pkwy, Cypress, TX 77433, USA
+  sitegroup_ids:
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  notes: ''
+  latlng:
+    lat: 29.941538
+    lng: -95.759697
+  id: d4ec7073-eb6b-4568-8f2c-7e3e28de64e4
+  name: Store - 00806
+  created_time: 1724427712
+  modified_time: 1738360393
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: H-E-B Spring Market, 2121 Farm to Market 2920, Spring, TX 77388, USA
+  latlng:
+    lat: 30.0687865
+    lng: -95.4500986
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 5309fe48-bf94-4b45-b583-2a2d1cde483d
+  name: Store - 00610
+  created_time: 1674589443
+  modified_time: 1738364689
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 6030 Montgomery Rd, San Antonio, TX 78252, USA
+  latlng:
+    lat: 29.3740219
+    lng: -98.7383057
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: de0e366e-44b6-4fc3-b494-c35cb8d34458
+  name: Store - 00384
+  created_time: 1674589292
+  modified_time: 1738366630
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 3540 Rayford Rd, Spring, TX 77386, USA
+  latlng:
+    lat: 30.10941729999999
+    lng: -95.38740109999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: e5990eb8-41f9-435a-b848-15ec4efe0460
+  name: Store - 00705
+  created_time: 1674589588
+  modified_time: 1738367600
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 1015 S WW White Rd, San Antonio, TX 78220, USA
+  latlng:
+    lat: 29.4139199
+    lng: -98.40597969999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: b0743a1e-a3c6-45aa-abce-48e768e63072
+  name: Store - 00106
+  created_time: 1674589232
+  modified_time: 1747931029
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 12407 N Mopac Expy, Austin, TX 78758, USA
+  latlng:
+    lat: 30.41732039999999
+    lng: -97.7028335
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: dc378df3-de94-4b28-aaaa-2f09730ba10c
+  name: Store - 00218
+  created_time: 1674589258
+  modified_time: 1747885387
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 30a76abd-3c62-4381-81c4-8fcbcfbcd078
+  tzoffset: 1080
+- address: 3601 FM 1488, The Woodlands, TX 77384, USA
+  latlng:
+    lat: 30.2260365
+    lng: -95.5196119
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - a3a952d5-51e1-40ab-8cb0-58b27aa6de37
+  id: 747c6493-1ebe-4652-b468-b7b6fc9bff39
+  name: Store - 00638
+  created_time: 1674589456
+  modified_time: 1741883027
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 1115 E Main St, Alice, TX 78332, USA
+  latlng:
+    lat: 27.7520495
+    lng: -98.0637388
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 82bf05e1-0e57-47fe-a3e6-3b0acf700a85
+  id: c07a4b57-e213-49de-a474-c0beaabe7bbc
+  name: Store - 00223
+  created_time: 1674589259
+  modified_time: 1741883156
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: null
+  tzoffset: 1080
+- timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  address: 100 Carlos G Parker Blvd NW, Taylor, TX 76574, USA
+  country_code: US
+  latlng:
+    lat: 30.601002
+    lng: -97.417187
+  id: e603616a-45e9-4806-a9d7-9a038df9cfcd
+  name: Store - 00593
+  created_time: 1674589440
+  modified_time: 1747938648
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 9255 Grissom Rd, San Antonio, TX 78251, USA
+  latlng:
+    lat: 29.4849854
+    lng: -98.6649918
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  id: 4cabd043-a39b-4139-bd44-1ed85b3d9111
+  name: Store - 00235
+  created_time: 1674589265
+  modified_time: 1746114457
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- country_code: US
+  timezone: America/Chicago
+  address: 7700 Samuell Blvd, Dallas, TX 75227, USA
+  sitegroup_ids:
+  - 275aed20-2e63-4c66-ad28-aa904584bb79
+  notes: ''
+  latlng:
+    lat: 32.791973
+    lng: -96.686373
+  id: 80fec180-743a-4b07-91f8-73eeac2a02cb
+  name: Store - 00805
+  created_time: 1731340940
+  modified_time: 1741838694
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: null
+  tzoffset: 1080
+- address: 6900 Brodie Ln, Austin, TX 78745, USA
+  latlng:
+    lat: 30.2163608
+    lng: -97.8308579
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - d22dfd87-4c57-47a3-8da4-7d0899b2e10f
+  id: 842fbfe8-ff02-4f14-a2e4-bfd67c62c412
+  name: Store - 00428
+  created_time: 1674589387
+  modified_time: 1747811467
+  rftemplate_id: d525b772-3136-4291-a0a7-1c92ff88642f
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 1911 NE Bob Bullock Loop, Laredo, TX 78045, USA
+  latlng:
+    lat: 27.6074762
+    lng: -99.47386639999999
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 4c5f3e59-601a-4b67-8287-21204257def3
+  id: f0c6c379-20f3-4994-af9e-c447bd475a2b
+  name: Store - 00095
+  created_time: 1674589637
+  modified_time: 1747951796
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
+- address: 20725 TX-46, Spring Branch, TX 78070, USA
+  latlng:
+    lat: 29.796134
+    lng: -98.4299032
+  country_code: US
+  timezone: America/Chicago
+  sitegroup_ids:
+  - 67cb1765-171c-4104-b833-0aadfc0c1bd4
+  - 7c715094-665b-4f8d-bb44-88ac07bab34a
+  notes: 'Store currently in remodel; APs impacted:
+
+
+    622-AP56-Cheese-F0FC - Feb 19, 2025 3:57:58 PM
+
+    622-AP29-Aisle17-F0A7 - Feb 19, 2025 3:57:59 PM
+
+    622-AP57-MealSimp-F1A6 - Feb 19, 2025 3:58:05 PM
+
+    622-AP7- BkryClr-EF0D - Feb 19, 2025 3:58:22 PM
+
+    622-AP28-Blooms-F08E - Feb 19, 2025 3:58:18 PM
+
+    622-AP24-Produce1-F098 - Feb 19, 2025 3:57:44 PM
+
+    622-AP8-BkryFrz-EDB4 - Dec 30, 2024 7:57:18 PM
+
+    622-AP25-Produce2-E571 - Feb 19, 2025 3:57:45 PM
+
+    622-AP6-ChknClr-F1D8 - Feb 19, 2025 3:58:18 PM
+
+    622-AP55-Alcohol2-F05C- Feb 19, 2025 3:58:33 PM
+
+    622-AP27-Bakery-EFE4 - Feb 19, 2025 3:58:35 PM
+
+    622-AP20-ExtCS3-2E89 - Jan 6, 2025 9:34:58 AM
+
+    622-AP26-PrdcRcvn-e689 - Feb 19, 2025 3:58:15 PM
+
+    622-AP59-Aisle16-EDC3 - Feb 3, 2025 1:51:54 PM'
+  id: ad3141a1-7aba-425b-8ac7-65baa5c0a90d
+  name: Store - 00622
+  created_time: 1674589451
+  modified_time: 1747897483
+  rftemplate_id: ed497897-bc46-48aa-a0bc-e6ee15623c9e
+  networktemplate_id: 6a80d7c5-22ba-4c36-be63-e0cd0b43ba68
+  tzoffset: 1080
