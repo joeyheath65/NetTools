@@ -24,23 +24,163 @@
   // Domain-specific code for manage.mist.com
   /* domain:manage.mist.com */
   (function() {
+    'use strict';
+    
     console.log('[Enhance] Mist.com enhancements loaded');
     
-    // Example: Wait for page to be ready
+    // Initialize Mist.com enhancements
+    function initMistEnhancements() {
+      const currentUrl = window.location.href;
+      
+      // Check if we're on the dashboard insights page
+      if (currentUrl.includes('/admin/') && currentUrl.includes('#!dashboard/insights/')) {
+        initDashboardInsights();
+      }
+      
+      // General admin page enhancements
+      if (currentUrl.includes('/admin/')) {
+        initAdminEnhancements();
+      }
+    }
+    
+    // Enhancements for dashboard insights page
+    function initDashboardInsights() {
+      console.log('[Enhance] Initializing Mist.com Dashboard Insights enhancements');
+      
+      // Extract site ID from URL hash
+      const hashMatch = window.location.hash.match(/dashboard\/insights\/([^\/]+)/);
+      const siteId = hashMatch ? hashMatch[1] : null;
+      
+      if (siteId) {
+        console.log('[Enhance] Site ID detected:', siteId);
+        
+        // Add custom data attribute for easy identification
+        document.body.setAttribute('data-mist-site-id', siteId);
+      }
+      
+      // Wait for dashboard to load (Mist.com uses dynamic loading)
+      const observer = new MutationObserver((mutations, obs) => {
+        const dashboard = document.querySelector('[class*="dashboard"], [class*="insights"]');
+        if (dashboard) {
+          enhanceDashboardMetrics();
+          enhanceDashboardCharts();
+          obs.disconnect();
+        }
+      });
+      
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true
+      });
+      
+      // Also try immediately in case page is already loaded
+      setTimeout(() => {
+        enhanceDashboardMetrics();
+        enhanceDashboardCharts();
+      }, 1000);
+    }
+    
+    // Enhance dashboard metrics display
+    function enhanceDashboardMetrics() {
+      // Find metric cards and enhance them
+      const metricCards = document.querySelectorAll('[class*="metric"], [class*="card"]');
+      metricCards.forEach((card, index) => {
+        if (!card.hasAttribute('data-enhance-processed')) {
+          card.setAttribute('data-enhance-processed', 'true');
+          
+          // Add hover effect
+          card.style.transition = 'transform 0.2s, box-shadow 0.2s';
+          card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-2px)';
+            this.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+          });
+          card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+            this.style.boxShadow = '';
+          });
+        }
+      });
+    }
+    
+    // Enhance dashboard charts
+    function enhanceDashboardCharts() {
+      // Find chart containers and add enhancements
+      const charts = document.querySelectorAll('[class*="chart"], canvas, svg');
+      charts.forEach((chart) => {
+        if (!chart.hasAttribute('data-enhance-processed')) {
+          chart.setAttribute('data-enhance-processed', 'true');
+          
+          // Add container styling if needed
+          const container = chart.closest('[class*="container"], [class*="wrapper"]');
+          if (container) {
+            container.style.borderRadius = '8px';
+            container.style.overflow = 'hidden';
+          }
+        }
+      });
+    }
+    
+    // General admin page enhancements
+    function initAdminEnhancements() {
+      console.log('[Enhance] Initializing Mist.com Admin page enhancements');
+      
+      // Add keyboard shortcuts helper
+      document.addEventListener('keydown', function(e) {
+        // Example: Ctrl/Cmd + K for quick search (if not already handled)
+        if ((e.ctrlKey || e.metaKey) && e.key === 'k' && !e.target.matches('input, textarea')) {
+          const searchInput = document.querySelector('input[type="search"], input[placeholder*="search" i]');
+          if (searchInput) {
+            e.preventDefault();
+            searchInput.focus();
+            searchInput.select();
+          }
+        }
+      });
+      
+      // Enhance data tables
+      const tables = document.querySelectorAll('table');
+      tables.forEach((table) => {
+        if (!table.hasAttribute('data-enhance-processed')) {
+          table.setAttribute('data-enhance-processed', 'true');
+          
+          // Add sticky header if not already present
+          const thead = table.querySelector('thead');
+          if (thead) {
+            thead.style.position = 'sticky';
+            thead.style.top = '0';
+            thead.style.zIndex = '10';
+            thead.style.backgroundColor = '#fff';
+          }
+        }
+      });
+    }
+    
+    // Initialize when DOM is ready
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', initMistEnhancements);
     } else {
       initMistEnhancements();
     }
     
-    function initMistEnhancements() {
-      // Add your Mist.com specific enhancements here
-      // Example: Modify dashboard elements
-      // const dashboard = document.querySelector('.dashboard');
-      // if (dashboard) {
-      //   dashboard.style.backgroundColor = '#f5f5f5';
-      // }
-    }
+    // Re-initialize on hash change (SPA navigation)
+    let lastHash = window.location.hash;
+    window.addEventListener('hashchange', function() {
+      if (window.location.hash !== lastHash) {
+        lastHash = window.location.hash;
+        setTimeout(initMistEnhancements, 500); // Wait for SPA to update
+      }
+    });
+    
+    // Also watch for dynamic content loading
+    const contentObserver = new MutationObserver(() => {
+      initMistEnhancements();
+    });
+    
+    contentObserver.observe(document.body, {
+      childList: true,
+      subtree: true
+    });
+    
   })();
   /* end-domain */
   

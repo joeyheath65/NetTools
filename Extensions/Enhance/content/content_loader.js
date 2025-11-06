@@ -104,7 +104,7 @@ function injectJS(js, domain) {
 
 /**
  * Get domain-specific assets from cached assets
- * Supports format: /* domain:example.com */ ... /* end-domain */
+ * Supports format: / * domain:example.com * / ... / * end-domain * /
  * @param {string} content - CSS or JS content
  * @param {string} domain - Current domain
  * @returns {string} Domain-specific content

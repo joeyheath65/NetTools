@@ -134,10 +134,16 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   }
   
   if (request.action === 'isTargetDomain') {
-    const { isTargetDomain } = await import('../lib/storage.js');
-    const isTarget = await isTargetDomain(request.url);
-    sendResponse({ isTarget });
-    return true;
+    (async () => {
+      try {
+        const { isTargetDomain } = await import('../lib/storage.js');
+        const isTarget = await isTargetDomain(request.url);
+        sendResponse({ isTarget });
+      } catch (error) {
+        sendResponse({ isTarget: false, error: error.message });
+      }
+    })();
+    return true; // Keep channel open for async response
   }
 });
 

@@ -11,18 +11,52 @@ body {
 
 /* Domain-specific styles for manage.mist.com */
 /* domain:manage.mist.com */
-.mist-dashboard {
-  /* Mist.com specific styles */
-  /* Example: Customize dashboard colors */
-  /* background-color: #f5f5f5; */
-}
-/* end-domain */
+/* Mist.com Admin Dashboard Enhancements */
 
-/* Domain-specific styles for example.com */
-/* domain:example.com */
-.example-widget {
-  /* Example.com specific styles */
-  /* border: 2px solid #007bff; */
+/* Enhance dashboard insights page */
+.mist-dashboard-insights {
+  /* Custom styling for insights dashboard */
 }
+
+/* Improve visibility of key metrics */
+.mist-metric-card {
+  /* border: 2px solid #007bff; */
+  /* border-radius: 8px; */
+  /* box-shadow: 0 2px 4px rgba(0, 123, 255, 0.1); */
+}
+
+/* Customize chart containers */
+.mist-chart-container {
+  /* background: #f8f9fa; */
+  /* padding: 16px; */
+  /* border-radius: 6px; */
+}
+
+/* Enhance table readability */
+.mist-data-table {
+  /* font-size: 13px; */
+}
+
+.mist-data-table th {
+  /* background-color: #f5f5f5; */
+  /* font-weight: 600; */
+  /* position: sticky; */
+  /* top: 0; */
+  /* z-index: 10; */
+}
+
+/* Add custom highlight for important elements */
+.mist-highlight {
+  /* background-color: #fff3cd; */
+  /* border-left: 4px solid #ffc107; */
+  /* padding: 8px 12px; */
+}
+
+/* Improve button visibility */
+.mist-button-primary {
+  /* background: linear-gradient(135deg, #007bff 0%, #0056b3 100%); */
+  /* box-shadow: 0 2px 4px rgba(0, 123, 255, 0.3); */
+}
+
 /* end-domain */
 
