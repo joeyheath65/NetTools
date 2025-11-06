@@ -163,10 +163,22 @@ chrome.notifications.onClicked.addListener((notificationId) => {
 (async () => {
   console.log('Enhance background service worker started');
   
-  // Check if we have cached assets, if not, fetch them
+  // Check if we have cached assets, if not, initialize with defaults
   const cached = await getCachedAssets();
   if (!cached.css && !cached.js && !cached.version) {
-    await fetchAndCacheAssets();
+    // Try to fetch from GitLab, but fall back to defaults if not configured
+    const gitlabUrl = await getConfigValue('gitlabUrl');
+    if (gitlabUrl) {
+      // GitLab URL is configured, try to fetch
+      await fetchAndCacheAssets();
+    } else {
+      // No GitLab URL configured, use default assets
+      console.log('No GitLab URL configured, using default built-in assets');
+      const { getDefaultAssets } = await import('../lib/defaultAssets.js');
+      const { saveCachedAssets } = await import('../lib/storage.js');
+      const defaultAssets = getDefaultAssets();
+      await saveCachedAssets(defaultAssets);
+    }
   }
   
   // Setup alarm
