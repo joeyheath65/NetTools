@@ -73,7 +73,7 @@ a.comp-navbarLogo[data-enhance-indicator] {
   gap: 16px;
   align-items: stretch;
   height: 50vh;
-  height: 210px;
+  height: 220px;
 }
 
 .section-wrapper.enhance-map-layout .enhance-site-panel {
@@ -131,9 +131,28 @@ a.comp-navbarLogo[data-enhance-indicator] {
 }
 
 .enhance-site-panel .map-summary {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+  display: block;
+  overflow-x: auto;
+}
+
+.enhance-site-panel .map-summary table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.enhance-site-panel .map-summary th,
+.enhance-site-panel .map-summary td {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 6px 10px;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+.enhance-site-panel .map-summary th {
+  background: rgba(255, 255, 255, 0.12);
+  font-weight: 600;
 }
 
 .enhance-site-panel .enhance-insights-list {
