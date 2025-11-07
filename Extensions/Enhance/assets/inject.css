@@ -78,18 +78,20 @@ a.comp-navbarLogo[data-enhance-indicator] {
 
 .section-wrapper.enhance-map-layout .enhance-site-panel {
   order: 1;
-  flex: 0 0 400px;
-  max-width: 480px;
-  min-width: 400px;
+  flex: 0 0 450px;
+  max-width: 450px;
+  min-width: 450px;
   margin-left: 0;
   height: 100%;
   overflow: auto;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .section-wrapper.enhance-map-layout .map-wrap {
   order: 2;
   flex: 1 1 520px;
-  min-width: 420px;
+  min-width: 470px;
   height: 100%;
   width: 100%;
   position: relative;
