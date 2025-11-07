@@ -135,7 +135,9 @@ a.comp-navbarLogo[data-enhance-indicator] {
   overflow-x: auto;
 }
 
-.enhance-site-panel .map-summary table {
+.enhance-site-panel .map-summary table,
+.enhance-site-panel .map-summary .css-table {
+  display: table;
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
@@ -143,16 +145,28 @@ a.comp-navbarLogo[data-enhance-indicator] {
 }
 
 .enhance-site-panel .map-summary th,
-.enhance-site-panel .map-summary td {
+.enhance-site-panel .map-summary td,
+.enhance-site-panel .map-summary .css-table-cell {
+  display: table-cell;
   border: 1px solid rgba(255, 255, 255, 0.25);
-  padding: 6px 10px;
+  padding: 8px 12px;
   font-size: 0.9rem;
   text-align: left;
+  vertical-align: middle;
 }
 
 .enhance-site-panel .map-summary th {
   background: rgba(255, 255, 255, 0.12);
   font-weight: 600;
+}
+
+.enhance-site-panel .map-summary .css-table.inline.center {
+  table-layout: fixed;
+  text-align: center;
+}
+
+.enhance-site-panel .map-summary .css-table.inline.center .css-table-cell {
+  text-align: center;
 }
 
 .enhance-site-panel .enhance-insights-list {
