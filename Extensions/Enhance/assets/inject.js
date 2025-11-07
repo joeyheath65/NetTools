@@ -669,8 +669,17 @@
       }
     });
     
+    let lastEnhancementRun = 0;
+    const ENHANCEMENT_DEBOUNCE_MS = 750;
+
     // Also watch for dynamic content loading
     const contentObserver = new MutationObserver(() => {
+      const now = Date.now();
+      if (now - lastEnhancementRun < ENHANCEMENT_DEBOUNCE_MS) {
+        return;
+      }
+      lastEnhancementRun = now;
+
       initMistEnhancements();
       addSiteConfigNavButton();
       enhanceSiteOverviewPanel();
