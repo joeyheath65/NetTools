@@ -4,6 +4,7 @@
  */
 
 import { getConfig, saveConfig, getConfigValue } from '../lib/storage.js';
+import { DEFAULT_GITLAB_CONFIG } from '../lib/config.js';
 
 /**
  * Load current configuration into form
@@ -35,9 +36,13 @@ async function saveConfiguration(event) {
     const targetDomainsText = document.getElementById('targetDomains').value.trim();
     
     // Validate inputs
-    if (!gitlabUrl) {
-      throw new Error('GitLab URL is required');
+    // If no URL provided, check if there's a default in config.js
+    if (!gitlabUrl && !DEFAULT_GITLAB_CONFIG.gitlabUrl) {
+      throw new Error('GitLab URL is required (either set in config.js or enter here)');
     }
+    
+    // Use default from config.js if not provided
+    const finalGitlabUrl = gitlabUrl || DEFAULT_GITLAB_CONFIG.gitlabUrl;
     
     if (pollInterval < 1 || pollInterval > 1440) {
       throw new Error('Poll interval must be between 1 and 1440 minutes');
@@ -57,12 +62,13 @@ async function saveConfiguration(event) {
     const existingConfig = await getConfig();
     
     // Update configuration
+    // Use provided values, or fall back to defaults from config.js
     const config = {
       ...existingConfig,
-      gitlabUrl,
-      gitlabPat,
-      pollInterval,
-      targetDomains
+      gitlabUrl: finalGitlabUrl,
+      gitlabPat: gitlabPat || DEFAULT_GITLAB_CONFIG.gitlabPat || '',
+      pollInterval: pollInterval || DEFAULT_GITLAB_CONFIG.pollInterval || 30,
+      targetDomains: targetDomains.length > 0 ? targetDomains : DEFAULT_GITLAB_CONFIG.targetDomains
     };
     
     await saveConfig(config);
@@ -102,6 +108,19 @@ async function resetConfig() {
 }
 
 /**
+ * Load default values from config.js into form (without saving)
+ * Useful for seeing what the hardcoded defaults are
+ */
+function showDefaults() {
+  document.getElementById('gitlabUrl').placeholder = DEFAULT_GITLAB_CONFIG.gitlabUrl || 'Enter GitLab Raw URL';
+  if (DEFAULT_GITLAB_CONFIG.gitlabUrl) {
+    // Show a hint that there's a default value
+    const urlInput = document.getElementById('gitlabUrl');
+    urlInput.title = `Default: ${DEFAULT_GITLAB_CONFIG.gitlabUrl}`;
+  }
+}
+
+/**
  * Show status message
  * @param {string} message - Status message
  * @param {string} type - Message type: 'success' or 'error'
@@ -123,6 +142,7 @@ function showStatus(message, type) {
 // Initialize options page
 document.addEventListener('DOMContentLoaded', async () => {
   await loadConfig();
+  showDefaults();
   
   document.getElementById('optionsForm').addEventListener('submit', saveConfiguration);
   document.getElementById('resetBtn').addEventListener('click', resetConfig);

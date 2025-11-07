@@ -1,0 +1,7 @@
+{
+  "version": "1.0.0",
+  "extensionVersion": "1.0.0",
+  "updateUrl": "https://gitlab.com/your-group/your-project/-/releases",
+  "changelogUrl": "https://gitlab.com/your-group/your-project/-/blob/main/CHANGELOG.md"
+}
+

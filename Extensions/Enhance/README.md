@@ -32,7 +32,44 @@ Enhance is a wrapper extension that injects custom CSS and JavaScript into speci
 2. Click "Load Temporary Add-on"
 3. Select the `manifest.json` file in the `Extensions/Enhance` directory
 
-## Configuration
+## Setup
+
+### Step 1: Prepare Inject Assets
+
+1. Edit files in `assets/` directory:
+   - `assets/inject.css` - CSS to inject
+   - `assets/inject.js` - JavaScript to inject
+   - `assets/version.json` - Version information
+
+2. Upload these files to your GitLab repository (root or subdirectory)
+
+3. Get the raw URL:
+   - Navigate to a file in GitLab
+   - Click "Raw" button
+   - Copy the base URL (everything up to the filename)
+   - Example: `https://gitlab.com/group/project/-/raw/main/`
+
+### Step 2: Configure Extension
+
+#### Option 1: Hardcode Defaults in `config.js` (Recommended for Internal Deployments)
+
+1. Edit `lib/config.js` and set your GitLab URL and other defaults:
+   ```javascript
+   export const DEFAULT_GITLAB_CONFIG = {
+     gitlabUrl: 'https://gitlab.yourcompany.com/group/project/-/raw/main/',
+     gitlabPat: '', // Optional: set PAT for private repos
+     pollInterval: 30,
+     targetDomains: [
+       'https://manage.mist.com/admin/*',
+       'https://manage.mist.com/admin/?org_id=*#!dashboard/insights/*'
+     ]
+   };
+   ```
+
+2. These defaults will be used automatically
+3. Users can still override in Options page if needed
+
+#### Option 2: Configure via Options Page
 
 1. Click the extension icon in your browser toolbar
 2. Click "Options" button
@@ -44,6 +81,13 @@ Enhance is a wrapper extension that injects custom CSS and JavaScript into speci
    - **Target Domains**: Domain patterns to inject assets into (one per line, use `*` as wildcard)
 
 4. Click "Save Settings"
+
+**Note**: If `config.js` has defaults set, those will be used if Options page fields are left empty.
+
+## Directory Structure
+
+- **`assets/`** - Live production inject code (upload to GitLab)
+- **`examples/`** - Example/template files for reference
 
 ## Usage
 
@@ -113,7 +157,20 @@ Enhance/
 │   └── background.js          # Service worker for fetching, caching, versioning
 ├── content/
 │   └── content_loader.js      # Content script for CSS/JS injection
+├── assets/                    # Live inject code (upload to GitLab)
+│   ├── inject.css            # Production CSS
+│   ├── inject.js             # Production JavaScript
+│   ├── version.json          # Version information
+│   └── README.md             # Assets directory documentation
+├── examples/                  # Example/template files
+│   ├── inject.css            # Example CSS template
+│   ├── inject.js             # Example JavaScript template
+│   ├── version.json          # Example version file
+│   └── README.md             # Examples documentation
 ├── lib/
+│   ├── config.js              # Default configuration (edit for hardcoded defaults)
+│   ├── config.example.js      # Example config file
+│   ├── defaultAssets.js       # Built-in default assets
 │   ├── storage.js             # Storage utilities
 │   ├── fetcher.js             # GitLab fetching utilities
 │   └── versioning.js          # Version comparison and update logic
