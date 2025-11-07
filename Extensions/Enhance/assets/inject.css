@@ -73,7 +73,7 @@ a.comp-navbarLogo[data-enhance-indicator] {
   gap: 16px;
   align-items: stretch;
   height: 50vh;
-  height: 140px;
+  height: 170px;
 }
 
 .section-wrapper.enhance-map-layout .enhance-site-panel {
@@ -123,8 +123,8 @@ a.comp-navbarLogo[data-enhance-indicator] {
 }
 
 .enhance-site-panel .map-name {
-  font-size: 1rem;
-  font-weight: 100;
+  font-size: 1.25rem;
+  font-weight: 300;
 }
 
 .enhance-site-panel .map-summary {
