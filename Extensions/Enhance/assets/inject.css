@@ -73,8 +73,7 @@ a.comp-navbarLogo[data-enhance-indicator] {
   gap: 16px;
   align-items: stretch;
   height: 50vh;
-  min-height: 140px;
-  max-height: 50vh;
+  height: 140px;
 }
 
 .section-wrapper.enhance-map-layout .enhance-site-panel {
