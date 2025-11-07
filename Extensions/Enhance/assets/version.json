@@ -1,8 +1,8 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "extensionVersion": "1.0.0",
-  "updateUrl": "https://gitlab.com/your-group/your-project/-/releases",
-  "changelogUrl": "https://gitlab.com/your-group/your-project/-/blob/main/CHANGELOG.md"
+  "updateUrl": "https://gitlab.com/heath.joe/NetTools/-/releases",
+  "changelogUrl": "https://gitlab.com/heath.joe/NetTools/-/blob/main/Extensions/Enhance/CHANGELOG.md"
 }
 
 /*
