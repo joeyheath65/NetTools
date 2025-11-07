@@ -19,17 +19,25 @@ async function fetchAndCacheAssets() {
     const assets = await fetchAssetsWithFallback();
     console.log('Assets fetched and cached successfully');
     
-    // Check if assets need update
-    const assetVersionCheck = await checkAssetVersion();
-    if (assetVersionCheck.needsUpdate) {
-      console.log('New asset version available, re-fetching...');
-      await fetchAssetsWithFallback();
+    // Check if assets need update (non-blocking)
+    try {
+      const assetVersionCheck = await checkAssetVersion();
+      if (assetVersionCheck.needsUpdate && !assetVersionCheck.error) {
+        console.log('New asset version available, re-fetching...');
+        await fetchAssetsWithFallback();
+      }
+    } catch (error) {
+      console.warn('Error checking asset version (non-critical):', error);
     }
     
-    // Check if extension needs update
-    const extensionVersionCheck = await checkExtensionVersion();
-    if (extensionVersionCheck.needsUpdate) {
-      await showUpdateNotification(extensionVersionCheck);
+    // Check if extension needs update (non-blocking)
+    try {
+      const extensionVersionCheck = await checkExtensionVersion();
+      if (extensionVersionCheck.needsUpdate && !extensionVersionCheck.error) {
+        await showUpdateNotification(extensionVersionCheck);
+      }
+    } catch (error) {
+      console.warn('Error checking extension version (non-critical):', error);
     }
   } catch (error) {
     console.error('Error fetching assets:', error);
