@@ -74,13 +74,24 @@ async function saveConfiguration(event) {
     await saveConfig(config);
     
     // Notify background script to update alarm
-    chrome.runtime.sendMessage({ action: 'configUpdated' });
+    chrome.runtime.sendMessage({ action: 'configUpdated' }, (response) => {
+      if (chrome.runtime.lastError) {
+        console.warn('Error notifying background script:', chrome.runtime.lastError);
+      }
+    });
     
     showStatus('Settings saved successfully!', 'success');
     
-    // Trigger asset fetch if URL changed
-    if (existingConfig.gitlabUrl !== gitlabUrl) {
-      chrome.runtime.sendMessage({ action: 'fetchAssets' });
+    // Trigger asset fetch if URL changed or if this is first time setting URL
+    const urlChanged = existingConfig.gitlabUrl !== finalGitlabUrl;
+    if (urlChanged || (!existingConfig.gitlabUrl && finalGitlabUrl)) {
+      chrome.runtime.sendMessage({ action: 'fetchAssets' }, (response) => {
+        if (chrome.runtime.lastError) {
+          console.warn('Error fetching assets:', chrome.runtime.lastError);
+        } else if (response && !response.success) {
+          console.warn('Asset fetch warning:', response.error);
+        }
+      });
     }
   } catch (error) {
     console.error('Error saving config:', error);
@@ -112,12 +123,28 @@ async function resetConfig() {
  * Useful for seeing what the hardcoded defaults are
  */
 function showDefaults() {
-  document.getElementById('gitlabUrl').placeholder = DEFAULT_GITLAB_CONFIG.gitlabUrl || 'Enter GitLab Raw URL';
+  const urlInput = document.getElementById('gitlabUrl');
+  const patInput = document.getElementById('gitlabPat');
+  const pollInput = document.getElementById('pollInterval');
+  const domainsInput = document.getElementById('targetDomains');
+  
+  // Set placeholders based on defaults
+  urlInput.placeholder = DEFAULT_GITLAB_CONFIG.gitlabUrl || 'Enter GitLab Raw URL (e.g., https://gitlab.com/group/project/-/raw/main/assets/)';
+  
   if (DEFAULT_GITLAB_CONFIG.gitlabUrl) {
-    // Show a hint that there's a default value
-    const urlInput = document.getElementById('gitlabUrl');
-    urlInput.title = `Default: ${DEFAULT_GITLAB_CONFIG.gitlabUrl}`;
+    urlInput.title = `Default from config.js: ${DEFAULT_GITLAB_CONFIG.gitlabUrl}`;
   }
+  
+  if (DEFAULT_GITLAB_CONFIG.pollInterval) {
+    pollInput.title = `Default from config.js: ${DEFAULT_GITLAB_CONFIG.pollInterval} minutes`;
+  }
+  
+  if (DEFAULT_GITLAB_CONFIG.targetDomains && DEFAULT_GITLAB_CONFIG.targetDomains.length > 0) {
+    domainsInput.title = `Default from config.js: ${DEFAULT_GITLAB_CONFIG.targetDomains.join(', ')}`;
+  }
+  
+  // Note: Helper text would be nice but could cause duplicate inserts
+  // Users can see defaults in the placeholder/title tooltips instead
 }
 
 /**

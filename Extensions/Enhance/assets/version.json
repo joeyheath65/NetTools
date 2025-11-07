@@ -1,19 +1,7 @@
 {
   "version": "1.0.1",
-  "extensionVersion": "1.0.0",
+  "extensionVersion": "1.0.1",
   "updateUrl": "https://gitlab.com/heath.joe/NetTools/-/releases",
   "changelogUrl": "https://gitlab.com/heath.joe/NetTools/-/blob/main/Extensions/Enhance/CHANGELOG.md"
 }
-
-/*
- * NOTE: This file does NOT contain the GitLab URL where assets are fetched from.
- * 
- * The GitLab URL is configured in:
- * - lib/config.js (for hardcoded defaults)
- * - Extension Options page (for user configuration)
- * 
- * This version.json file is fetched FROM GitLab using the URL configured above.
- * 
- * See GITLAB_URL_CONFIG.md for details.
- */
 

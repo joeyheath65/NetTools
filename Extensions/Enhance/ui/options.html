@@ -18,8 +18,8 @@
         
         <div class="form-group">
           <label for="gitlabUrl">GitLab Raw URL</label>
-          <input type="url" id="gitlabUrl" placeholder="https://gitlab.com/group/project/-/raw/main/">
-          <small>Base URL for fetching inject.css, inject.js, and version.json. If left empty and a default is set in config.js, that will be used.</small>
+          <input type="url" id="gitlabUrl" placeholder="https://gitlab.com/group/project/-/raw/main/assets/">
+          <small>Base URL for fetching inject.css, inject.js, and version.json. Must point to the directory containing these files and end with a forward slash (/). If left empty and a default is set in config.js, that will be used.</small>
         </div>
 
         <div class="form-group">
@@ -44,8 +44,8 @@
         
         <div class="form-group">
           <label for="targetDomains">Domain Patterns (one per line)</label>
-          <textarea id="targetDomains" rows="5" placeholder="https://manage.mist.com/*&#10;https://example.com/dashboard/*" required></textarea>
-          <small>Use * as wildcard. One pattern per line. Domains matching these patterns will have assets injected.</small>
+          <textarea id="targetDomains" rows="5" placeholder="https://manage.mist.com/admin/*&#10;https://manage.mist.com/admin/?org_id=*#!dashboard/insights*" required></textarea>
+          <small>Use * as wildcard. One pattern per line. Domains matching these patterns will have assets injected. Example: https://manage.mist.com/admin/*</small>
         </div>
       </div>
 

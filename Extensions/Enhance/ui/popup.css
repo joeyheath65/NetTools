@@ -140,3 +140,7 @@ header h1 {
   border: 1px solid #fcc;
 }
 
+.hidden {
+  display: none !important;
+}
+

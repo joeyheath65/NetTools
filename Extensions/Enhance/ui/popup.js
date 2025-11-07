@@ -38,9 +38,9 @@ async function updateStatus() {
     
     // Check for pending update
     const pendingUpdate = await getConfigValue('pendingUpdate');
+    const updateSection = document.getElementById('updateSection');
     if (pendingUpdate && pendingUpdate.timestamp) {
-      const updateSection = document.getElementById('updateSection');
-      updateSection.style.display = 'block';
+      updateSection.classList.remove('hidden');
       
       document.getElementById('updateNowBtn').onclick = () => {
         if (pendingUpdate.updateUrl) {
@@ -53,6 +53,8 @@ async function updateStatus() {
           chrome.tabs.create({ url: pendingUpdate.changelogUrl });
         }
       };
+    } else {
+      updateSection.classList.add('hidden');
     }
   } catch (error) {
     console.error('Error updating status:', error);
@@ -65,45 +67,82 @@ async function updateStatus() {
  * @param {string} message - Error message
  */
 function showError(message) {
-  const errorSection = document.getElementById('errorSection');
-  const errorMessage = document.getElementById('errorMessage');
-  errorMessage.textContent = message;
-  errorSection.style.display = 'block';
+  showStatus(message, 'error');
 }
 
 /**
  * Hide error message
  */
 function hideError() {
-  document.getElementById('errorSection').style.display = 'none';
+  const errorSection = document.getElementById('errorSection');
+  errorSection.classList.add('hidden');
 }
 
 /**
  * Refresh assets from GitLab
  */
 async function refreshAssets() {
+  const refreshBtn = document.getElementById('refreshAssetsBtn');
+  
   try {
     hideError();
-    const refreshBtn = document.getElementById('refreshAssetsBtn');
     refreshBtn.disabled = true;
     refreshBtn.textContent = 'Refreshing...';
     
-    const response = await chrome.runtime.sendMessage({ action: 'fetchAssets' });
+    // Send message and wait for response
+    const response = await new Promise((resolve, reject) => {
+      chrome.runtime.sendMessage({ action: 'fetchAssets' }, (response) => {
+        if (chrome.runtime.lastError) {
+          reject(new Error(chrome.runtime.lastError.message));
+        } else {
+          resolve(response);
+        }
+      });
+    });
     
     if (response && response.success) {
+      // Wait a moment for assets to be cached
+      await new Promise(resolve => setTimeout(resolve, 500));
       // Update status after refresh
       await updateStatus();
-      refreshBtn.textContent = 'Refresh Assets';
+      showStatus('Assets refreshed successfully!', 'success');
     } else {
       throw new Error(response?.error || 'Failed to refresh assets');
     }
   } catch (error) {
     console.error('Error refreshing assets:', error);
-    showError(error.message);
+    showError(error.message || 'Failed to refresh assets. Check console for details.');
   } finally {
-    const refreshBtn = document.getElementById('refreshAssetsBtn');
     refreshBtn.disabled = false;
     refreshBtn.textContent = 'Refresh Assets';
+  }
+}
+
+/**
+ * Show success message (temporary, similar to error message)
+ */
+function showStatus(message, type) {
+  const errorSection = document.getElementById('errorSection');
+  const errorMessage = document.getElementById('errorMessage');
+  
+  if (type === 'success') {
+    errorMessage.style.background = '#d4edda';
+    errorMessage.style.color = '#155724';
+    errorMessage.style.border = '1px solid #c3e6cb';
+  } else {
+    errorMessage.style.background = '#fee';
+    errorMessage.style.color = '#c33';
+    errorMessage.style.border = '1px solid #fcc';
+  }
+  
+  errorMessage.textContent = message;
+  errorSection.classList.remove('hidden');
+  
+  // Auto-hide success messages after 3 seconds
+  if (type === 'success') {
+    setTimeout(() => {
+      errorSection.classList.add('hidden');
+    }, 3000);
   }
 }
 

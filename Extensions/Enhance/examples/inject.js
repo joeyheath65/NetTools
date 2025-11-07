@@ -14,7 +14,7 @@
   
   // Example: Add a global utility function
   window.Enhance = window.Enhance || {};
-  window.Enhance.version = '1.0.0';
+  window.Enhance.version = '1.0.1';
   window.Enhance.utils = {
     log: function(message) {
       console.log('[Enhance]', message);
