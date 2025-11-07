@@ -71,7 +71,7 @@ a.comp-navbarLogo[data-enhance-indicator] {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
-  align-items: stretch;
+  align-items: flex-start;
 }
 
 .section-wrapper.enhance-map-layout .map-wrap .site-map-section.map{
@@ -80,7 +80,8 @@ a.comp-navbarLogo[data-enhance-indicator] {
 }
 
 .section-wrapper.enhance-map-layout .map-wrap.enhance-map-container {
-  max-width: 100%;
+  max-width: 50%;
+  align-self: flex-end;
 }
 
 .section-wrapper.enhance-map-layout .enhance-site-panel {
