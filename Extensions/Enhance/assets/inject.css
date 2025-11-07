@@ -123,14 +123,16 @@ a.comp-navbarLogo[data-enhance-indicator] {
 }
 
 .enhance-site-panel .map-name {
-  font-size: 1.25rem;
-  margin-left: 5px;
+  font-size: 1.5rem;
+  margin-left: 8px;
   font-family:'Lucida Sans';
   text-transform: bold;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .enhance-site-panel .map-summary {
+  align-items: center;
+  justify-content: center;
   display: flex;
   flex-direction: column;
   gap: 8px;
