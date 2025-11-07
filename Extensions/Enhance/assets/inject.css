@@ -95,6 +95,7 @@ a.comp-navbarLogo[data-enhance-indicator] {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  margin-left: auto;
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
 }
