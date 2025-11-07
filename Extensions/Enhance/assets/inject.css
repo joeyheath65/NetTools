@@ -139,7 +139,7 @@ a.comp-navbarLogo[data-enhance-indicator] {
 .enhance-site-panel .enhance-insights-list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
 }
 
 a.enhance-insight-row[data-enhance-state="alert"] {
@@ -164,7 +164,7 @@ a.enhance-insight-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 16px;
+  padding: 8px 8px;
   border-radius: 6px;
   background: rgba(255, 255, 255, 0.08);
   color: inherit;
@@ -190,7 +190,7 @@ a.enhance-insight-row.is-disabled {
 }
 
 .enhance-insight-icon {
-  font-size: 1.3rem;
+  font-size: 1rem;
   line-height: 1;
   display: inline-flex;
   align-items: center;
@@ -218,8 +218,8 @@ a.enhance-insight-row.is-disabled {
 }
 
 .enhance-insight-value {
-  font-size: 1.4rem;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 
 /* end-domain */
