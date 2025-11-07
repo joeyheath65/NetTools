@@ -8,6 +8,16 @@ import { checkAssetVersion, checkExtensionVersion, showUpdateNotification } from
 import { getConfigValue, getCachedAssets, isTargetDomain, saveCachedAssets } from '../lib/storage.js';
 import { getDefaultAssets } from '../lib/defaultAssets.js';
 
+function executeCodeInPage(code) {
+  try {
+    const fn = new Function(code);
+    fn();
+  } catch (error) {
+    console.error('[Enhance] Error executing injected code:', error);
+    throw error;
+  }
+}
+
 const ALARM_NAME = 'fetchAssets';
 const ALARM_INTERVAL = 30; // minutes
 
@@ -163,6 +173,38 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
       }
     })();
     return true; // Keep channel open for async response
+  }
+
+  if (request.action === 'executePageScript') {
+    (async () => {
+      try {
+        if (!sender.tab || typeof sender.tab.id !== 'number') {
+          throw new Error('No tab information available for script execution');
+        }
+
+        const code = request.code || '';
+        if (!code.trim()) {
+          sendResponse({ success: true, skipped: true });
+          return;
+        }
+
+        await chrome.scripting.executeScript({
+          target: {
+            tabId: sender.tab.id,
+            frameIds: typeof sender.frameId === 'number' ? [sender.frameId] : undefined
+          },
+          func: executeCodeInPage,
+          args: [code],
+          world: 'MAIN'
+        });
+
+        sendResponse({ success: true });
+      } catch (error) {
+        console.error('Error executing page script:', error);
+        sendResponse({ success: false, error: error.message });
+      }
+    })();
+    return true;
   }
   
   // Return false for unhandled messages

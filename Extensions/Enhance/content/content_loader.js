@@ -63,43 +63,26 @@ function injectCSS(css, domain) {
  * @param {string} js - JavaScript content to inject
  * @param {string} domain - Current domain for domain-specific JS
  */
-function injectJS(js, domain) {
+async function injectJS(js, domain) {
   if (!js) return;
-  
-  // Remove existing injected scripts
-  const existing = document.querySelector(`script[${INJECTION_TAG}]`);
-  if (existing) {
-    existing.remove();
-  }
-  
-  // Create blob URL for script
-  const blob = new Blob([js], { type: 'application/javascript' });
-  const url = URL.createObjectURL(blob);
-  
-  // Create script element
-  const script = document.createElement('script');
-  script.setAttribute(INJECTION_TAG, 'true');
-  script.src = url;
-  script.async = false;
-  
-  // Clean up blob URL after script loads
-  script.onload = () => {
-    URL.revokeObjectURL(url);
-  };
-  
-  // Inject script
-  if (document.head) {
-    document.head.appendChild(script);
-  } else {
-    // If head doesn't exist yet, wait for it
-    const observer = new MutationObserver((mutations, obs) => {
-      if (document.head) {
-        document.head.appendChild(script);
-        obs.disconnect();
+
+  return new Promise((resolve) => {
+    chrome.runtime.sendMessage({ action: 'executePageScript', code: js }, (response) => {
+      if (chrome.runtime.lastError) {
+        console.warn('Enhance: Failed to execute page script:', chrome.runtime.lastError);
+        resolve(false);
+        return;
       }
+
+      if (!response || !response.success) {
+        console.warn('Enhance: Page script execution reported error:', response?.error);
+        resolve(false);
+        return;
+      }
+
+      resolve(true);
     });
-    observer.observe(document.documentElement, { childList: true });
-  }
+  });
 }
 
 /**
@@ -195,13 +178,12 @@ async function loadAndInjectAssets() {
     
     // Inject JS
     if (js) {
-      // Wait for DOM to be ready for JS injection
+      const execute = () => injectJS(js, currentUrl);
+
       if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', () => {
-          injectJS(js, currentUrl);
-        });
+        document.addEventListener('DOMContentLoaded', execute, { once: true });
       } else {
-        injectJS(js, currentUrl);
+        await execute();
       }
     }
     
