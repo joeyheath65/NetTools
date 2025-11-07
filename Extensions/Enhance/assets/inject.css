@@ -99,6 +99,7 @@ a.comp-navbarLogo[data-enhance-indicator] {
 @media (max-width: 1100px) {
   .section-wrapper.enhance-map-layout {
     flex-direction: column;
+    height: 175px;
   }
 
   .section-wrapper.enhance-map-layout .enhance-site-panel,
