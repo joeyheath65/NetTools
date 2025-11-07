@@ -93,7 +93,16 @@ Enhance is a wrapper extension that injects custom CSS and JavaScript into speci
 
 ### Domain-Specific CSS/JS
 
-The extension supports domain-specific CSS and JavaScript injection. In your `inject.css` or `inject.js` files, use the following format:
+**Yes, you add all domains to the same inject files!** The extension supports multiple target domains in the same `inject.css` and `inject.js` files using domain-specific code blocks.
+
+#### How It Works
+
+- ✅ **Same files** for all domains (`inject.css` and `inject.js`)
+- ✅ **Domain blocks** to separate code (`/* domain:example.com */ ... /* end-domain */`)
+- ✅ **Global code** outside blocks applies to all domains
+- ✅ **Automatic extraction** - extension only injects relevant code per domain
+
+#### Example: Multiple Domains in Same Files
 
 ```css
 /* Global styles for all domains */
@@ -101,32 +110,50 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* Domain-specific styles */
+/* Domain-specific styles for manage.mist.com */
 /* domain:manage.mist.com */
-.mist-specific-class {
-  color: blue;
+.mist-dashboard {
+  background-color: #f5f5f5;
 }
 /* end-domain */
 
+/* Domain-specific styles for example.com */
 /* domain:example.com */
-.example-specific-class {
-  color: red;
+.example-class {
+  color: blue;
 }
 /* end-domain */
 ```
 
 ```javascript
 // Global JavaScript for all domains
-console.log('Enhance loaded');
+console.log('[Enhance] Extension loaded');
 
-// Domain-specific JavaScript
+// Domain-specific JavaScript for manage.mist.com
 /* domain:manage.mist.com */
-// Mist.com specific code
-document.addEventListener('DOMContentLoaded', () => {
-  console.log('Mist.com enhancements loaded');
-});
+(function() {
+  console.log('[Enhance] Mist.com enhancements loaded');
+  // Mist.com specific code here
+})();
+/* end-domain */
+
+// Domain-specific JavaScript for example.com
+/* domain:example.com */
+(function() {
+  console.log('[Enhance] Example.com enhancements loaded');
+  // Example.com specific code here
+})();
 /* end-domain */
 ```
+
+#### Adding a New Domain
+
+1. **Add domain to target domains** (in `config.js` or Options page)
+2. **Add domain block** to `inject.css` and/or `inject.js`
+3. **Update version** in `version.json`
+4. **Upload to GitLab** - extension will automatically fetch updates
+
+See `assets/MULTI_DOMAIN_GUIDE.md` for detailed guide on managing multiple domains.
 
 ### Version.json Format
 

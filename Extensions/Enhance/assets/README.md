@@ -20,6 +20,8 @@ This directory contains the **live/production** inject code that gets uploaded t
 - **`inject.js`** - JavaScript code injected into target domains  
 - **`version.json`** - Version information and update URLs
 
+**Important:** `version.json` does NOT contain the GitLab URL. The GitLab URL is configured in `lib/config.js` or the Options page. See `GITLAB_URL_CONFIG.md` for details.
+
 ## Workflow
 
 1. **Edit files in `assets/`** - Make your changes to the live code
