@@ -73,14 +73,14 @@ a.comp-navbarLogo[data-enhance-indicator] {
   gap: 16px;
   align-items: stretch;
   height: 50vh;
-  height: 220px;
+  height: 225px;
 }
 
 .section-wrapper.enhance-map-layout .enhance-site-panel {
   order: 1;
-  flex: 0 0 360px;
+  flex: 0 0 400px;
   max-width: 480px;
-  min-width: 360px;
+  min-width: 400px;
   margin-left: 0;
   height: 100%;
   overflow: auto;
@@ -150,14 +150,14 @@ a.comp-navbarLogo[data-enhance-indicator] {
   display: table-cell;
   border: 1px solid rgba(255, 255, 255, 0.25);
   padding: 8px 12px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   text-align: left;
   vertical-align: middle;
 }
 
 .enhance-site-panel .map-summary th {
   background: rgba(255, 255, 255, 0.12);
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .enhance-site-panel .map-summary .css-table.inline.center {
@@ -241,17 +241,17 @@ a.enhance-insight-row.is-disabled {
 }
 
 .enhance-insight-label {
-  font-size: 0.95rem;
-  font-weight: 500;
+  font-size: 0.8rem;
+  font-weight: 400;
 }
 
 .enhance-insight-subLabel {
-  font-size: 0.78rem;
+  font-size: 0.6rem;
   opacity: 0.7;
 }
 
 .enhance-insight-value {
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   font-weight: 400;
 }
 
