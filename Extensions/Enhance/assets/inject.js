@@ -392,6 +392,7 @@
       if (!summaryEl) {
         summaryEl = document.createElement('div');
         summaryEl.className = 'map-summary';
+        summaryEl.setAttribute('data-enhance-summary', 'true');
         panel.appendChild(summaryEl);
       }
 
