@@ -612,6 +612,7 @@
     let networkServersTableObserver = null;
     let networkServersTableNode = null;
     let successPercentageRetryTimer = null;
+    let suppressNetworkServersObserver = false;
 
     function addSuccessPercentageColumn() {
       const networkServersSection = document.querySelector('section.section-wrapper.status-section.network-servers-section');
@@ -633,42 +634,50 @@
         return false;
       }
 
-      if (!headerRow.querySelector('.hdr-successPercentage')) {
-        const newHeader = document.createElement('th');
-        newHeader.className = 'hdr-successPercentage';
-        newHeader.innerHTML = '<span class="sort-heading">Success Percentage</span>';
-        headerRow.appendChild(newHeader);
-      }
+      suppressNetworkServersObserver = true;
 
-      const rows = tbody.querySelectorAll('tr');
-      if (!rows.length) {
-        scheduleSuccessPercentageRetry();
-        return false;
-      }
-
-      rows.forEach((row) => {
-        const goodAttemptsCell = row.querySelector('.row-goodAttempts');
-        const badAttemptsCell = row.querySelector('.row-badAttempts');
-
-        if (!goodAttemptsCell || !badAttemptsCell) {
-          return;
+      try {
+        if (!headerRow.querySelector('.hdr-successPercentage')) {
+          const newHeader = document.createElement('th');
+          newHeader.className = 'hdr-successPercentage';
+          newHeader.innerHTML = '<span class="sort-heading">Success Percentage</span>';
+          headerRow.appendChild(newHeader);
         }
 
-        const goodAttempts = parseInt(goodAttemptsCell.textContent.trim(), 10) || 0;
-        const badAttempts = parseInt(badAttemptsCell.textContent.trim(), 10) || 0;
-        const totalAttempts = goodAttempts + badAttempts;
-        const successPercentage = totalAttempts === 0 ? 0 : ((goodAttempts / totalAttempts) * 100).toFixed(2);
-
-        let percentageCell = row.querySelector('.row-successPercentage');
-        if (!percentageCell) {
-          percentageCell = document.createElement('td');
-          percentageCell.className = 'row-successPercentage';
-          row.appendChild(percentageCell);
+        const rows = tbody.querySelectorAll('tr');
+        if (!rows.length) {
+          scheduleSuccessPercentageRetry();
+          return false;
         }
-        percentageCell.textContent = `${successPercentage}%`;
-      });
 
-      return true;
+        rows.forEach((row) => {
+          const goodAttemptsCell = row.querySelector('.row-goodAttempts');
+          const badAttemptsCell = row.querySelector('.row-badAttempts');
+
+          if (!goodAttemptsCell || !badAttemptsCell) {
+            return;
+          }
+
+          const goodAttempts = parseInt(goodAttemptsCell.textContent.trim(), 10) || 0;
+          const badAttempts = parseInt(badAttemptsCell.textContent.trim(), 10) || 0;
+          const totalAttempts = goodAttempts + badAttempts;
+          const successPercentage = totalAttempts === 0 ? 0 : ((goodAttempts / totalAttempts) * 100).toFixed(2);
+
+          let percentageCell = row.querySelector('.row-successPercentage');
+          if (!percentageCell) {
+            percentageCell = document.createElement('td');
+            percentageCell.className = 'row-successPercentage';
+            row.appendChild(percentageCell);
+          }
+          percentageCell.textContent = `${successPercentage}%`;
+        });
+
+        return true;
+      } finally {
+        setTimeout(() => {
+          suppressNetworkServersObserver = false;
+        }, 0);
+      }
     }
 
     function scheduleSuccessPercentageRetry() {
@@ -737,6 +746,9 @@
 
       if (!networkServersTableObserver) {
         networkServersTableObserver = new MutationObserver(() => {
+          if (suppressNetworkServersObserver) {
+            return;
+          }
           addSuccessPercentageColumn();
         });
 
