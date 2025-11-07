@@ -74,7 +74,7 @@ a.comp-navbarLogo[data-enhance-indicator] {
   align-items: stretch;
 }
 
-.section-wrapper.enhance-map-layout .map-wrap .site-map-section map{
+.section-wrapper.enhance-map-layout .map-wrap .site-map-section.map{
   flex: 1 1 50%;
   min-width: 320px;
 }
