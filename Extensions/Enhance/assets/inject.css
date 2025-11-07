@@ -131,8 +131,6 @@ a.comp-navbarLogo[data-enhance-indicator] {
 }
 
 .enhance-site-panel .map-summary {
-  align-items: center;
-  justify-content: center;
   display: flex;
   flex-direction: column;
   gap: 8px;
