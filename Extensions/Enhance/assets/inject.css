@@ -124,6 +124,9 @@ a.comp-navbarLogo[data-enhance-indicator] {
 
 .enhance-site-panel .map-name {
   font-size: 1.25rem;
+  margin-left: 5px;
+  font-family:'Lucida Sans';
+  text-transform: bold;
   font-weight: 300;
 }
 
