@@ -319,25 +319,68 @@
       }
 
       const mapWrap = section.querySelector('.map-wrap');
-      const mapContent = section.querySelector('.map-content');
+      const originalContent = section.querySelector('.map-content');
 
-      if (!mapWrap || !mapContent) {
+      if (!mapWrap || !originalContent) {
         return false;
+      }
+
+      if (!originalContent.dataset.enhanceHidden) {
+        originalContent.dataset.enhanceHidden = 'true';
+        originalContent.style.display = 'none';
       }
 
       section.classList.add('enhance-map-layout');
       mapWrap.classList.add('enhance-map-container');
-      mapContent.classList.add('enhance-site-panel');
 
-      let insightsList = mapContent.querySelector('[data-enhance-insights-list]');
+      let panel = section.querySelector('[data-enhance-site-panel]');
+      if (!panel) {
+        panel = document.createElement('div');
+        panel.className = 'enhance-site-panel';
+        panel.setAttribute('data-enhance-site-panel', 'true');
+        if (mapWrap.nextSibling) {
+          section.insertBefore(panel, mapWrap.nextSibling);
+        } else {
+          section.appendChild(panel);
+        }
+      }
+
+      let titleEl = panel.querySelector('.map-name');
+      if (!titleEl) {
+        titleEl = document.createElement('div');
+        titleEl.className = 'map-name';
+        panel.appendChild(titleEl);
+      }
+
+      const sourceName = originalContent.querySelector('.map-name');
+      if (sourceName) {
+        titleEl.textContent = sourceName.textContent;
+        titleEl.setAttribute('title', sourceName.getAttribute('title') || sourceName.textContent);
+      }
+
+      let summaryEl = panel.querySelector('.map-summary');
+      if (!summaryEl) {
+        summaryEl = document.createElement('div');
+        summaryEl.className = 'map-summary';
+        panel.appendChild(summaryEl);
+      }
+
+      const sourceSummary = originalContent.querySelector('.map-summary');
+      if (sourceSummary) {
+        summaryEl.innerHTML = sourceSummary.innerHTML;
+      } else {
+        summaryEl.innerHTML = '';
+      }
+
+      let insightsList = panel.querySelector('[data-enhance-insights-list]');
       if (!insightsList) {
         insightsList = document.createElement('div');
         insightsList.className = 'enhance-insights-list';
         insightsList.setAttribute('data-enhance-insights-list', 'true');
-        mapContent.appendChild(insightsList);
+        panel.appendChild(insightsList);
       }
 
-      let alarmRow = mapContent.querySelector('[data-enhance-alarm-link]');
+      let alarmRow = panel.querySelector('[data-enhance-alarm-link]');
       if (!alarmRow) {
         alarmRow = document.createElement('a');
         alarmRow.className = 'enhance-insight-row';
@@ -349,7 +392,7 @@
         insightsList.appendChild(alarmRow);
       }
 
-      let marvisRow = mapContent.querySelector('[data-enhance-marvis-link]');
+      let marvisRow = panel.querySelector('[data-enhance-marvis-link]');
       if (!marvisRow) {
         marvisRow = document.createElement('a');
         marvisRow.className = 'enhance-insight-row';
@@ -362,14 +405,15 @@
       }
 
       const { orgId, siteId } = getOrgAndSiteIds();
-      updateAlarmSummary(mapContent, orgId, siteId);
-      updateMarvisSummary(mapContent, orgId, siteId);
+      updateAlarmSummary(panel, orgId, siteId);
+      updateMarvisSummary(panel, orgId, siteId);
 
-      const summaryElement = mapContent.querySelector('.map-summary');
+      const summaryElement = sourceSummary;
       if (summaryElement && !summaryElement.dataset.enhanceSummaryObserved) {
         const summaryObserver = new MutationObserver(() => {
           const ids = getOrgAndSiteIds();
-          updateMarvisSummary(mapContent, ids.orgId, ids.siteId);
+          summaryEl.innerHTML = summaryElement.innerHTML;
+          updateMarvisSummary(panel, ids.orgId, ids.siteId);
         });
 
         summaryObserver.observe(summaryElement, {
@@ -421,7 +465,7 @@
         if (dashboard) {
           enhanceDashboardMetrics();
           enhanceDashboardCharts();
-        enhanceSiteOverviewPanel();
+          enhanceSiteOverviewPanel();
           obs.disconnect();
         }
       });

@@ -92,6 +92,10 @@ a.comp-navbarLogo[data-enhance-indicator] {
   display: flex;
 }
 
+.section-wrapper.enhance-map-layout .map-content[data-enhance-hidden="true"] {
+  display: none !important;
+}
+
 @media (max-width: 1100px) {
   .section-wrapper.enhance-map-layout {
     flex-direction: column;
