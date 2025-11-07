@@ -80,7 +80,7 @@ a.comp-navbarLogo[data-enhance-indicator] {
 }
 
 .section-wrapper.enhance-map-layout .map-wrap.enhance-map-container {
-  max-width: 50%;
+  max-width: 100%;
 }
 
 .section-wrapper.enhance-map-layout .enhance-site-panel {
@@ -99,8 +99,8 @@ a.comp-navbarLogo[data-enhance-indicator] {
 }
 
 .enhance-site-panel .map-name {
-  font-size: 1.25rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 100;
 }
 
 .enhance-site-panel .map-summary {
