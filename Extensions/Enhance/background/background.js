@@ -68,7 +68,9 @@ async function setupAlarm() {
  */
 chrome.alarms.onAlarm.addListener((alarm) => {
   if (alarm.name === ALARM_NAME) {
-    fetchAndCacheAssets();
+    fetchAndCacheAssets().catch((error) => {
+      console.error('Error fetching assets from alarm:', error);
+    });
   }
 });
 
@@ -76,26 +78,34 @@ chrome.alarms.onAlarm.addListener((alarm) => {
  * Handle extension installation
  */
 chrome.runtime.onInstalled.addListener(async () => {
-  console.log('Enhance extension installed');
-  
-  // Fetch assets on install
-  await fetchAndCacheAssets();
-  
-  // Setup periodic fetching
-  await setupAlarm();
+  try {
+    console.log('Enhance extension installed');
+    
+    // Fetch assets on install
+    await fetchAndCacheAssets();
+    
+    // Setup periodic fetching
+    await setupAlarm();
+  } catch (error) {
+    console.error('Error during extension installation:', error);
+  }
 });
 
 /**
  * Handle extension startup
  */
 chrome.runtime.onStartup.addListener(async () => {
-  console.log('Enhance extension started');
-  
-  // Fetch assets on startup
-  await fetchAndCacheAssets();
-  
-  // Setup periodic fetching
-  await setupAlarm();
+  try {
+    console.log('Enhance extension started');
+    
+    // Fetch assets on startup
+    await fetchAndCacheAssets();
+    
+    // Setup periodic fetching
+    await setupAlarm();
+  } catch (error) {
+    console.error('Error during extension startup:', error);
+  }
 });
 
 /**
@@ -148,48 +158,85 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         const isTarget = await isTargetDomain(request.url);
         sendResponse({ isTarget });
       } catch (error) {
+        console.error('Error checking target domain:', error);
         sendResponse({ isTarget: false, error: error.message });
       }
     })();
     return true; // Keep channel open for async response
   }
+  
+  // Return false for unhandled messages
+  return false;
 });
 
 /**
  * Handle notification clicks
  */
 chrome.notifications.onClicked.addListener((notificationId) => {
-  chrome.storage.local.get(['pendingUpdate'], (result) => {
-    if (result.pendingUpdate && result.pendingUpdate.updateUrl) {
-      chrome.tabs.create({ url: result.pendingUpdate.updateUrl });
-    }
-  });
-  chrome.notifications.clear(notificationId);
+  try {
+    chrome.storage.local.get(['pendingUpdate'], (result) => {
+      try {
+        if (result.pendingUpdate && result.pendingUpdate.updateUrl) {
+          chrome.tabs.create({ url: result.pendingUpdate.updateUrl });
+        }
+      } catch (error) {
+        console.error('Error handling notification click:', error);
+      }
+    });
+    chrome.notifications.clear(notificationId);
+  } catch (error) {
+    console.error('Error in notification click handler:', error);
+  }
 });
 
 // Initialize on service worker startup
 (async () => {
-  console.log('Enhance background service worker started');
-  
-  // Check if we have cached assets, if not, initialize with defaults
-  const cached = await getCachedAssets();
-  if (!cached.css && !cached.js && !cached.version) {
-    // Try to fetch from GitLab, but fall back to defaults if not configured
-    const gitlabUrl = await getConfigValue('gitlabUrl');
-    if (gitlabUrl) {
-      // GitLab URL is configured, try to fetch
-      await fetchAndCacheAssets();
-    } else {
-      // No GitLab URL configured, use default assets
-      console.log('No GitLab URL configured, using default built-in assets');
-      const { getDefaultAssets } = await import('../lib/defaultAssets.js');
-      const { saveCachedAssets } = await import('../lib/storage.js');
-      const defaultAssets = getDefaultAssets();
-      await saveCachedAssets(defaultAssets);
+  try {
+    console.log('Enhance background service worker started');
+    
+    // Check if we have cached assets, if not, initialize with defaults
+    try {
+      const cached = await getCachedAssets();
+      if (!cached.css && !cached.js && !cached.version) {
+        // Try to fetch from GitLab, but fall back to defaults if not configured
+        try {
+          const gitlabUrl = await getConfigValue('gitlabUrl');
+          if (gitlabUrl) {
+            // GitLab URL is configured, try to fetch
+            await fetchAndCacheAssets();
+          } else {
+            // No GitLab URL configured, use default assets
+            console.log('No GitLab URL configured, using default built-in assets');
+            const { getDefaultAssets } = await import('../lib/defaultAssets.js');
+            const { saveCachedAssets } = await import('../lib/storage.js');
+            const defaultAssets = getDefaultAssets();
+            await saveCachedAssets(defaultAssets);
+          }
+        } catch (error) {
+          console.error('Error initializing assets:', error);
+          // Fallback to default assets on error
+          try {
+            const { getDefaultAssets } = await import('../lib/defaultAssets.js');
+            const { saveCachedAssets } = await import('../lib/storage.js');
+            const defaultAssets = getDefaultAssets();
+            await saveCachedAssets(defaultAssets);
+          } catch (fallbackError) {
+            console.error('Error loading default assets:', fallbackError);
+          }
+        }
+      }
+    } catch (error) {
+      console.error('Error checking cached assets:', error);
     }
+    
+    // Setup alarm
+    try {
+      await setupAlarm();
+    } catch (error) {
+      console.error('Error setting up alarm:', error);
+    }
+  } catch (error) {
+    console.error('Fatal error in service worker initialization:', error);
   }
-  
-  // Setup alarm
-  await setupAlarm();
 })();
 
