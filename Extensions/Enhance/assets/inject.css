@@ -75,13 +75,14 @@ a.comp-navbarLogo[data-enhance-indicator] {
   align-items: stretch;
 }
 
-.section-wrapper.enhance-map-layout .map-wrap {
+.section-wrapper.enhance-map-layout .enhance-site-panel {
   grid-column: 1 / span 1;
-  width: 100%;
+  margin-left: 0;
 }
 
-.section-wrapper.enhance-map-layout .enhance-site-panel {
+.section-wrapper.enhance-map-layout .map-wrap {
   grid-column: 2 / span 1;
+  width: 100%;
 }
 
 @media (max-width: 900px) {
