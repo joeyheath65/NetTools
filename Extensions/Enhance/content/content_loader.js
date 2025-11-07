@@ -221,15 +221,27 @@ if (document.readyState === 'loading') {
   loadAndInjectAssets();
 }
 
-// Also listen for navigation in SPAs
+// Also listen for navigation in SPAs (hash changes, etc.)
 let lastUrl = location.href;
-new MutationObserver(() => {
-  const url = location.href;
-  if (url !== lastUrl) {
-    lastUrl = url;
+const urlCheckInterval = setInterval(() => {
+  const currentUrl = location.href;
+  if (currentUrl !== lastUrl) {
+    lastUrl = currentUrl;
     // Reset injection flag and reload assets
     document.documentElement.removeAttribute(INJECTED_FLAG);
     loadAndInjectAssets();
   }
-}).observe(document, { subtree: true, childList: true });
+}, 500);
+
+// Also use hashchange event for SPA navigation
+window.addEventListener('hashchange', () => {
+  lastUrl = location.href;
+  document.documentElement.removeAttribute(INJECTED_FLAG);
+  loadAndInjectAssets();
+});
+
+// Cleanup interval when page unloads
+window.addEventListener('beforeunload', () => {
+  clearInterval(urlCheckInterval);
+});
 
