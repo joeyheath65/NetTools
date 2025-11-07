@@ -139,6 +139,24 @@ a.comp-navbarLogo[data-enhance-indicator] {
   gap: 12px;
 }
 
+a.enhance-insight-row[data-enhance-state="alert"] {
+  background: rgba(255, 77, 79, 0.15);
+  border: 1px solid rgba(255, 77, 79, 0.35);
+}
+
+a.enhance-insight-row[data-enhance-state="error"] {
+  background: rgba(255, 170, 43, 0.12);
+  border: 1px solid rgba(255, 170, 43, 0.32);
+}
+
+a.enhance-insight-row[data-enhance-state="loading"] .enhance-insight-value {
+  opacity: 0.75;
+}
+
+a.enhance-insight-row[data-enhance-state="idle"] .enhance-insight-value {
+  opacity: 0.6;
+}
+
 a.enhance-insight-row {
   display: flex;
   align-items: center;
@@ -162,9 +180,38 @@ a.enhance-insight-row.is-disabled {
   opacity: 0.5;
 }
 
+.enhance-insight-leading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.enhance-insight-icon {
+  font-size: 1.3rem;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.enhance-insight-icon svg {
+  display: block;
+}
+
+.enhance-insight-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
 .enhance-insight-label {
   font-size: 0.95rem;
   font-weight: 500;
+}
+
+.enhance-insight-subLabel {
+  font-size: 0.78rem;
+  opacity: 0.7;
 }
 
 .enhance-insight-value {

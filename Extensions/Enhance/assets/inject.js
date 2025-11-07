@@ -67,7 +67,8 @@
 
       const label = document.createElement('div');
       label.className = 'comp-navbarBtn-text';
-      label.textContent = 'Site Config';
+      // Add gear icon before the text
+      label.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" style="position:relative;top:2px;margin-right:6px;" width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path d="M13.562 2.661c-.563-1.209-2.562-1.209-3.124 0-.225.483-.689.812-1.233.889-1.364.188-2.293 1.303-1.996 2.63.07.301.027.617-.154.867-.688.981-2.08 1.058-2.428-.004-.244-.714-.962-1.302-1.784-1.382C2.36 6.451 2 7.428 2 8.25c0 1.051.858 2.003 1.889 2.004C4.82 10.255 6.09 9.732 6.291 9.026c.162-.528.755-.818 1.264-.641.39.132.831-.012 1.04-.385.208-.37.753-.455 1.138-.213.292.185.648.215.962.068 1.063-.514 2.293.294 2.167 1.466-.042.398.22.761.616.828.972.159 2.064-.442 2.064-1.432 0-.764-.436-1.523-1.294-1.738-.598-.15-1.081-.687-1.115-1.301-.043-.775-1.147-.894-1.325-.147zm-3.68 4.554a3 3 0 1 1 5.237 0l.5-.865c.277-.48.945-.59 1.27-.211a3 3 0 0 1 0 3.382c-.285.382-.528.813-.666 1.288.081.345.317.642.654.757a3 3 0 0 1 0 1.683c-.337.115-.573.412-.654.757.139.475.381.906.666 1.288a3 3 0 0 1 0 3.382c-.325.38-.993.27-1.27-.21l-.5-.866a3 3 0 1 1-5.237 0l-.5.866c-.277.48-.945.59-1.27.21a3 3 0 0 1 0-3.382c.285-.382.527-.813.666-1.288-.08-.345-.317-.642-.654-.757a3 3 0 0 1 0-1.683c.337-.115.573-.412.654-.757-.139-.475-.381-.906-.666-1.288a3 3 0 0 1 0-3.382c.325-.38.993-.27 1.27.211l.5.865zm2.118.785a2 2 0 1 0 0 4.001 2 2 0 0 0 0-4.001z"/></svg>Site Config`;
 
       buttonItem.appendChild(label);
 
@@ -162,6 +163,7 @@
     async function updateAlarmSummary(panel, orgId, siteId) {
       const valueEl = panel.querySelector('[data-enhance-alarm-count]');
       const linkEl = panel.querySelector('[data-enhance-alarm-link]');
+      const rowEl = linkEl;
 
       if (linkEl) {
         const alertsUrl = buildAlertsUrl(orgId, siteId);
@@ -169,19 +171,27 @@
           linkEl.href = alertsUrl;
           linkEl.classList.remove('is-disabled');
           linkEl.title = 'View site alarms';
+          linkEl.dataset.enhanceState = 'loading';
         } else {
           linkEl.removeAttribute('href');
           linkEl.classList.add('is-disabled');
           linkEl.title = 'Alerts URL unavailable';
+          linkEl.dataset.enhanceState = 'idle';
         }
       }
 
       if (!valueEl) {
+        if (rowEl) {
+          rowEl.dataset.enhanceState = 'idle';
+        }
         return;
       }
 
       if (!siteId) {
         valueEl.textContent = 'N/A';
+        if (rowEl) {
+          rowEl.dataset.enhanceState = 'idle';
+        }
         return;
       }
 
@@ -190,7 +200,7 @@
       }
 
       panel.dataset.enhanceAlarmSiteId = siteId;
-      valueEl.textContent = '...';
+      valueEl.textContent = 'Loading...';
 
       try {
         const response = await fetch(`https://api.mist.com/api/v1/sites/${siteId}/alarms/count`, {
@@ -211,11 +221,18 @@
         }
 
         valueEl.textContent = total;
+        if (rowEl) {
+          rowEl.dataset.enhanceState = total > 0 ? 'alert' : 'ready';
+          rowEl.title = total > 0 ? `${total} active alarm${total === 1 ? '' : 's'}` : 'No active alarms';
+        }
       } catch (error) {
         console.warn('[Enhance] Failed to load alarm summary:', error);
         valueEl.textContent = '—';
         if (linkEl) {
           linkEl.title = `Failed to load alarm count: ${error.message}`;
+        }
+        if (rowEl) {
+          rowEl.dataset.enhanceState = 'error';
         }
       }
     }
@@ -281,6 +298,15 @@
         return;
       }
 
+      if (!siteId) {
+        valueEl.textContent = 'N/A';
+        linkEl.removeAttribute('href');
+        linkEl.classList.add('is-disabled');
+        linkEl.title = 'Site context required';
+        linkEl.dataset.enhanceState = 'idle';
+        return;
+      }
+
       const metric = extractMarvisMiniMetric();
 
       if (metric) {
@@ -290,10 +316,12 @@
           linkEl.href = resolvedUrl;
           linkEl.classList.remove('is-disabled');
           linkEl.title = 'View Marvis Minis SLE details';
+          linkEl.dataset.enhanceState = 'ready';
         } else {
           linkEl.removeAttribute('href');
           linkEl.classList.add('is-disabled');
           linkEl.title = 'Marvis Minis SLE link unavailable';
+          linkEl.dataset.enhanceState = 'idle';
         }
       } else {
         valueEl.textContent = '—';
@@ -302,10 +330,12 @@
           linkEl.href = fallbackUrl;
           linkEl.classList.remove('is-disabled');
           linkEl.title = 'View Marvis Minis SLE details';
+          linkEl.dataset.enhanceState = 'ready';
         } else {
           linkEl.removeAttribute('href');
           linkEl.classList.add('is-disabled');
           linkEl.title = 'Marvis Minis SLE link unavailable';
+          linkEl.dataset.enhanceState = 'idle';
         }
       }
 
@@ -385,9 +415,22 @@
         alarmRow = document.createElement('a');
         alarmRow.className = 'enhance-insight-row';
         alarmRow.setAttribute('data-enhance-alarm-link', '');
+        alarmRow.dataset.enhanceState = 'loading';
         alarmRow.innerHTML = `
-          <span class="enhance-insight-label">Alarms</span>
-          <span class="enhance-insight-value" data-enhance-alarm-count>—</span>
+          <div class="enhance-insight-leading">
+            <span class="enhance-insight-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 9v4"></path>
+                <path d="M12 17h.01"></path>
+                <path d="M10.29 3.86 1.82 18a1.5 1.5 0 0 0 1.29 2.25h17.78A1.5 1.5 0 0 0 22.18 18L13.71 3.86a1.5 1.5 0 0 0-2.42 0z"></path>
+              </svg>
+            </span>
+            <div class="enhance-insight-content">
+              <span class="enhance-insight-label">Alarms</span>
+              <span class="enhance-insight-subLabel">Active alerts for this site</span>
+            </div>
+          </div>
+          <span class="enhance-insight-value" data-enhance-alarm-count>Loading...</span>
         `;
         insightsList.appendChild(alarmRow);
       }
@@ -397,9 +440,26 @@
         marvisRow = document.createElement('a');
         marvisRow.className = 'enhance-insight-row';
         marvisRow.setAttribute('data-enhance-marvis-link', '');
+        marvisRow.dataset.enhanceState = 'loading';
         marvisRow.innerHTML = `
-          <span class="enhance-insight-label">Marvis Minis SLE</span>
-          <span class="enhance-insight-value" data-enhance-marvis-value>—</span>
+          <div class="enhance-insight-leading">
+            <span class="enhance-insight-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="7" width="18" height="12" rx="2"></rect>
+                <circle cx="9" cy="13" r="1"></circle>
+                <circle cx="15" cy="13" r="1"></circle>
+                <path d="M9 3v2"></path>
+                <path d="M15 3v2"></path>
+                <path d="M5 7V5"></path>
+                <path d="M19 7V5"></path>
+              </svg>
+            </span>
+            <div class="enhance-insight-content">
+              <span class="enhance-insight-label">Marvis Minis SLE</span>
+              <span class="enhance-insight-subLabel">Session insight (past 24h)</span>
+            </div>
+          </div>
+          <span class="enhance-insight-value" data-enhance-marvis-value>Loading...</span>
         `;
         insightsList.appendChild(marvisRow);
       }
@@ -459,6 +519,8 @@
         document.body.setAttribute('data-mist-site-id', siteId);
       }
       
+      observeForSection();
+
       // Wait for dashboard to load (Mist.com uses dynamic loading)
       const observer = new MutationObserver((mutations, obs) => {
         const dashboard = document.querySelector('[class*="dashboard"], [class*="insights"]');
@@ -481,6 +543,7 @@
         enhanceDashboardCharts();
         addSiteConfigNavButton();
         enhanceSiteOverviewPanel();
+        observeForSection();
       }, 1000);
     }
     
@@ -501,13 +564,14 @@
       enhancedText.textContent = 'Enhanced!';
       enhancedText.style.cssText = `
         display: inline-block;
-        margin-left: 8px;
+        margin-left: 1px;
         padding: 2px 8px;
         background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
         color: white;
         font-size: 11px;
         font-weight: 600;
         border-radius: 4px;
+        border: 1px solid #e0e9f2;
         text-transform: uppercase;
         letter-spacing: 0.5px;
         box-shadow: 0 2px 4px rgba(0, 123, 255, 0.3);
@@ -544,73 +608,161 @@
         }
       });
     }
+    let networkServersSectionObserver = null;
+    let networkServersTableObserver = null;
+    let networkServersTableNode = null;
+    let successPercentageRetryTimer = null;
+
     function addSuccessPercentageColumn() {
       const networkServersSection = document.querySelector('section.section-wrapper.status-section.network-servers-section');
-  
-      if (networkServersSection) {
-          console.log('Network Servers section found:', networkServersSection);
-          const table = networkServersSection.querySelector('table');
-          if (table) {
-              const thead = table.querySelector('thead tr');
-              const tbody = table.querySelector('tbody');
-  
-              // Add a new column header if it doesn't already exist
-              if (!thead.querySelector('.hdr-successPercentage')) {
-                  const newHeader = document.createElement('th');
-                  newHeader.className = 'hdr-successPercentage';
-                  newHeader.innerHTML = '<span class="sort-heading">Success Percentage</span>';
-                  thead.appendChild(newHeader);
-              }
-              const rows = tbody.querySelectorAll('tr');
-              rows.forEach(row => {
-                  const goodAttemptsCell = row.querySelector('.row-goodAttempts');
-                  const badAttemptsCell = row.querySelector('.row-badAttempts');
-                  const goodAttempts = parseInt(goodAttemptsCell.textContent.trim(), 10) || 0;
-                  const badAttempts = parseInt(badAttemptsCell.textContent.trim(), 10) || 0;
-                  const totalAttempts = goodAttempts + badAttempts;
-                  const successPercentage = totalAttempts === 0 ? 0 : (goodAttempts / totalAttempts * 100).toFixed(2);
-  
-                  let percentageCell = row.querySelector('.row-successPercentage');
-                  if (!percentageCell) {
-                      percentageCell = document.createElement('td');
-                      percentageCell.className = 'row-successPercentage';
-                      row.appendChild(percentageCell);
-                  }
-                  percentageCell.textContent = `${successPercentage}%`;
-              });
-          } else {
-              console.log('Table not found in Network Servers section');
-          }
-      } else {
-          console.log('Network Servers section not found');
+      if (!networkServersSection) {
+        return false;
       }
-  }
-  function observeForSection() {
-      const observer = new MutationObserver((mutations, me) => {
-          const networkServersSection = document.querySelector('section.section-wrapper.status-section.network-servers-section');
-          if (networkServersSection) {
-              addSuccessPercentageColumn();
-              me.disconnect();
-              observeTabChanges();
-          }
+
+      const table = networkServersSection.querySelector('table');
+      if (!table) {
+        scheduleSuccessPercentageRetry();
+        return false;
+      }
+
+      const headerRow = table.querySelector('thead tr');
+      const tbody = table.querySelector('tbody');
+
+      if (!headerRow || !tbody) {
+        scheduleSuccessPercentageRetry();
+        return false;
+      }
+
+      if (!headerRow.querySelector('.hdr-successPercentage')) {
+        const newHeader = document.createElement('th');
+        newHeader.className = 'hdr-successPercentage';
+        newHeader.innerHTML = '<span class="sort-heading">Success Percentage</span>';
+        headerRow.appendChild(newHeader);
+      }
+
+      const rows = tbody.querySelectorAll('tr');
+      if (!rows.length) {
+        scheduleSuccessPercentageRetry();
+        return false;
+      }
+
+      rows.forEach((row) => {
+        const goodAttemptsCell = row.querySelector('.row-goodAttempts');
+        const badAttemptsCell = row.querySelector('.row-badAttempts');
+
+        if (!goodAttemptsCell || !badAttemptsCell) {
+          return;
+        }
+
+        const goodAttempts = parseInt(goodAttemptsCell.textContent.trim(), 10) || 0;
+        const badAttempts = parseInt(badAttemptsCell.textContent.trim(), 10) || 0;
+        const totalAttempts = goodAttempts + badAttempts;
+        const successPercentage = totalAttempts === 0 ? 0 : ((goodAttempts / totalAttempts) * 100).toFixed(2);
+
+        let percentageCell = row.querySelector('.row-successPercentage');
+        if (!percentageCell) {
+          percentageCell = document.createElement('td');
+          percentageCell.className = 'row-successPercentage';
+          row.appendChild(percentageCell);
+        }
+        percentageCell.textContent = `${successPercentage}%`;
       });
-  
-      observer.observe(document, {
+
+      return true;
+    }
+
+    function scheduleSuccessPercentageRetry() {
+      if (successPercentageRetryTimer) {
+        return;
+      }
+
+      // # Reason: Mist dashboard hydrates asynchronously; retry until the table is populated.
+      successPercentageRetryTimer = setTimeout(() => {
+        successPercentageRetryTimer = null;
+        addSuccessPercentageColumn();
+      }, 250);
+    }
+
+    function observeForSection() {
+      const didEnhance = addSuccessPercentageColumn();
+      const networkServersSection = document.querySelector('section.section-wrapper.status-section.network-servers-section');
+
+      if (networkServersSection) {
+        observeTabChanges(networkServersSection);
+        observeTableChanges(networkServersSection);
+      }
+
+      if (didEnhance || networkServersSection) {
+        disconnectSectionObserver();
+        return true;
+      }
+
+      if (!networkServersSectionObserver) {
+        networkServersSectionObserver = new MutationObserver(() => {
+          if (observeForSection()) {
+            disconnectSectionObserver();
+          }
+        });
+
+        networkServersSectionObserver.observe(document.body, {
           childList: true,
           subtree: true
+        });
+      }
+
+      return false;
+    }
+
+    function disconnectSectionObserver() {
+      if (networkServersSectionObserver) {
+        networkServersSectionObserver.disconnect();
+        networkServersSectionObserver = null;
+      }
+    }
+
+    function observeTableChanges(networkServersSection) {
+      const table = networkServersSection.querySelector('table');
+      const tbody = table ? table.querySelector('tbody') : null;
+
+      if (!tbody) {
+        return;
+      }
+
+      if (networkServersTableObserver && networkServersTableNode !== tbody) {
+        // # Reason: Mist may swap out the tbody element when refreshing data.
+        networkServersTableObserver.disconnect();
+        networkServersTableObserver = null;
+        networkServersTableNode = null;
+      }
+
+      if (!networkServersTableObserver) {
+        networkServersTableObserver = new MutationObserver(() => {
+          addSuccessPercentageColumn();
+        });
+
+        networkServersTableObserver.observe(tbody, {
+          childList: true,
+          subtree: true,
+          characterData: true
+        });
+
+        networkServersTableNode = tbody;
+      }
+    }
+
+    function observeTabChanges(networkServersSection) {
+      const tabs = networkServersSection.querySelectorAll('.tab-menu-item');
+      tabs.forEach((tab) => {
+        if (tab.dataset.enhanceSuccessListener === 'true') {
+          return;
+        }
+
+        tab.dataset.enhanceSuccessListener = 'true';
+        tab.addEventListener('click', () => {
+          setTimeout(addSuccessPercentageColumn, 100);
+        });
       });
-  }
-  
-  function observeTabChanges() {
-      const tabs = document.querySelectorAll('.section-wrapper.status-section.network-servers-section .tab-menu-item');
-      tabs.forEach(tab => {
-          tab.addEventListener('click', () => {
-              setTimeout(addSuccessPercentageColumn, 100);
-          });
-      });
-  }
-  
-  window.addEventListener('load', observeForSection);
+    }
   
     
     // Enhance dashboard charts
