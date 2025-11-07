@@ -5,7 +5,8 @@
 
 import { fetchAssetsWithFallback } from '../lib/fetcher.js';
 import { checkAssetVersion, checkExtensionVersion, showUpdateNotification } from '../lib/versioning.js';
-import { getConfigValue, getCachedAssets } from '../lib/storage.js';
+import { getConfigValue, getCachedAssets, isTargetDomain, saveCachedAssets } from '../lib/storage.js';
+import { getDefaultAssets } from '../lib/defaultAssets.js';
 
 const ALARM_NAME = 'fetchAssets';
 const ALARM_INTERVAL = 30; // minutes
@@ -154,7 +155,6 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.action === 'isTargetDomain') {
     (async () => {
       try {
-        const { isTargetDomain } = await import('../lib/storage.js');
         const isTarget = await isTargetDomain(request.url);
         sendResponse({ isTarget });
       } catch (error) {
@@ -207,8 +207,6 @@ chrome.notifications.onClicked.addListener((notificationId) => {
           } else {
             // No GitLab URL configured, use default assets
             console.log('No GitLab URL configured, using default built-in assets');
-            const { getDefaultAssets } = await import('../lib/defaultAssets.js');
-            const { saveCachedAssets } = await import('../lib/storage.js');
             const defaultAssets = getDefaultAssets();
             await saveCachedAssets(defaultAssets);
           }
@@ -216,8 +214,6 @@ chrome.notifications.onClicked.addListener((notificationId) => {
           console.error('Error initializing assets:', error);
           // Fallback to default assets on error
           try {
-            const { getDefaultAssets } = await import('../lib/defaultAssets.js');
-            const { saveCachedAssets } = await import('../lib/storage.js');
             const defaultAssets = getDefaultAssets();
             await saveCachedAssets(defaultAssets);
           } catch (fallbackError) {
