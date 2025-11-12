@@ -206,7 +206,8 @@ a.comp-navbarLogo[data-enhance-indicator] {
 
 /* Site Health Display Styles */
 .enhance-site-panel .enhance-site-health-display {
-  padding: 12px 16px;
+  padding: 8px 12px;
+  margin: 4px 0;
   border-radius: 8px;
   text-align: center;
   border: 2px solid;
@@ -219,21 +220,21 @@ a.comp-navbarLogo[data-enhance-indicator] {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   opacity: 0.9;
 }
 
 .enhance-site-panel .enhance-site-health-percentage {
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 1.2;
-  margin-bottom: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-bottom: 4px;
 }
 
 .enhance-site-panel .enhance-site-health-details {
   font-size: 0.75rem;
   opacity: 0.8;
-  margin-top: 4px;
+  margin-top: 2px;
 }
 
 .enhance-site-panel .enhance-site-health-green {
