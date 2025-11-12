@@ -126,13 +126,13 @@ a.comp-navbarLogo[data-enhance-indicator] {
 .enhance-site-panel .map-name {
   position: relative;
   font-family: 'Copperplate', 'Papyrus', fantasy;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 500;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #000000;
   margin: 5px 0 6px 12px;
-  padding-bottom: 8px;
+  padding-bottom: 4px;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
 }
 
@@ -167,7 +167,7 @@ a.comp-navbarLogo[data-enhance-indicator] {
 .enhance-site-panel .map-summary .css-table-cell {
   display: table-cell;
   border: 1px solid rgba(255, 255, 255, 0.25);
-  padding: 8px 12px;
+  padding: 8px 8px;
   font-size: 0.8rem;
   text-align: left;
   vertical-align: middle;
@@ -175,7 +175,7 @@ a.comp-navbarLogo[data-enhance-indicator] {
 
 .enhance-site-panel .map-summary th {
   background: rgba(255, 255, 255, 0.12);
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .enhance-site-panel .map-summary .css-table.inline.center {
@@ -187,10 +187,52 @@ a.comp-navbarLogo[data-enhance-indicator] {
   text-align: center;
 }
 
+/* Site Health Percentage Column Styles */
+.enhance-site-panel .map-summary .enhance-site-health-cell {
+  min-width: 60px;
+  white-space: nowrap;
+  border-radius: 4px;
+  padding: 6px 8px !important;
+}
+
+.enhance-site-panel .map-summary .enhance-site-health-green {
+  background-color: rgba(82, 196, 26, 0.25) !important;
+  border: 1px solid rgba(82, 196, 26, 0.5) !important;
+  color: #52c41a;
+  font-weight: 600;
+}
+
+.enhance-site-panel .map-summary .enhance-site-health-yellow {
+  background-color: rgba(250, 173, 20, 0.25) !important;
+  border: 1px solid rgba(250, 173, 20, 0.5) !important;
+  color: #faad14;
+  font-weight: 600;
+}
+
+.enhance-site-panel .map-summary .enhance-site-health-red {
+  background-color: rgba(255, 77, 79, 0.25) !important;
+  border: 1px solid rgba(255, 77, 79, 0.5) !important;
+  color: #ff4d4f;
+  font-weight: 600;
+}
+
+/* Ensure table cells fit on the same row */
+.enhance-site-panel .map-summary table,
+.enhance-site-panel .map-summary .css-table {
+  table-layout: auto;
+  width: 100%;
+}
+
+/* Ensure health cell stays compact and on same row */
+.enhance-site-panel .map-summary .enhance-site-health-cell {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
 .enhance-site-panel .enhance-insights-list {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 4px;
 }
 
 a.enhance-insight-row[data-enhance-state="alert"] {

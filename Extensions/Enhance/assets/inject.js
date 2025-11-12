@@ -469,11 +469,15 @@
       updateAlarmSummary(panel, orgId, siteId);
       updateMarvisSummary(panel, orgId, siteId);
 
+      // Process the summary table to add site health percentage
+      enhanceMapSummaryTable(summaryEl);
+
       const summaryElement = sourceSummary;
       if (summaryElement && !summaryElement.dataset.enhanceSummaryObserved) {
         const summaryObserver = new MutationObserver(() => {
           const ids = getOrgAndSiteIds();
           summaryEl.innerHTML = summaryElement.innerHTML;
+          enhanceMapSummaryTable(summaryEl);
           updateMarvisSummary(panel, ids.orgId, ids.siteId);
         });
 
@@ -486,6 +490,99 @@
       }
 
       return true;
+    }
+
+    function enhanceMapSummaryTable(summaryEl) {
+      if (!summaryEl) {
+        return;
+      }
+
+      // Find the table in the map-summary
+      const table = summaryEl.querySelector('table') || summaryEl.querySelector('.css-table');
+      if (!table) {
+        return;
+      }
+
+      // Find the row that contains AP information
+      // Look for the row that contains the "insights-AccessPoints-total" span
+      const totalSpan = summaryEl.querySelector('.insights-AccessPoints-total');
+      if (!totalSpan) {
+        return;
+      }
+
+      // Find the row containing this span
+      const row = totalSpan.closest('tr') || totalSpan.closest('.css-table-row') || 
+                  totalSpan.parentElement?.closest('tr') || 
+                  totalSpan.parentElement?.closest('.css-table-row');
+      
+      if (!row) {
+        return;
+      }
+
+      // Check if we've already added the health column
+      if (row.querySelector('[data-enhance-site-health]')) {
+        return;
+      }
+
+      // Extract total AP count from the span text (e.g., "72 Total")
+      const totalText = totalSpan.textContent.trim();
+      const totalMatch = totalText.match(/(\d+)/);
+      const totalAPs = totalMatch ? parseInt(totalMatch[1], 10) : 0;
+
+      // Find the first cell in the row (which should contain the online AP count)
+      const cells = row.querySelectorAll('td, .css-table-cell');
+      if (cells.length === 0) {
+        return;
+      }
+
+      const firstCell = cells[0];
+      const onlineText = firstCell.textContent.trim();
+      const onlineMatch = onlineText.match(/(\d+)/);
+      const onlineAPs = onlineMatch ? parseInt(onlineMatch[1], 10) : 0;
+
+      // Calculate percentage
+      const percentage = totalAPs > 0 ? Math.round((onlineAPs / totalAPs) * 100) : 0;
+
+      // Determine color class based on percentage
+      let healthClass = 'enhance-site-health-red';
+      if (percentage >= 95) {
+        healthClass = 'enhance-site-health-green';
+      } else if (percentage >= 85) {
+        healthClass = 'enhance-site-health-yellow';
+      }
+
+      // Create the new health percentage cell
+      const healthCell = document.createElement(firstCell.tagName === 'TD' ? 'td' : 'div');
+      healthCell.className = firstCell.className + ' enhance-site-health-cell';
+      healthCell.setAttribute('data-enhance-site-health', 'true');
+      healthCell.classList.add(healthClass);
+      healthCell.textContent = `${percentage}%`;
+      healthCell.style.textAlign = 'center';
+      healthCell.style.fontWeight = '500';
+
+      // Insert as the first cell
+      row.insertBefore(healthCell, firstCell);
+
+      // Also add a header cell if there's a header row
+      const thead = table.querySelector('thead');
+      const headerRow = thead ? thead.querySelector('tr') : null;
+      if (headerRow) {
+        const headerCells = headerRow.querySelectorAll('th, .css-table-cell');
+        if (headerCells.length > 0 && !headerRow.querySelector('[data-enhance-site-health-header]')) {
+          const firstHeaderCell = headerCells[0];
+          const healthHeader = document.createElement(firstHeaderCell.tagName === 'TH' ? 'th' : 'div');
+          healthHeader.className = firstHeaderCell.className + ' enhance-site-health-header';
+          healthHeader.setAttribute('data-enhance-site-health-header', 'true');
+          healthHeader.textContent = 'Site Health';
+          healthHeader.style.textAlign = 'center';
+          headerRow.insertBefore(healthHeader, firstHeaderCell);
+        }
+      }
+
+      // Adjust table layout to ensure all columns fit on the same row
+      if (table.style.tableLayout !== 'fixed') {
+        table.style.tableLayout = 'auto';
+      }
     }
 
     // Initialize Mist.com enhancements
