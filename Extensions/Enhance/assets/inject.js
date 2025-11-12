@@ -521,37 +521,62 @@
       updateMarvisSummary(panel, orgId, siteId);
 
       // Process the summary table to add site health percentage
-      // Use setTimeout to ensure DOM is fully parsed after innerHTML assignment
-      // Try multiple times in case content loads asynchronously
-      let retryCount = 0;
-      const maxRetries = 10;
-      const tryEnhance = async () => {
-        // Try enhancing summaryEl
-        const success = await enhanceMapSummaryWithHealth(summaryEl);
-        if (!success && retryCount < maxRetries) {
-          retryCount++;
-          setTimeout(tryEnhance, 300);
-        }
-      };
-      setTimeout(tryEnhance, 200);
+      // Check if already enhanced first to prevent re-running
+      if (!summaryEl.querySelector('[data-enhance-site-health]')) {
+        // Use setTimeout to ensure DOM is fully parsed after innerHTML assignment
+        // Try multiple times in case content loads asynchronously
+        let retryCount = 0;
+        const maxRetries = 10;
+        const tryEnhance = async () => {
+          // Check again before trying
+          if (summaryEl.querySelector('[data-enhance-site-health]')) {
+            return; // Already enhanced, stop retrying
+          }
+          
+          // Try enhancing summaryEl
+          const success = await enhanceMapSummaryWithHealth(summaryEl);
+          if (!success && retryCount < maxRetries) {
+            retryCount++;
+            setTimeout(tryEnhance, 300);
+          }
+        };
+        setTimeout(tryEnhance, 200);
+      }
 
       const summaryElement = sourceSummary;
       if (summaryElement && !summaryElement.dataset.enhanceSummaryObserved) {
+        let isUpdating = false; // Flag to prevent recursive updates
         const summaryObserver = new MutationObserver(() => {
+          // Skip if we're already updating or if health element exists
+          if (isUpdating || summaryEl.querySelector('[data-enhance-site-health]')) {
+            return;
+          }
+          
+          isUpdating = true;
           const ids = getOrgAndSiteIds();
-          summaryEl.innerHTML = summaryElement.innerHTML;
-          // Use setTimeout to ensure DOM is fully parsed after innerHTML assignment
-          // Try multiple times in case content loads asynchronously
-          let retryCount2 = 0;
-          const maxRetries2 = 5;
-          const tryEnhance2 = async () => {
-            const success = await enhanceMapSummaryWithHealth(summaryEl);
-            if (!success && retryCount2 < maxRetries2) {
-              retryCount2++;
-              setTimeout(tryEnhance2, 300);
-            }
-          };
-          setTimeout(tryEnhance2, 200);
+          
+          // Only update if health element doesn't exist
+          if (!summaryEl.querySelector('[data-enhance-site-health]')) {
+            summaryEl.innerHTML = summaryElement.innerHTML;
+            
+            // Use setTimeout to ensure DOM is fully parsed after innerHTML assignment
+            // Try multiple times in case content loads asynchronously
+            let retryCount2 = 0;
+            const maxRetries2 = 5;
+            const tryEnhance2 = async () => {
+              const success = await enhanceMapSummaryWithHealth(summaryEl);
+              if (!success && retryCount2 < maxRetries2) {
+                retryCount2++;
+                setTimeout(tryEnhance2, 300);
+              } else {
+                isUpdating = false;
+              }
+            };
+            setTimeout(tryEnhance2, 200);
+          } else {
+            isUpdating = false;
+          }
+          
           updateMarvisSummary(panel, ids.orgId, ids.siteId);
         });
 
@@ -638,18 +663,37 @@
       healthContainer.appendChild(healthDisplay);
 
       // Wrap the existing summary content in a container and add health element
-      const existingContent = summaryEl.innerHTML;
-      summaryEl.innerHTML = '';
-      summaryEl.classList.add('enhance-summary-with-health');
-      
-      // Add health container first (left side)
-      summaryEl.appendChild(healthContainer);
-      
-      // Add existing content in a wrapper (right side)
-      const contentWrapper = document.createElement('div');
-      contentWrapper.className = 'enhance-summary-content';
-      contentWrapper.innerHTML = existingContent;
-      summaryEl.appendChild(contentWrapper);
+      // Only modify if we don't already have the health element
+      if (!summaryEl.querySelector('[data-enhance-site-health]')) {
+        const existingContent = summaryEl.innerHTML;
+        summaryEl.innerHTML = '';
+        summaryEl.classList.add('enhance-summary-with-health');
+        
+        // Add health container first (left side)
+        summaryEl.appendChild(healthContainer);
+        
+        // Add existing content in a wrapper (right side)
+        const contentWrapper = document.createElement('div');
+        contentWrapper.className = 'enhance-summary-content';
+        contentWrapper.innerHTML = existingContent;
+        summaryEl.appendChild(contentWrapper);
+      } else {
+        // Health element already exists, just update the percentage if needed
+        const existingDisplay = summaryEl.querySelector('.enhance-site-health-display');
+        if (existingDisplay) {
+          const existingPercentage = existingDisplay.querySelector('.enhance-site-health-percentage');
+          const existingDetails = existingDisplay.querySelector('.enhance-site-health-details');
+          if (existingPercentage) {
+            existingPercentage.textContent = `${percentage}%`;
+          }
+          if (existingDetails) {
+            existingDetails.textContent = `${onlineAPs} / ${totalAPs} APs Online`;
+          }
+          // Update color class
+          existingDisplay.className = 'enhance-site-health-display ' + healthClass;
+        }
+        return true;
+      }
       
       console.log('[Enhance] enhanceMapSummaryWithHealth: Successfully added health element with', percentage + '%', healthClass);
       
@@ -1066,7 +1110,7 @@
     });
     
     let lastEnhancementRun = 0;
-    const ENHANCEMENT_DEBOUNCE_MS = 750;
+    const ENHANCEMENT_DEBOUNCE_MS = 2000; // Increased from 750ms to 2000ms
 
     // Also watch for dynamic content loading
     const contentObserver = new MutationObserver(() => {
@@ -1074,6 +1118,13 @@
       if (now - lastEnhancementRun < ENHANCEMENT_DEBOUNCE_MS) {
         return;
       }
+      
+      // Skip if we're on a page that already has the health element
+      const existingHealth = document.querySelector('[data-enhance-site-health]');
+      if (existingHealth) {
+        return; // Already enhanced, skip
+      }
+      
       lastEnhancementRun = now;
 
       initMistEnhancements();
