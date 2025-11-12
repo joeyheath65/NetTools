@@ -153,6 +153,24 @@ a.comp-navbarLogo[data-enhance-indicator] {
   overflow-x: auto;
 }
 
+/* Site Health Element Layout */
+.enhance-site-panel .map-summary.enhance-summary-with-health {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.enhance-site-panel .enhance-site-health-container {
+  flex: 0 0 auto;
+  min-width: 140px;
+}
+
+.enhance-site-panel .enhance-summary-content {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
 .enhance-site-panel .map-summary table,
 .enhance-site-panel .map-summary .css-table {
   display: table;
@@ -187,46 +205,54 @@ a.comp-navbarLogo[data-enhance-indicator] {
   text-align: center;
 }
 
-/* Site Health Percentage Column Styles */
-.enhance-site-panel .map-summary .enhance-site-health-cell {
-  min-width: 60px;
-  white-space: nowrap;
-  border-radius: 4px;
-  padding: 6px 8px !important;
+/* Site Health Display Styles */
+.enhance-site-panel .enhance-site-health-display {
+  padding: 12px 16px;
+  border-radius: 8px;
+  text-align: center;
+  border: 2px solid;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-width: 120px;
 }
 
-.enhance-site-panel .map-summary .enhance-site-health-green {
-  background-color: rgba(82, 196, 26, 0.25) !important;
-  border: 1px solid rgba(82, 196, 26, 0.5) !important;
+.enhance-site-panel .enhance-site-health-label {
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+  opacity: 0.9;
+}
+
+.enhance-site-panel .enhance-site-health-percentage {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+
+.enhance-site-panel .enhance-site-health-details {
+  font-size: 0.75rem;
+  opacity: 0.8;
+  margin-top: 4px;
+}
+
+.enhance-site-panel .enhance-site-health-green {
+  background-color: rgba(82, 196, 26, 0.15);
+  border-color: rgba(82, 196, 26, 0.6);
   color: #52c41a;
-  font-weight: 600;
 }
 
-.enhance-site-panel .map-summary .enhance-site-health-yellow {
-  background-color: rgba(250, 173, 20, 0.25) !important;
-  border: 1px solid rgba(250, 173, 20, 0.5) !important;
+.enhance-site-panel .enhance-site-health-yellow {
+  background-color: rgba(250, 173, 20, 0.15);
+  border-color: rgba(250, 173, 20, 0.6);
   color: #faad14;
-  font-weight: 600;
 }
 
-.enhance-site-panel .map-summary .enhance-site-health-red {
-  background-color: rgba(255, 77, 79, 0.25) !important;
-  border: 1px solid rgba(255, 77, 79, 0.5) !important;
+.enhance-site-panel .enhance-site-health-red {
+  background-color: rgba(255, 77, 79, 0.15);
+  border-color: rgba(255, 77, 79, 0.6);
   color: #ff4d4f;
-  font-weight: 600;
-}
-
-/* Ensure table cells fit on the same row */
-.enhance-site-panel .map-summary table,
-.enhance-site-panel .map-summary .css-table {
-  table-layout: auto;
-  width: 100%;
-}
-
-/* Ensure health cell stays compact and on same row */
-.enhance-site-panel .map-summary .enhance-site-health-cell {
-  white-space: nowrap;
-  flex-shrink: 0;
 }
 
 .enhance-site-panel .enhance-insights-list {

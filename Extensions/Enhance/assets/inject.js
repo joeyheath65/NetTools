@@ -527,7 +527,7 @@
       const maxRetries = 10;
       const tryEnhance = async () => {
         // Try enhancing summaryEl
-        const success = await enhanceMapSummaryTable(summaryEl, sourceSummary);
+        const success = await enhanceMapSummaryWithHealth(summaryEl);
         if (!success && retryCount < maxRetries) {
           retryCount++;
           setTimeout(tryEnhance, 300);
@@ -545,7 +545,7 @@
           let retryCount2 = 0;
           const maxRetries2 = 5;
           const tryEnhance2 = async () => {
-            const success = await enhanceMapSummaryTable(summaryEl, summaryElement);
+            const success = await enhanceMapSummaryWithHealth(summaryEl);
             if (!success && retryCount2 < maxRetries2) {
               retryCount2++;
               setTimeout(tryEnhance2, 300);
@@ -566,150 +566,41 @@
       return true;
     }
 
-    async function enhanceMapSummaryTable(summaryEl, sourceSummary = null) {
+    async function enhanceMapSummaryWithHealth(summaryEl) {
       if (!summaryEl) {
-        console.log('[Enhance] enhanceMapSummaryTable: summaryEl is null');
+        console.log('[Enhance] enhanceMapSummaryWithHealth: summaryEl is null');
         return false;
+      }
+
+      // Check if we've already added the health element
+      if (summaryEl.querySelector('[data-enhance-site-health]')) {
+        console.log('[Enhance] enhanceMapSummaryWithHealth: Health element already exists');
+        return true; // Success - already enhanced
       }
 
       // Get siteId from the page
       const { siteId } = getOrgAndSiteIds();
       if (!siteId) {
-        console.log('[Enhance] enhanceMapSummaryTable: No siteId found');
+        console.log('[Enhance] enhanceMapSummaryWithHealth: No siteId found');
         return false;
-      }
-
-      // Find the table in the map-summary
-      const table = summaryEl.querySelector('table') || summaryEl.querySelector('.css-table');
-      if (!table) {
-        console.log('[Enhance] enhanceMapSummaryTable: No table found in summaryEl');
-        // Debug: log what's in summaryEl
-        console.log('[Enhance] summaryEl content:', summaryEl.innerHTML.substring(0, 500));
-        return false;
-      }
-
-      console.log('[Enhance] enhanceMapSummaryTable: Found table, searching for rows...');
-
-      // Find the row that contains AP information by looking for the "insights-AccessPoints-total" span
-      let totalSpan = summaryEl.querySelector('.insights-AccessPoints-total');
-      if (!totalSpan && sourceSummary) {
-        totalSpan = sourceSummary.querySelector('.insights-AccessPoints-total');
-      }
-      if (!totalSpan) {
-        // Try case-insensitive search
-        const allSpans = summaryEl.querySelectorAll('span');
-        for (const span of allSpans) {
-          if (span.className && /insights-AccessPoints-total/i.test(span.className)) {
-            totalSpan = span;
-            break;
-          }
-        }
-      }
-
-      // Find the row containing the AP information
-      let row = null;
-      if (totalSpan) {
-        console.log('[Enhance] Found totalSpan:', totalSpan.textContent);
-        row = totalSpan.closest('tr');
-        if (!row) {
-          row = totalSpan.closest('.css-table-row');
-        }
-        if (!row) {
-          let parent = totalSpan.parentElement;
-          while (parent && parent !== summaryEl && parent !== document.body) {
-            if (parent.tagName === 'TR' || parent.classList.contains('css-table-row')) {
-              row = parent;
-              break;
-            }
-            parent = parent.parentElement;
-          }
-        }
-      }
-
-      // If we can't find the row by span, try to find any row in the table
-      if (!row) {
-        console.log('[Enhance] Could not find row via span, trying alternative methods...');
-        
-        // Try tbody first
-        const tbody = table.querySelector('tbody');
-        if (tbody) {
-          const rows = tbody.querySelectorAll('tr, .css-table-row');
-          console.log('[Enhance] Found', rows.length, 'rows in tbody');
-          
-          // Try to find a row that might contain AP info (look for numbers)
-          for (const r of rows) {
-            const text = r.textContent || '';
-            if (/AccessPoint|AP|accesspoint/i.test(text) || /\d+\s*(Total|Online|Connected)/i.test(text)) {
-              row = r;
-              console.log('[Enhance] Found row by text matching:', text.substring(0, 100));
-              break;
-            }
-          }
-          // If still no row, use the first data row
-          if (!row && rows.length > 0) {
-            row = rows[0];
-            console.log('[Enhance] Using first row in tbody');
-          }
-        } else {
-          // No tbody, try direct children of table
-          const rows = table.querySelectorAll('tr, .css-table-row');
-          console.log('[Enhance] Found', rows.length, 'rows directly in table');
-          
-          if (rows.length > 0) {
-            // Skip header row if it exists
-            for (let i = 0; i < rows.length; i++) {
-              const r = rows[i];
-              const text = r.textContent || '';
-              // Check if this looks like a data row (has numbers)
-              if (/\d+/.test(text) && !/header|th/i.test(r.className)) {
-                row = r;
-                console.log('[Enhance] Found data row:', text.substring(0, 100));
-                break;
-              }
-            }
-            // If still no row, use the first one
-            if (!row) {
-              row = rows[0];
-              console.log('[Enhance] Using first row in table');
-            }
-          }
-        }
-      }
-
-      if (!row) {
-        console.log('[Enhance] enhanceMapSummaryTable: Could not find row in table');
-        console.log('[Enhance] Table structure:', {
-          hasTbody: !!table.querySelector('tbody'),
-          directRows: table.querySelectorAll('tr, .css-table-row').length,
-          tableHTML: table.outerHTML.substring(0, 1000)
-        });
-        return false;
-      }
-
-      console.log('[Enhance] Found row with', row.querySelectorAll('td, .css-table-cell').length, 'cells');
-
-      // Check if we've already added the health column
-      if (row.querySelector('[data-enhance-site-health]')) {
-        console.log('[Enhance] enhanceMapSummaryTable: Health column already exists');
-        return true; // Success - already enhanced
       }
 
       // Get site stats from cache or fetch if not available
       let data = null;
       const cached = siteStatsCache.get(siteId);
       if (cached && (Date.now() - cached.timestamp < 30000)) {
-        console.log('[Enhance] enhanceMapSummaryTable: Using cached site stats');
+        console.log('[Enhance] enhanceMapSummaryWithHealth: Using cached site stats');
         data = cached.data;
       } else {
         // Fetch if not cached or cache is stale
         try {
           data = await fetchSiteStats(siteId);
           if (!data) {
-            console.warn('[Enhance] enhanceMapSummaryTable: Failed to get site stats');
+            console.warn('[Enhance] enhanceMapSummaryWithHealth: Failed to get site stats');
             return false;
           }
         } catch (error) {
-          console.warn('[Enhance] enhanceMapSummaryTable: Failed to fetch site stats:', error);
+          console.warn('[Enhance] enhanceMapSummaryWithHealth: Failed to fetch site stats:', error);
           return false;
         }
       }
@@ -717,7 +608,7 @@
       const totalAPs = data.num_ap || 0;
       const onlineAPs = data.num_ap_connected || 0;
 
-      console.log('[Enhance] enhanceMapSummaryTable: API data - total APs:', totalAPs, 'online APs:', onlineAPs);
+      console.log('[Enhance] enhanceMapSummaryWithHealth: API data - total APs:', totalAPs, 'online APs:', onlineAPs);
 
       // Calculate percentage
       const percentage = totalAPs > 0 ? Math.round((onlineAPs / totalAPs) * 100) : 0;
@@ -730,55 +621,37 @@
         healthClass = 'enhance-site-health-yellow';
       }
 
-      // Find the first cell in the row
-      const cells = row.querySelectorAll('td, .css-table-cell');
-      if (cells.length === 0) {
-        console.log('[Enhance] enhanceMapSummaryTable: No cells found in row');
-        return false;
-      }
+      // Create the health element container
+      const healthContainer = document.createElement('div');
+      healthContainer.className = 'enhance-site-health-container';
+      healthContainer.setAttribute('data-enhance-site-health', 'true');
 
-      const firstCell = cells[0];
-      const cellTagName = firstCell.tagName.toLowerCase();
+      // Create the health percentage display
+      const healthDisplay = document.createElement('div');
+      healthDisplay.className = 'enhance-site-health-display ' + healthClass;
+      healthDisplay.innerHTML = `
+        <div class="enhance-site-health-label">Site Health</div>
+        <div class="enhance-site-health-percentage">${percentage}%</div>
+        <div class="enhance-site-health-details">${onlineAPs} / ${totalAPs} APs Online</div>
+      `;
 
-      // Create the new health percentage cell
-      const healthCell = document.createElement(cellTagName === 'td' ? 'td' : (cellTagName === 'th' ? 'th' : 'div'));
+      healthContainer.appendChild(healthDisplay);
+
+      // Wrap the existing summary content in a container and add health element
+      const existingContent = summaryEl.innerHTML;
+      summaryEl.innerHTML = '';
+      summaryEl.classList.add('enhance-summary-with-health');
       
-      // Preserve existing classes from firstCell
-      if (firstCell.className) {
-        healthCell.className = firstCell.className;
-      }
-      healthCell.classList.add('enhance-site-health-cell');
-      healthCell.setAttribute('data-enhance-site-health', 'true');
-      healthCell.classList.add(healthClass);
-      healthCell.textContent = `${percentage}%`;
-      healthCell.style.textAlign = 'center';
-      healthCell.style.fontWeight = '500';
-
-      // Insert as the first cell
-      row.insertBefore(healthCell, firstCell);
+      // Add health container first (left side)
+      summaryEl.appendChild(healthContainer);
       
-      console.log('[Enhance] enhanceMapSummaryTable: Successfully added health cell with', percentage + '%', healthClass);
-
-      // Also add a header cell if there's a header row
-      const thead = table.querySelector('thead');
-      const headerRow = thead ? thead.querySelector('tr') : null;
-      if (headerRow) {
-        const headerCells = headerRow.querySelectorAll('th, .css-table-cell');
-        if (headerCells.length > 0 && !headerRow.querySelector('[data-enhance-site-health-header]')) {
-          const firstHeaderCell = headerCells[0];
-          const healthHeader = document.createElement(firstHeaderCell.tagName === 'TH' ? 'th' : 'div');
-          healthHeader.className = firstHeaderCell.className + ' enhance-site-health-header';
-          healthHeader.setAttribute('data-enhance-site-health-header', 'true');
-          healthHeader.textContent = 'Site Health';
-          healthHeader.style.textAlign = 'center';
-          headerRow.insertBefore(healthHeader, firstHeaderCell);
-        }
-      }
-
-      // Adjust table layout to ensure all columns fit on the same row
-      if (table.style.tableLayout !== 'fixed') {
-        table.style.tableLayout = 'auto';
-      }
+      // Add existing content in a wrapper (right side)
+      const contentWrapper = document.createElement('div');
+      contentWrapper.className = 'enhance-summary-content';
+      contentWrapper.innerHTML = existingContent;
+      summaryEl.appendChild(contentWrapper);
+      
+      console.log('[Enhance] enhanceMapSummaryWithHealth: Successfully added health element with', percentage + '%', healthClass);
       
       return true; // Success
     }
