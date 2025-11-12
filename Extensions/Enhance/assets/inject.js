@@ -470,14 +470,36 @@
       updateMarvisSummary(panel, orgId, siteId);
 
       // Process the summary table to add site health percentage
-      enhanceMapSummaryTable(summaryEl);
+      // Use setTimeout to ensure DOM is fully parsed after innerHTML assignment
+      // Try multiple times in case content loads asynchronously
+      let retryCount = 0;
+      const maxRetries = 5;
+      const tryEnhance = () => {
+        const success = enhanceMapSummaryTable(summaryEl);
+        if (!success && retryCount < maxRetries) {
+          retryCount++;
+          setTimeout(tryEnhance, 200);
+        }
+      };
+      setTimeout(tryEnhance, 100);
 
       const summaryElement = sourceSummary;
       if (summaryElement && !summaryElement.dataset.enhanceSummaryObserved) {
         const summaryObserver = new MutationObserver(() => {
           const ids = getOrgAndSiteIds();
           summaryEl.innerHTML = summaryElement.innerHTML;
-          enhanceMapSummaryTable(summaryEl);
+          // Use setTimeout to ensure DOM is fully parsed after innerHTML assignment
+          // Try multiple times in case content loads asynchronously
+          let retryCount2 = 0;
+          const maxRetries2 = 5;
+          const tryEnhance2 = () => {
+            const success = enhanceMapSummaryTable(summaryEl);
+            if (!success && retryCount2 < maxRetries2) {
+              retryCount2++;
+              setTimeout(tryEnhance2, 200);
+            }
+          };
+          setTimeout(tryEnhance2, 100);
           updateMarvisSummary(panel, ids.orgId, ids.siteId);
         });
 
@@ -494,34 +516,66 @@
 
     function enhanceMapSummaryTable(summaryEl) {
       if (!summaryEl) {
-        return;
+        console.log('[Enhance] enhanceMapSummaryTable: summaryEl is null');
+        return false;
       }
 
       // Find the table in the map-summary
       const table = summaryEl.querySelector('table') || summaryEl.querySelector('.css-table');
       if (!table) {
-        return;
+        console.log('[Enhance] enhanceMapSummaryTable: No table found in summaryEl');
+        return false;
       }
 
       // Find the row that contains AP information
       // Look for the row that contains the "insights-AccessPoints-total" span
-      const totalSpan = summaryEl.querySelector('.insights-AccessPoints-total');
+      // Try multiple variations of the class name (case-insensitive search)
+      let totalSpan = summaryEl.querySelector('.insights-AccessPoints-total');
       if (!totalSpan) {
-        return;
+        // Try case-insensitive search
+        const allSpans = summaryEl.querySelectorAll('span');
+        for (const span of allSpans) {
+          if (span.className && /insights-AccessPoints-total/i.test(span.className)) {
+            totalSpan = span;
+            break;
+          }
+        }
+      }
+      
+      if (!totalSpan) {
+        console.log('[Enhance] enhanceMapSummaryTable: Could not find .insights-AccessPoints-total span');
+        // Debug: log all spans to see what's available
+        const allSpans = summaryEl.querySelectorAll('span');
+        console.log('[Enhance] Available spans:', Array.from(allSpans).map(s => ({ text: s.textContent.trim(), class: s.className })));
+        return false;
       }
 
       // Find the row containing this span
-      const row = totalSpan.closest('tr') || totalSpan.closest('.css-table-row') || 
-                  totalSpan.parentElement?.closest('tr') || 
-                  totalSpan.parentElement?.closest('.css-table-row');
+      let row = totalSpan.closest('tr');
+      if (!row) {
+        row = totalSpan.closest('.css-table-row');
+      }
+      if (!row) {
+        // Try going up the parent chain
+        let parent = totalSpan.parentElement;
+        while (parent && parent !== summaryEl) {
+          if (parent.tagName === 'TR' || parent.classList.contains('css-table-row')) {
+            row = parent;
+            break;
+          }
+          parent = parent.parentElement;
+        }
+      }
       
       if (!row) {
-        return;
+        console.log('[Enhance] enhanceMapSummaryTable: Could not find row containing totalSpan');
+        return false;
       }
 
       // Check if we've already added the health column
       if (row.querySelector('[data-enhance-site-health]')) {
-        return;
+        console.log('[Enhance] enhanceMapSummaryTable: Health column already exists');
+        return true; // Success - already enhanced
       }
 
       // Extract total AP count from the span text (e.g., "72 Total")
@@ -529,10 +583,13 @@
       const totalMatch = totalText.match(/(\d+)/);
       const totalAPs = totalMatch ? parseInt(totalMatch[1], 10) : 0;
 
+      console.log('[Enhance] enhanceMapSummaryTable: Found total APs:', totalAPs, 'from text:', totalText);
+
       // Find the first cell in the row (which should contain the online AP count)
       const cells = row.querySelectorAll('td, .css-table-cell');
       if (cells.length === 0) {
-        return;
+        console.log('[Enhance] enhanceMapSummaryTable: No cells found in row');
+        return false;
       }
 
       const firstCell = cells[0];
@@ -540,8 +597,12 @@
       const onlineMatch = onlineText.match(/(\d+)/);
       const onlineAPs = onlineMatch ? parseInt(onlineMatch[1], 10) : 0;
 
+      console.log('[Enhance] enhanceMapSummaryTable: Found online APs:', onlineAPs, 'from text:', onlineText);
+
       // Calculate percentage
       const percentage = totalAPs > 0 ? Math.round((onlineAPs / totalAPs) * 100) : 0;
+
+      console.log('[Enhance] enhanceMapSummaryTable: Calculated percentage:', percentage + '%');
 
       // Determine color class based on percentage
       let healthClass = 'enhance-site-health-red';
@@ -552,8 +613,14 @@
       }
 
       // Create the new health percentage cell
-      const healthCell = document.createElement(firstCell.tagName === 'TD' ? 'td' : 'div');
-      healthCell.className = firstCell.className + ' enhance-site-health-cell';
+      const cellTagName = firstCell.tagName.toLowerCase();
+      const healthCell = document.createElement(cellTagName === 'td' ? 'td' : (cellTagName === 'th' ? 'th' : 'div'));
+      
+      // Preserve existing classes from firstCell
+      if (firstCell.className) {
+        healthCell.className = firstCell.className;
+      }
+      healthCell.classList.add('enhance-site-health-cell');
       healthCell.setAttribute('data-enhance-site-health', 'true');
       healthCell.classList.add(healthClass);
       healthCell.textContent = `${percentage}%`;
@@ -562,6 +629,8 @@
 
       // Insert as the first cell
       row.insertBefore(healthCell, firstCell);
+      
+      console.log('[Enhance] enhanceMapSummaryTable: Successfully added health cell with', percentage + '%', healthClass);
 
       // Also add a header cell if there's a header row
       const thead = table.querySelector('thead');
@@ -583,6 +652,8 @@
       if (table.style.tableLayout !== 'fixed') {
         table.style.tableLayout = 'auto';
       }
+      
+      return true; // Success
     }
 
     // Initialize Mist.com enhancements

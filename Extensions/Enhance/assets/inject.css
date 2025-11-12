@@ -141,7 +141,7 @@ a.comp-navbarLogo[data-enhance-indicator] {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 180px;
+  width: 200px;
   height: 3px;
   border-radius: 3px;
   background: linear-gradient(90deg, #036b97 0%, #2582f4 100%);
