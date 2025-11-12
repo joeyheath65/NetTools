@@ -1,6 +1,13 @@
 /**
  * Content script for injecting CSS and JS into target domains
  * Injects assets based on domain matching and supports multiple domains
+ * 
+ * Note: Injected scripts run in the page context (MAIN world) and can:
+ * - Make fetch calls to external APIs (e.g., api.mist.com)
+ * - Access page cookies and session data
+ * - Manipulate the DOM directly
+ * 
+ * The injected scripts are responsible for their own API calls and error handling.
  */
 
 // Note: Content scripts use messaging to communicate with background script

@@ -31,6 +31,51 @@
     
     console.log('[Enhance] Mist.com enhancements loaded');
 
+    // Cache for site stats data
+    const siteStatsCache = new Map();
+
+    async function fetchSiteStats(siteId) {
+      if (!siteId) {
+        return null;
+      }
+
+      // Return cached data if available and recent (less than 30 seconds old)
+      const cached = siteStatsCache.get(siteId);
+      if (cached && (Date.now() - cached.timestamp < 30000)) {
+        console.log('[Enhance] Using cached site stats for', siteId);
+        return cached.data;
+      }
+
+      try {
+        console.log('[Enhance] Fetching site stats for', siteId);
+        const response = await fetch(`https://api.mist.com/api/v1/sites/${siteId}/stats`, {
+          credentials: 'include'
+        });
+
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}`);
+        }
+
+        const data = await response.json();
+        
+        // Cache the data
+        siteStatsCache.set(siteId, {
+          data: data,
+          timestamp: Date.now()
+        });
+
+        console.log('[Enhance] Site stats fetched and cached:', {
+          totalAPs: data.num_ap,
+          onlineAPs: data.num_ap_connected
+        });
+
+        return data;
+      } catch (error) {
+        console.warn('[Enhance] Failed to fetch site stats:', error);
+        return null;
+      }
+    }
+
     function getOrgAndSiteIds() {
       let orgId = null;
       let siteId = null;
@@ -598,93 +643,107 @@
         return true; // Success - already enhanced
       }
 
-      // Fetch site stats from API
-      try {
-        const response = await fetch(`https://api.mist.com/api/v1/sites/${siteId}/stats`, {
-          credentials: 'include'
-        });
-
-        if (!response.ok) {
-          throw new Error(`HTTP ${response.status}`);
-        }
-
-        const data = await response.json();
-        const totalAPs = data.num_ap || 0;
-        const onlineAPs = data.num_ap_connected || 0;
-
-        console.log('[Enhance] enhanceMapSummaryTable: API data - total APs:', totalAPs, 'online APs:', onlineAPs);
-
-        // Calculate percentage
-        const percentage = totalAPs > 0 ? Math.round((onlineAPs / totalAPs) * 100) : 0;
-
-        // Determine color class based on percentage
-        let healthClass = 'enhance-site-health-red';
-        if (percentage >= 95) {
-          healthClass = 'enhance-site-health-green';
-        } else if (percentage >= 85) {
-          healthClass = 'enhance-site-health-yellow';
-        }
-
-        // Find the first cell in the row
-        const cells = row.querySelectorAll('td, .css-table-cell');
-        if (cells.length === 0) {
-          console.log('[Enhance] enhanceMapSummaryTable: No cells found in row');
+      // Get site stats from cache or fetch if not available
+      let data = null;
+      const cached = siteStatsCache.get(siteId);
+      if (cached && (Date.now() - cached.timestamp < 30000)) {
+        console.log('[Enhance] enhanceMapSummaryTable: Using cached site stats');
+        data = cached.data;
+      } else {
+        // Fetch if not cached or cache is stale
+        try {
+          data = await fetchSiteStats(siteId);
+          if (!data) {
+            console.warn('[Enhance] enhanceMapSummaryTable: Failed to get site stats');
+            return false;
+          }
+        } catch (error) {
+          console.warn('[Enhance] enhanceMapSummaryTable: Failed to fetch site stats:', error);
           return false;
         }
+      }
 
-        const firstCell = cells[0];
-        const cellTagName = firstCell.tagName.toLowerCase();
+      const totalAPs = data.num_ap || 0;
+      const onlineAPs = data.num_ap_connected || 0;
 
-        // Create the new health percentage cell
-        const healthCell = document.createElement(cellTagName === 'td' ? 'td' : (cellTagName === 'th' ? 'th' : 'div'));
-        
-        // Preserve existing classes from firstCell
-        if (firstCell.className) {
-          healthCell.className = firstCell.className;
-        }
-        healthCell.classList.add('enhance-site-health-cell');
-        healthCell.setAttribute('data-enhance-site-health', 'true');
-        healthCell.classList.add(healthClass);
-        healthCell.textContent = `${percentage}%`;
-        healthCell.style.textAlign = 'center';
-        healthCell.style.fontWeight = '500';
+      console.log('[Enhance] enhanceMapSummaryTable: API data - total APs:', totalAPs, 'online APs:', onlineAPs);
 
-        // Insert as the first cell
-        row.insertBefore(healthCell, firstCell);
-        
-        console.log('[Enhance] enhanceMapSummaryTable: Successfully added health cell with', percentage + '%', healthClass);
+      // Calculate percentage
+      const percentage = totalAPs > 0 ? Math.round((onlineAPs / totalAPs) * 100) : 0;
 
-        // Also add a header cell if there's a header row
-        const thead = table.querySelector('thead');
-        const headerRow = thead ? thead.querySelector('tr') : null;
-        if (headerRow) {
-          const headerCells = headerRow.querySelectorAll('th, .css-table-cell');
-          if (headerCells.length > 0 && !headerRow.querySelector('[data-enhance-site-health-header]')) {
-            const firstHeaderCell = headerCells[0];
-            const healthHeader = document.createElement(firstHeaderCell.tagName === 'TH' ? 'th' : 'div');
-            healthHeader.className = firstHeaderCell.className + ' enhance-site-health-header';
-            healthHeader.setAttribute('data-enhance-site-health-header', 'true');
-            healthHeader.textContent = 'Site Health';
-            healthHeader.style.textAlign = 'center';
-            headerRow.insertBefore(healthHeader, firstHeaderCell);
-          }
-        }
+      // Determine color class based on percentage
+      let healthClass = 'enhance-site-health-red';
+      if (percentage >= 95) {
+        healthClass = 'enhance-site-health-green';
+      } else if (percentage >= 85) {
+        healthClass = 'enhance-site-health-yellow';
+      }
 
-        // Adjust table layout to ensure all columns fit on the same row
-        if (table.style.tableLayout !== 'fixed') {
-          table.style.tableLayout = 'auto';
-        }
-        
-        return true; // Success
-      } catch (error) {
-        console.warn('[Enhance] enhanceMapSummaryTable: Failed to fetch site stats:', error);
+      // Find the first cell in the row
+      const cells = row.querySelectorAll('td, .css-table-cell');
+      if (cells.length === 0) {
+        console.log('[Enhance] enhanceMapSummaryTable: No cells found in row');
         return false;
       }
+
+      const firstCell = cells[0];
+      const cellTagName = firstCell.tagName.toLowerCase();
+
+      // Create the new health percentage cell
+      const healthCell = document.createElement(cellTagName === 'td' ? 'td' : (cellTagName === 'th' ? 'th' : 'div'));
+      
+      // Preserve existing classes from firstCell
+      if (firstCell.className) {
+        healthCell.className = firstCell.className;
+      }
+      healthCell.classList.add('enhance-site-health-cell');
+      healthCell.setAttribute('data-enhance-site-health', 'true');
+      healthCell.classList.add(healthClass);
+      healthCell.textContent = `${percentage}%`;
+      healthCell.style.textAlign = 'center';
+      healthCell.style.fontWeight = '500';
+
+      // Insert as the first cell
+      row.insertBefore(healthCell, firstCell);
+      
+      console.log('[Enhance] enhanceMapSummaryTable: Successfully added health cell with', percentage + '%', healthClass);
+
+      // Also add a header cell if there's a header row
+      const thead = table.querySelector('thead');
+      const headerRow = thead ? thead.querySelector('tr') : null;
+      if (headerRow) {
+        const headerCells = headerRow.querySelectorAll('th, .css-table-cell');
+        if (headerCells.length > 0 && !headerRow.querySelector('[data-enhance-site-health-header]')) {
+          const firstHeaderCell = headerCells[0];
+          const healthHeader = document.createElement(firstHeaderCell.tagName === 'TH' ? 'th' : 'div');
+          healthHeader.className = firstHeaderCell.className + ' enhance-site-health-header';
+          healthHeader.setAttribute('data-enhance-site-health-header', 'true');
+          healthHeader.textContent = 'Site Health';
+          healthHeader.style.textAlign = 'center';
+          headerRow.insertBefore(healthHeader, firstHeaderCell);
+        }
+      }
+
+      // Adjust table layout to ensure all columns fit on the same row
+      if (table.style.tableLayout !== 'fixed') {
+        table.style.tableLayout = 'auto';
+      }
+      
+      return true; // Success
     }
 
     // Initialize Mist.com enhancements
     function initMistEnhancements() {
       const currentUrl = window.location.href;
+      
+      // Fetch site stats early if we have a siteId
+      const { siteId } = getOrgAndSiteIds();
+      if (siteId) {
+        fetchSiteStats(siteId).catch(err => {
+          console.warn('[Enhance] Failed to pre-fetch site stats:', err);
+        });
+      }
+      
       addSiteConfigNavButton();
       enhanceSiteOverviewPanel();
       
@@ -699,7 +758,7 @@
       }
     }
     
-    // Enhancements for dashboard insights page
+      // Enhancements for dashboard insights page
     function initDashboardInsights() {
       console.log('[Enhance] Initializing Mist.com Dashboard Insights enhancements');
       
@@ -712,6 +771,11 @@
         
         // Add custom data attribute for easy identification
         document.body.setAttribute('data-mist-site-id', siteId);
+        
+        // Pre-fetch site stats on page load
+        fetchSiteStats(siteId).catch(err => {
+          console.warn('[Enhance] Failed to pre-fetch site stats:', err);
+        });
       }
       
       observeForSection();
