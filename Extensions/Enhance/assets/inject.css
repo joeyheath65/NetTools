@@ -18,7 +18,6 @@ body {
 /* Enhance dashboard insights page */
 .mist-dashboard-insights {
   /* Custom styling for insights dashboard */
-  background-color: #851212;
 }
 
 /* Improve visibility of key metrics */
@@ -126,7 +125,7 @@ a.comp-navbarLogo[data-enhance-indicator] {
 
 .enhance-site-panel .map-name {
   position: relative;
-  font-family: 'Lucida Sans', 'Segoe UI', sans-serif;
+  font-family: 'Copperplate', 'Papyrus', fantasy;
   font-size: 1.6rem;
   font-weight: 500;
   letter-spacing: 0.04em;
