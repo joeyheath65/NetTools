@@ -87,7 +87,7 @@
         console.warn('[Enhance] Unable to parse org_id from URL:', error);
       }
 
-      const hashMatch = window.location.hash.match(/dashboard\/insights\/([^\/]+)/);
+      const hashMatch = window.location.hash.match(/dashboard\/insights\/([^\/\?]+)/);
       if (hashMatch) {
         siteId = hashMatch[1];
       }
@@ -95,8 +95,14 @@
       if (!siteId) {
         const bodySiteId = document.body.getAttribute('data-mist-site-id');
         if (bodySiteId) {
-          siteId = bodySiteId;
+          // Clean up siteId if it has query parameters
+          siteId = bodySiteId.split('?')[0].split('&')[0];
         }
+      }
+
+      // Clean up siteId - remove any query parameters or fragments
+      if (siteId) {
+        siteId = siteId.split('?')[0].split('&')[0].split('#')[0].trim();
       }
 
       return { orgId, siteId };
@@ -577,8 +583,12 @@
       const table = summaryEl.querySelector('table') || summaryEl.querySelector('.css-table');
       if (!table) {
         console.log('[Enhance] enhanceMapSummaryTable: No table found in summaryEl');
+        // Debug: log what's in summaryEl
+        console.log('[Enhance] summaryEl content:', summaryEl.innerHTML.substring(0, 500));
         return false;
       }
+
+      console.log('[Enhance] enhanceMapSummaryTable: Found table, searching for rows...');
 
       // Find the row that contains AP information by looking for the "insights-AccessPoints-total" span
       let totalSpan = summaryEl.querySelector('.insights-AccessPoints-total');
@@ -599,10 +609,14 @@
       // Find the row containing the AP information
       let row = null;
       if (totalSpan) {
-        row = totalSpan.closest('tr') || totalSpan.closest('.css-table-row');
+        console.log('[Enhance] Found totalSpan:', totalSpan.textContent);
+        row = totalSpan.closest('tr');
+        if (!row) {
+          row = totalSpan.closest('.css-table-row');
+        }
         if (!row) {
           let parent = totalSpan.parentElement;
-          while (parent && parent !== summaryEl) {
+          while (parent && parent !== summaryEl && parent !== document.body) {
             if (parent.tagName === 'TR' || parent.classList.contains('css-table-row')) {
               row = parent;
               break;
@@ -614,28 +628,65 @@
 
       // If we can't find the row by span, try to find any row in the table
       if (!row) {
+        console.log('[Enhance] Could not find row via span, trying alternative methods...');
+        
+        // Try tbody first
         const tbody = table.querySelector('tbody');
         if (tbody) {
           const rows = tbody.querySelectorAll('tr, .css-table-row');
+          console.log('[Enhance] Found', rows.length, 'rows in tbody');
+          
           // Try to find a row that might contain AP info (look for numbers)
           for (const r of rows) {
             const text = r.textContent || '';
             if (/AccessPoint|AP|accesspoint/i.test(text) || /\d+\s*(Total|Online|Connected)/i.test(text)) {
               row = r;
+              console.log('[Enhance] Found row by text matching:', text.substring(0, 100));
               break;
             }
           }
           // If still no row, use the first data row
           if (!row && rows.length > 0) {
             row = rows[0];
+            console.log('[Enhance] Using first row in tbody');
+          }
+        } else {
+          // No tbody, try direct children of table
+          const rows = table.querySelectorAll('tr, .css-table-row');
+          console.log('[Enhance] Found', rows.length, 'rows directly in table');
+          
+          if (rows.length > 0) {
+            // Skip header row if it exists
+            for (let i = 0; i < rows.length; i++) {
+              const r = rows[i];
+              const text = r.textContent || '';
+              // Check if this looks like a data row (has numbers)
+              if (/\d+/.test(text) && !/header|th/i.test(r.className)) {
+                row = r;
+                console.log('[Enhance] Found data row:', text.substring(0, 100));
+                break;
+              }
+            }
+            // If still no row, use the first one
+            if (!row) {
+              row = rows[0];
+              console.log('[Enhance] Using first row in table');
+            }
           }
         }
       }
 
       if (!row) {
         console.log('[Enhance] enhanceMapSummaryTable: Could not find row in table');
+        console.log('[Enhance] Table structure:', {
+          hasTbody: !!table.querySelector('tbody'),
+          directRows: table.querySelectorAll('tr, .css-table-row').length,
+          tableHTML: table.outerHTML.substring(0, 1000)
+        });
         return false;
       }
+
+      console.log('[Enhance] Found row with', row.querySelectorAll('td, .css-table-cell').length, 'cells');
 
       // Check if we've already added the health column
       if (row.querySelector('[data-enhance-site-health]')) {
@@ -763,8 +814,13 @@
       console.log('[Enhance] Initializing Mist.com Dashboard Insights enhancements');
       
       // Extract site ID from URL hash
-      const hashMatch = window.location.hash.match(/dashboard\/insights\/([^\/]+)/);
-      const siteId = hashMatch ? hashMatch[1] : null;
+      const hashMatch = window.location.hash.match(/dashboard\/insights\/([^\/\?]+)/);
+      let siteId = hashMatch ? hashMatch[1] : null;
+      
+      // Clean up siteId - remove any query parameters or fragments
+      if (siteId) {
+        siteId = siteId.split('?')[0].split('&')[0].split('#')[0].trim();
+      }
       
       if (siteId) {
         console.log('[Enhance] Site ID detected:', siteId);
