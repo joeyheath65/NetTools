@@ -206,13 +206,13 @@ a.comp-navbarLogo[data-enhance-indicator] {
 
 /* Site Health Display Styles */
 .enhance-site-panel .enhance-site-health-display {
-  padding: 8px 12px;
-  margin: 4px 0;
+  padding: 8px 8px;
+  margin-left: 5px;
   border-radius: 8px;
   text-align: center;
   border: 2px solid;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  min-width: 120px;
+  min-width: 110px;
 }
 
 .enhance-site-panel .enhance-site-health-label {
