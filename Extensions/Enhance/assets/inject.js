@@ -470,18 +470,29 @@
       updateMarvisSummary(panel, orgId, siteId);
 
       // Process the summary table to add site health percentage
+      // Try both summaryEl (our copy) and sourceSummary (the original)
       // Use setTimeout to ensure DOM is fully parsed after innerHTML assignment
       // Try multiple times in case content loads asynchronously
       let retryCount = 0;
-      const maxRetries = 5;
+      const maxRetries = 10; // Increased retries
       const tryEnhance = () => {
-        const success = enhanceMapSummaryTable(summaryEl);
+        // Try enhancing summaryEl first
+        let success = enhanceMapSummaryTable(summaryEl, sourceSummary);
+        // If that fails and we have a sourceSummary, also try enhancing it directly
+        if (!success && sourceSummary) {
+          console.log('[Enhance] Trying to enhance sourceSummary directly');
+          success = enhanceMapSummaryTable(sourceSummary, null);
+          // If we enhanced sourceSummary, copy the updated HTML to summaryEl
+          if (success) {
+            summaryEl.innerHTML = sourceSummary.innerHTML;
+          }
+        }
         if (!success && retryCount < maxRetries) {
           retryCount++;
-          setTimeout(tryEnhance, 200);
+          setTimeout(tryEnhance, 300); // Increased delay
         }
       };
-      setTimeout(tryEnhance, 100);
+      setTimeout(tryEnhance, 200); // Increased initial delay
 
       const summaryElement = sourceSummary;
       if (summaryElement && !summaryElement.dataset.enhanceSummaryObserved) {
@@ -493,13 +504,22 @@
           let retryCount2 = 0;
           const maxRetries2 = 5;
           const tryEnhance2 = () => {
-            const success = enhanceMapSummaryTable(summaryEl);
+            // Try enhancing summaryEl first
+            let success = enhanceMapSummaryTable(summaryEl, summaryElement);
+            // If that fails, also try enhancing sourceSummary directly
+            if (!success && summaryElement) {
+              success = enhanceMapSummaryTable(summaryElement, null);
+              // If we enhanced sourceSummary, copy the updated HTML to summaryEl
+              if (success) {
+                summaryEl.innerHTML = summaryElement.innerHTML;
+              }
+            }
             if (!success && retryCount2 < maxRetries2) {
               retryCount2++;
-              setTimeout(tryEnhance2, 200);
+              setTimeout(tryEnhance2, 300);
             }
           };
-          setTimeout(tryEnhance2, 100);
+          setTimeout(tryEnhance2, 200);
           updateMarvisSummary(panel, ids.orgId, ids.siteId);
         });
 
@@ -514,16 +534,27 @@
       return true;
     }
 
-    function enhanceMapSummaryTable(summaryEl) {
+    function enhanceMapSummaryTable(summaryEl, sourceSummary = null) {
       if (!summaryEl) {
         console.log('[Enhance] enhanceMapSummaryTable: summaryEl is null');
         return false;
       }
 
+      // Debug: Log what's actually in summaryEl
+      console.log('[Enhance] enhanceMapSummaryTable: summaryEl.innerHTML length:', summaryEl.innerHTML.length);
+      console.log('[Enhance] enhanceMapSummaryTable: summaryEl children:', summaryEl.children.length);
+      console.log('[Enhance] enhanceMapSummaryTable: summaryEl.innerHTML preview:', summaryEl.innerHTML.substring(0, 200));
+
       // Find the table in the map-summary
       const table = summaryEl.querySelector('table') || summaryEl.querySelector('.css-table');
       if (!table) {
         console.log('[Enhance] enhanceMapSummaryTable: No table found in summaryEl');
+        // Debug: log all child elements
+        console.log('[Enhance] summaryEl children:', Array.from(summaryEl.children).map(el => ({
+          tag: el.tagName,
+          class: el.className,
+          text: el.textContent.trim().substring(0, 50)
+        })));
         return false;
       }
 
@@ -542,12 +573,57 @@
         }
       }
       
+      // Also try searching in the entire document if not found in summaryEl
+      if (!totalSpan) {
+        totalSpan = document.querySelector('.insights-AccessPoints-total');
+        if (totalSpan) {
+          console.log('[Enhance] Found .insights-AccessPoints-total in document, not in summaryEl');
+        }
+      }
+      
       if (!totalSpan) {
         console.log('[Enhance] enhanceMapSummaryTable: Could not find .insights-AccessPoints-total span');
         // Debug: log all spans to see what's available
         const allSpans = summaryEl.querySelectorAll('span');
-        console.log('[Enhance] Available spans:', Array.from(allSpans).map(s => ({ text: s.textContent.trim(), class: s.className })));
-        return false;
+        console.log('[Enhance] Available spans in summaryEl:', Array.from(allSpans).map(s => ({ text: s.textContent.trim(), class: s.className })));
+        
+        // Also check the source element (use passed parameter or find it)
+        const sourceToCheck = sourceSummary || document.querySelector('section.section-wrapper .map-content .map-summary');
+        if (sourceToCheck) {
+          const sourceSpans = sourceToCheck.querySelectorAll('span');
+          console.log('[Enhance] Available spans in sourceToCheck:', Array.from(sourceSpans).map(s => ({ text: s.textContent.trim(), class: s.className })));
+          const sourceTotalSpan = sourceToCheck.querySelector('.insights-AccessPoints-total');
+          if (sourceTotalSpan) {
+            console.log('[Enhance] Found .insights-AccessPoints-total in sourceToCheck!');
+            // If we're working with the source directly, use it
+            if (sourceToCheck === summaryEl || !summaryEl.querySelector('table')) {
+              totalSpan = sourceTotalSpan;
+              console.log('[Enhance] Using sourceTotalSpan directly');
+            } else {
+              // Try to find the row in sourceSummary and then apply to summaryEl
+              const sourceRow = sourceTotalSpan.closest('tr') || sourceTotalSpan.closest('.css-table-row');
+              if (sourceRow) {
+                // Find corresponding row in summaryEl by matching structure
+                const summaryTable = summaryEl.querySelector('table') || summaryEl.querySelector('.css-table');
+                if (summaryTable) {
+                  const summaryRows = summaryTable.querySelectorAll('tr, .css-table-row');
+                  // Try to match by position or content
+                  const sourceRowIndex = Array.from(sourceRow.parentElement.children).indexOf(sourceRow);
+                  if (summaryRows[sourceRowIndex]) {
+                    totalSpan = summaryRows[sourceRowIndex].querySelector('.insights-AccessPoints-total');
+                    if (totalSpan) {
+                      console.log('[Enhance] Found matching row in summaryEl');
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        
+        if (!totalSpan) {
+          return false;
+        }
       }
 
       // Find the row containing this span
