@@ -259,6 +259,8 @@ a.comp-navbarLogo[data-enhance-indicator] {
   display: flex;
   flex-direction: row;
   gap: 4px;
+  margin-top: 12px;
+  margin-left: 12px;
 }
 
 .enhance-site-panel .enhance-insights-list > * {

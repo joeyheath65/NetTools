@@ -640,9 +640,9 @@
 
       // Determine color class based on percentage
       let healthClass = 'enhance-site-health-red';
-      if (percentage >= 95) {
+      if (percentage >= 90) {
         healthClass = 'enhance-site-health-green';
-      } else if (percentage >= 85) {
+      } else if (percentage >= 80) {
         healthClass = 'enhance-site-health-yellow';
       }
 
@@ -655,9 +655,9 @@
       const healthDisplay = document.createElement('div');
       healthDisplay.className = 'enhance-site-health-display ' + healthClass;
       healthDisplay.innerHTML = `
-        <div class="enhance-site-health-label">Site Health</div>
+        <div class="enhance-site-health-label">AP Health</div>
         <div class="enhance-site-health-percentage">${percentage}%</div>
-        <div class="enhance-site-health-details">${onlineAPs} / ${totalAPs} APs Online</div>
+        <div class="enhance-site-health-details">${onlineAPs} / ${totalAPs} Online</div>
       `;
 
       healthContainer.appendChild(healthDisplay);
