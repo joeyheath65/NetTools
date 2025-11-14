@@ -1032,10 +1032,11 @@
     
     // Disable and hide the "Delete Site" button permanently
     function disableDeleteSiteButton() {
-      // Find all buttons with the dangerous class that contain "Delete Site" text
-      const buttons = document.querySelectorAll('button.btn.normal.dangerous');
+      // Find all buttons with the dangerous class that haven't been processed yet
+      const buttons = document.querySelectorAll('button.btn.normal.dangerous:not([data-enhance-delete-disabled])');
       
       buttons.forEach((button) => {
+        // Only process buttons that contain "Delete Site" text
         const btnContent = button.querySelector('.btn-content');
         if (btnContent && btnContent.textContent.trim() === 'Delete Site') {
           // Hide the button
@@ -1049,7 +1050,7 @@
             e.stopImmediatePropagation();
             return false;
           }, true); // Use capture phase to catch early
-          // Mark as processed
+          // Mark as processed immediately to prevent re-processing
           button.setAttribute('data-enhance-delete-disabled', 'true');
           console.log('[Enhance] Disabled and hid Delete Site button');
         }
@@ -1171,9 +1172,20 @@
     
     // Watch specifically for Delete Site button being added dynamically
     const deleteButtonObserver = new MutationObserver(() => {
-      // Check for any buttons that match but haven't been disabled yet
+      // Check for any buttons that match and actually contain "Delete Site" text
       const buttons = document.querySelectorAll('button.btn.normal.dangerous:not([data-enhance-delete-disabled])');
-      if (buttons.length > 0) {
+      let foundDeleteButton = false;
+      
+      // Only proceed if we find a button that actually says "Delete Site"
+      for (const button of buttons) {
+        const btnContent = button.querySelector('.btn-content');
+        if (btnContent && btnContent.textContent.trim() === 'Delete Site') {
+          foundDeleteButton = true;
+          break;
+        }
+      }
+      
+      if (foundDeleteButton) {
         disableDeleteSiteButton();
       }
     });
