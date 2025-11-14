@@ -18,7 +18,7 @@ Windows:
 Does python even run on windows?
 
 ## Usage
-There are 2 subdirectories here. Packages and Scripts. The packages directory has more complex multi-file programs (multi function or advanced functionality), and the scripts directory which has mostly single function or single purpose (and single file) scripts.
+There are 3 subdirectories here. Packages, Scripts, and Extensions. The packages directory has more complex multi-file programs (multi function or advanced functionality), the scripts directory which has mostly single function or single purpose (and single file) scripts, and the extensions directory which contains browser extensions for enhancing network management portals.
 
 ## Tools and What They Do!
 Here is a quick tidbit about each tool and what it does.
@@ -34,6 +34,9 @@ Very simple monitor for your host machine's network interfaces. This is a LIVE m
 
 ### ✅ Scripts > Sysinfo.py
 Im not gonna even lie on this one, this is all AI. I didnt code ANYTHING on this. This will extract all of the host network connection information.
+
+### ✅ Extensions > Enhance
+Chrome/Firefox extension that injects custom CSS and JavaScript into network infrastructure management portals. See [Extensions/Enhance/README.md](Extensions/Enhance/README.md) for full documentation and setup instructions.
 
 ## Support
 Sorry, no support! Use at your own risk! Just kidding, feel free to reach out if you have questions or need help.
