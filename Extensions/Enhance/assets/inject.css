@@ -207,12 +207,12 @@ a.comp-navbarLogo[data-enhance-indicator] {
 /* Site Health Display Styles */
 .enhance-site-panel .enhance-site-health-display {
   padding: 8px 8px;
-  margin-left: 5px;
+  margin-left: 6px;
   border-radius: 8px;
   text-align: center;
   border: 2px solid;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  min-width: 110px;
+  min-width: 100px;
 }
 
 .enhance-site-panel .enhance-site-health-label {
@@ -244,9 +244,9 @@ a.comp-navbarLogo[data-enhance-indicator] {
 }
 
 .enhance-site-panel .enhance-site-health-yellow {
-  background-color: rgba(250, 173, 20, 0.15);
-  border-color: rgb(81, 82, 0);
-  color: #f6fa14;
+  background-color: rgba(219, 250, 20, 0.274);
+  border-color: rgba(205, 208, 26, 0.733);
+  color: #383909;
 }
 
 .enhance-site-panel .enhance-site-health-red {
