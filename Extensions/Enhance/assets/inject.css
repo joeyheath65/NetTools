@@ -257,8 +257,13 @@ a.comp-navbarLogo[data-enhance-indicator] {
 
 .enhance-site-panel .enhance-insights-list {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 4px;
+}
+
+.enhance-site-panel .enhance-insights-list > * {
+  flex: 1 1 0;
+  min-width: 0;
 }
 
 a.enhance-insight-row[data-enhance-state="alert"] {
