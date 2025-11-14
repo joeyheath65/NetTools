@@ -220,15 +220,15 @@ a.comp-navbarLogo[data-enhance-indicator] {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
   opacity: 0.9;
 }
 
 .enhance-site-panel .enhance-site-health-percentage {
   font-size: 1rem;
   font-weight: 500;
-  line-height: 1.1;
-  margin-bottom: 4px;
+  line-height: 1;
+  margin-bottom: 2px;
 }
 
 .enhance-site-panel .enhance-site-health-details {
@@ -245,8 +245,8 @@ a.comp-navbarLogo[data-enhance-indicator] {
 
 .enhance-site-panel .enhance-site-health-yellow {
   background-color: rgba(250, 173, 20, 0.15);
-  border-color: rgba(250, 173, 20, 0.6);
-  color: #faad14;
+  border-color: rgb(81, 82, 0);
+  color: #f6fa14;
 }
 
 .enhance-site-panel .enhance-site-health-red {
