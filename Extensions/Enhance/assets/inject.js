@@ -704,6 +704,9 @@
     function initMistEnhancements() {
       const currentUrl = window.location.href;
       
+      // Disable Delete Site button (call early to catch it if already present)
+      disableDeleteSiteButton();
+      
       // Fetch site stats early if we have a siteId
       const { siteId } = getOrgAndSiteIds();
       if (siteId) {
@@ -1027,9 +1030,38 @@
       });
     }
     
+    // Disable and hide the "Delete Site" button permanently
+    function disableDeleteSiteButton() {
+      // Find all buttons with the dangerous class that contain "Delete Site" text
+      const buttons = document.querySelectorAll('button.btn.normal.dangerous');
+      
+      buttons.forEach((button) => {
+        const btnContent = button.querySelector('.btn-content');
+        if (btnContent && btnContent.textContent.trim() === 'Delete Site') {
+          // Hide the button
+          button.style.display = 'none';
+          // Disable it to prevent any interaction
+          button.disabled = true;
+          // Prevent all click events
+          button.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            e.stopImmediatePropagation();
+            return false;
+          }, true); // Use capture phase to catch early
+          // Mark as processed
+          button.setAttribute('data-enhance-delete-disabled', 'true');
+          console.log('[Enhance] Disabled and hid Delete Site button');
+        }
+      });
+    }
+    
     // General admin page enhancements
     function initAdminEnhancements() {
       console.log('[Enhance] Initializing Mist.com Admin page enhancements');
+      
+      // Disable Delete Site button
+      disableDeleteSiteButton();
       
       // Add "Enhanced!" indicator to logo (try multiple times as page loads)
       let attempts = 0;
@@ -1135,6 +1167,21 @@
     contentObserver.observe(document.body, {
       childList: true,
       subtree: true
+    });
+    
+    // Watch specifically for Delete Site button being added dynamically
+    const deleteButtonObserver = new MutationObserver(() => {
+      // Check for any buttons that match but haven't been disabled yet
+      const buttons = document.querySelectorAll('button.btn.normal.dangerous:not([data-enhance-delete-disabled])');
+      if (buttons.length > 0) {
+        disableDeleteSiteButton();
+      }
+    });
+    
+    deleteButtonObserver.observe(document.body, {
+      childList: true,
+      subtree: true,
+      attributes: false
     });
     
   })();
